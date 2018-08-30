@@ -1,0 +1,62 @@
+/************************************************************
+ * COLORS
+ ***********************************************************/
+
+@TRANSPARENT: transparent;
+@DGK_BLACK: #101010;
+//(16,16,16)
+@DGK_BLACK_SEMI_TRANSPARENT: rgba(16, 16, 16, 0.1);
+@DGK_GREY_SEMI_TRANSPARENT_POPUP: rgba(100, 100, 100, 0.8);
+@DGK_WHITE: #F0F0F0;
+//(240,240,240)
+@DGK_PURPLE: #350949;
+@DGK_RED: #DD052B;
+@DGK_GREY_100: #646464;
+@DGK_GREY_140: #8C8C8C;
+@DGK_GREY_160: #A0A0A0;
+@DGK_GREY_200: #C8C8C8;
+@DGK_BLACK_PURPLE: #201820;
+@DGK_ORANGE: #FF4600;
+@DGK_GREEN: #00C800;
+
+/*@DDEMM_COLOR_WHITE : rgb(240,240,240);
+@DDEMM_COLOR_BLACK : rgb(16,16,16);
+@DDEMM_COLOR_GREY : rgb(80,80,80);
+@DDEMM_COLOR_BLUE : rgb(48,16,80);
+@DDEMM_COLOR_RED : rgb(240,0,0);*/
+
+
+.channelLogo {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/************************************************************
+ * OPACITY
+ ***********************************************************/
+
+.setOpacity() {
+  @opacities: lightTransparency 0.79, mediumTransparency 0.84, standardTransparency 0.89, darkTransparency 0.95, opaqueTransparency 1;
+  .traverse(@iterator:1) when(@iterator <= length(@opacities)) {
+    @name: extract(extract(@opacities, @iterator),1);
+    body.@{name} & {
+      opacity: extract(extract(@opacities, @iterator),2);
+    }
+
+    .traverse((@iterator + 1));
+  }
+  .traverse();
+}
+.setBlurOpacity() {
+  @opacities: lightTransparency 0.59, mediumTransparency 0.64, standardTransparency 0.69, darkTransparency 0.74, opaqueTransparency 1;
+  .traverse(@iterator:1) when(@iterator <= length(@opacities)) {
+    @name: extract(extract(@opacities, @iterator),1);
+    body.@{name} & {
+      opacity: extract(extract(@opacities, @iterator),2);
+    }
+
+    .traverse((@iterator + 1));
+  }
+  .traverse();
+}

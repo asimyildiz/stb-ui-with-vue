@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgetlist version="1.0" lastupdated="1454061342" revision="512000">
+    <widget id="0" name="beINCONNECT">
+        <posterUrl>Widgets/icons/_icon_bein_connect.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>false</needPlayer>
+        <needSecureLogin>true</needSecureLogin>
+        <swfToLoad>dtportal</swfToLoad>
+        <uitexts lang="en">
+            <title>beIN CONNECT</title>
+            <description>Missed programs, hundreds of movies and more are waiting for you to watch. You can reach to Betimlemeli contents directly by pressing RED button in your controller</description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>beIN CONNECT</title>
+            <description>Kaçırdığınız programlar, yüzlerce film ve fazlası dilediğiniz zaman izlemeniz için sizi bekliyor. Betimlemeli içeriklere hızlı ulaşmak için kumandanızda KIRMIZI tuşa basınız</description>
+        </uitexts>
+    </widget>
+    <widget id="1" name="DigiturkCocuk">
+        <posterUrl>Widgets/icons/DZ_cocuk.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>false</needPlayer>
+        <needSecureLogin>true</needSecureLogin>
+        <swfToLoad>dtkids</swfToLoad>
+        <uitexts lang="en">
+            <title>DIGITURK ÇOCUK</title>
+            <description>Digiturk Çocuk kanallarında keyifle izlenen programlar dilediğiniz zaman elinizin altında.
+                Üstelik yaş sınırı koyarak çocuğunuzun sadece yaşına uygun programlara erişmesini sağlayabilirsiniz.</description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>DIGITURK ÇOCUK</title>
+            <description>Digiturk Çocuk kanallarında keyifle izlenen programlar dilediğiniz zaman elinizin altında.
+                Üstelik yaş sınırı koyarak çocuğunuzun sadece yaşına uygun programlara erişmesini sağlayabilirsiniz.</description>
+        </uitexts>
+    </widget>
+    <widget id="2" name="beINSPORTS">
+        <posterUrl>Widgets/icons/_icon_bein_sports.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>true</needPlayer>
+        <needSecureLogin>true</needSecureLogin>
+        <swfToLoad>Widgets/BrowserLauncher.swf</swfToLoad>
+        <uitexts lang="en">
+            <title>beIN SPORTS</title>
+            <description>Everything you can find for football is in this application. Watch goals, news, special interviews and more</description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>beIN SPORTS</title>
+            <description>Futbol ve futbola dair herşey burada! Puan durumu, fikstür, haftanın golleri, maç özetleri ve daha fazlası...</description>
+        </uitexts>
+        <params>
+            <url value="http://stb-premiumiq-beinsports-inotv.beiniz.biz"/>
+            <querystrings value="smartCardNumber,portalCode,dbsCode"/>
+            <stopVideo value="true"/>
+        </params>
+    </widget>
+    <widget id="3" name="Karaoke">
+        <posterUrl>Widgets/icons/_icon_karaoke.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>true</needPlayer>
+        <needSecureLogin>true</needSecureLogin>
+        <swfToLoad>Widgets/BrowserLauncher.swf</swfToLoad>
+        <uitexts lang="en">
+            <title>KARAOKE</title>
+            <description>Sing populer songs with karaoke, whenever you want. Choose your song from hundreds of songs, sing and enjoy </description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>KARAOKE</title>
+            <description>Karaoke uygulamasıyla, dilediğiniz zaman şarkı söyleyebilirsiniz. Yüzlerce şarkının arasından istediğinizi seçin, söyleyin ve eğlenin</description>
+        </uitexts>
+        <params>
+            <url value="http://nitv.digiturk.com.tr/karaoke"/>
+            <querystrings value="smartCardNumber,portalCode,dbsCode"/>
+            <stopVideo value="true"/>
+        </params>
+    </widget>
+    <widget id="4" name="Facebook">
+        <posterUrl>Widgets/icons/_icon_facebook.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>false</needPlayer>
+        <needSecureLogin>true</needSecureLogin>
+        <swfToLoad>Widgets/BrowserLauncher.swf</swfToLoad>
+        <uitexts lang="en">
+            <title>FACEBOOK</title>
+            <description>Interact with your friends while whaching TV</description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>FACEBOOK</title>
+            <description>Facebook'ta durumunuzu güncelleyin, arkadaşlarınız neler yapıyor takip edin</description>
+        </uitexts>
+        <params>
+            <url value="http://nitv.digiturk.com.tr/tvfacebook/pages/mainpage.aspx"/>
+            <querystrings value="smartCardNumber,portalCode,dbsCode,SerialCode"/>
+            <stopVideo value="true"/>
+        </params>
+    </widget>
+    <widget id="5" name="Twitter">
+        <posterUrl>Widgets/icons/_icon_twitter.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>false</needPlayer>
+        <needSecureLogin>true</needSecureLogin>
+        <swfToLoad>Widgets/BrowserLauncher.swf</swfToLoad>
+        <uitexts lang="en">
+            <title>TWITTER</title>
+            <description>Send tweets, short text messages, to your community</description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>TWITTER</title>
+            <description>Twitter üzerinde tweet atabilir, takip ettiklerinizin tweetlerini okuyabilirsiniz</description>
+        </uitexts>
+        <params>
+            <url value="https://nitv.digiturk.com.tr/tvtwitter"/>
+            <querystrings value="smartCardNumber,portalCode,dbsCode,SerialCode"/>
+            <stopVideo value="true"/>
+        </params>
+    </widget>
+    <widget id="6" name="YemekTarifi">
+        <posterUrl>Widgets/icons/_icon_yemek_tarifleri.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>true</needPlayer>
+        <needSecureLogin>true</needSecureLogin>
+        <swfToLoad>Widgets/BrowserLauncher.swf</swfToLoad>
+        <uitexts lang="en">
+            <title>RECIPIES</title>
+            <description>You can find losts of recipes via this application</description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>YEMEK TARİFİ</title>
+            <description>Ne pişirsem diye düşünmeyin! Onlarca tarif, üstelik videolu anlatımlarıyla, elinizin altında</description>
+        </uitexts>
+        <params>
+            <url value="http://nitv.digiturk.com.tr/yemektarifleri"/>
+            <querystrings value="smartCardNumber,portalCode,dbsCode,SerialCode"/>
+            <stopVideo value="true"/>
+        </params>
+    </widget>
+    <widget id="7" name="SpeedTest">
+        <posterUrl>Widgets/icons/_icon_speedtest.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>true</needPlayer>
+        <needSecureLogin>false</needSecureLogin>
+        <swfToLoad>Widgets/BrowserLauncher.swf</swfToLoad>
+        <uitexts lang="en">
+            <title>SPEED TEST</title>
+            <description>Use this application to check your internet connection speed</description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>HIZ TESTİ</title>
+            <description>İnternete ve digiturk sunucularına bağlantı kalitenizi bu uygulama üzerinden kontrol edebilirsiniz</description>
+        </uitexts>
+        <params>
+            <url value="https://nitv.digiturk.com.tr/IQSpeedControl"/>
+            <querystrings value="smartCardNumber,portalCode,dbsCode"/>
+            <stopVideo value="true"/>
+        </params>
+    </widget>
+    <widget id="8" name="DasAuto">
+        <posterUrl>Widgets/icons/_icon_VW.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>true</needPlayer>
+        <needSecureLogin>true</needSecureLogin>
+        <swfToLoad>Widgets/BrowserLauncher.swf</swfToLoad>
+        <uitexts lang="en">
+            <title>VOLKSWAGEN</title>
+            <description>Discover the world of Volkswagen</description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>VOLKSWAGEN</title>
+            <description>Volkswagen dünyasını keşfedin.</description>
+        </uitexts>
+        <params>
+            <url value="http://nitv.digiturk.com.tr/DigiturkVolkswagen"/>
+            <querystrings value="smartCardNumber,portalCode,dbsCode"/>
+            <stopVideo value="true"/>
+        </params>
+    </widget>
+    <widget id="9" name="DiniProgramlar">
+        <posterUrl>Widgets/icons/_icon_dini_programlar.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>true</needPlayer>
+        <needSecureLogin>true</needSecureLogin>
+        <swfToLoad>Widgets/BrowserLauncher.swf</swfToLoad>
+        <uitexts lang="en">
+            <title>RELIGIOUS CONTENTS</title>
+            <description>You can find religious contents via this application.</description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>DİNİ PROGRAMLAR</title>
+            <description>Hadis’ten İlahi’ye, filmden belgesele pek çok dini programa buradan ulaşabilirsiniz.</description>
+        </uitexts>
+        <params>
+            <url value="http://nitv.digiturk.com.tr/RamazanOzel"/>
+            <querystrings value="smartCardNumber,portalCode,dbsCode,SerialCode"/>
+            <stopVideo value="true"/>
+        </params>
+    </widget>
+    <widget id="10" name="VideoClip">
+        <posterUrl>Widgets/icons/_icon_video_klip.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>true</needPlayer>
+        <needSecureLogin>false</needSecureLogin>
+        <swfToLoad>Widgets/BrowserLauncher.swf</swfToLoad>
+        <uitexts lang="en">
+            <title>VIDEO CLIP</title>
+            <description>You can find losts of video clips and concerts in HD quality via this application. Choose from thousands of video clips and concerts, watch and enjoy </description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>VİDEO KLİP</title>
+            <description>Videoklip uygulamasıyla, dilediğiniz zaman en güzel videoklip ve konserleri HD kalitesinde izleyin. Binlerce videoklip ve onlarca konser içinden istediğinizi seçin, izleyin ve eğlenin</description>
+        </uitexts>
+        <params>
+            <url value="http://nitv.digiturk.com.tr/videoclip"/>
+            <querystrings value="smartCardNumber,portalCode,dbsCode"/>
+            <stopVideo value="true"/>
+        </params>
+    </widget>
+    <widget id="11" name="DigiGame">
+        <posterUrl>Widgets/icons/_icon_digigame.png</posterUrl>
+        <needHDD>false</needHDD>
+        <needConnection>true</needConnection>
+        <needPlayer>true</needPlayer>
+        <needSecureLogin>false</needSecureLogin>
+        <swfToLoad>Widgets/BrowserLauncher.swf</swfToLoad>
+        <uitexts lang="en">
+            <title>DIGIGAME</title>
+            <description>You can find lots of games in this application </description>
+        </uitexts>
+        <uitexts lang="tr">
+            <title>DIGIOYUN</title>
+            <description>Çeşitli oyunlara bu uygulama altından ulaşabilirsiniz.</description>
+        </uitexts>
+        <params>
+            <url value="http://nitv.digiturk.com.tr/digiturkgame/index.html"/>
+            <querystrings value="smartCardNumber,portalCode,dbsCode"/>
+            <stopVideo value="true"/>
+        </params>
+    </widget>
+</widgetlist>

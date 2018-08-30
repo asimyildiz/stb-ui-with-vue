@@ -1,0 +1,349 @@
+{
+    "widgetlist": {
+        "-version": "1.0",
+        "-lastupdated": "1454061342",
+        "-revision": "512000",
+        "widget": [
+            {
+                "-id": "0",
+                "-name": "beINCONNECT",
+                "posterUrl": "Widgets/icons/_icon_bein_connect.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "false",
+                "needSecureLogin": "true",
+                "swfToLoad": "dtportal",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "beIN CONNECT",
+                        "description": "Missed programs, hundreds of movies and more are waiting for you to watch. You can reach to Betimlemeli contents directly by pressing RED button in your controller"
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "beIN CONNECT",
+                        "description": "Kaçırdığınız programlar, yüzlerce film ve fazlası dilediğiniz zaman izlemeniz için sizi bekliyor. Betimlemeli içeriklere hızlı ulaşmak için kumandanızda KIRMIZI tuşa basınız"
+                    }
+                ]
+            },
+            {
+                "-id": "1",
+                "-name": "Cocuk Programları",
+                "posterUrl": "Widgets/icons/DZ_cocuk.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "false",
+                "needSecureLogin": "true",
+                "swfToLoad": "dtkids",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "DIGITURK ÇOCUK",
+                        "description": "Digiturk Çocuk kanallarında keyifle izlenen programlar dilediğiniz zaman elinizin altında.Üstelik yaş sınırı koyarak çocuğunuzun sadece yaşına uygun programlara erişmesini sağlayabilirsiniz."
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "DIGITURK ÇOCUK",
+                        "description": "Digiturk Çocuk kanallarında keyifle izlenen programlar dilediğiniz zaman elinizin altında.Üstelik yaş sınırı koyarak çocuğunuzun sadece yaşına uygun programlara erişmesini sağlayabilirsiniz."
+                    }
+                ]
+            },
+            {
+                "-id": "2",
+                "-name": "beINSPORTS",
+                "posterUrl": "Widgets/icons/_icon_bein_sports.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "true",
+                "needSecureLogin": "true",
+                "swfToLoad": "Widgets/BrowserLauncher.swf",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "beIN SPORTS",
+                        "description": "Everything you can find for football is in this application. Watch goals, news, special interviews and more"
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "beIN SPORTS",
+                        "description": "Futbol ve futbola dair herşey burada! Puan durumu, fikstür, haftanın golleri, maç özetleri ve daha fazlası..."
+                    }
+                ],
+                "params": {
+                    "url": { "-value": "http://stb-premiumiq-beinsports-inotv.beiniz.biz" },
+                    "querystrings": { "-value": "smartCardNumber,portalCode,dbsCode" },
+                    "stopVideo": { "-value": "true" }
+                }
+            },
+            {
+                "-id": "3",
+                "-name": "Karaoke",
+                "posterUrl": "Widgets/icons/_icon_karaoke.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "true",
+                "needSecureLogin": "true",
+                "swfToLoad": "Widgets/BrowserLauncher.swf",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "KARAOKE",
+                        "description": "Sing populer songs with karaoke, whenever you want. Choose your song from hundreds of songs, sing and enjoy "
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "KARAOKE",
+                        "description": "Karaoke uygulamasıyla, dilediğiniz zaman şarkı söyleyebilirsiniz. Yüzlerce şarkının arasından istediğinizi seçin, söyleyin ve eğlenin"
+                    }
+                ],
+                "params": {
+                    "url": { "-value": "http://nitv.digiturk.com.tr/karaoke" },
+                    "querystrings": { "-value": "smartCardNumber,portalCode,dbsCode" },
+                    "stopVideo": { "-value": "true" }
+                }
+            },
+            {
+                "-id": "4",
+                "-name": "Facebook",
+                "posterUrl": "Widgets/icons/_icon_facebook.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "false",
+                "needSecureLogin": "true",
+                "swfToLoad": "Widgets/BrowserLauncher.swf",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "FACEBOOK",
+                        "description": "Interact with your friends while whaching TV"
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "FACEBOOK",
+                        "description": "Facebook'ta durumunuzu güncelleyin, arkadaşlarınız neler yapıyor takip edin"
+                    }
+                ],
+                "params": {
+                    "url": { "-value": "http://nitv.digiturk.com.tr/tvfacebook/pages/mainpage.aspx" },
+                    "querystrings": { "-value": "smartCardNumber,portalCode,dbsCode,SerialCode" },
+                    "stopVideo": { "-value": "true" }
+                }
+            },
+            {
+                "-id": "5",
+                "-name": "Twitter",
+                "posterUrl": "Widgets/icons/_icon_twitter.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "false",
+                "needSecureLogin": "true",
+                "swfToLoad": "Widgets/BrowserLauncher.swf",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "TWITTER",
+                        "description": "Send tweets, short text messages, to your community"
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "TWITTER",
+                        "description": "Twitter üzerinde tweet atabilir, takip ettiklerinizin tweetlerini okuyabilirsiniz"
+                    }
+                ],
+                "params": {
+                    "url": { "-value": "https://nitv.digiturk.com.tr/tvtwitter" },
+                    "querystrings": { "-value": "smartCardNumber,portalCode,dbsCode,SerialCode" },
+                    "stopVideo": { "-value": "true" }
+                }
+            },
+            {
+                "-id": "6",
+                "-name": "YemekTarifi",
+                "posterUrl": "Widgets/icons/_icon_yemek_tarifleri.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "true",
+                "needSecureLogin": "true",
+                "swfToLoad": "Widgets/BrowserLauncher.swf",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "RECIPIES",
+                        "description": "You can find losts of recipes via this application"
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "YEMEK TARİFİ",
+                        "description": "Ne pişirsem diye düşünmeyin! Onlarca tarif, üstelik videolu anlatımlarıyla, elinizin altında"
+                    }
+                ],
+                "params": {
+                    "url": { "-value": "http://nitv.digiturk.com.tr/yemektarifleri" },
+                    "querystrings": { "-value": "smartCardNumber,portalCode,dbsCode,SerialCode" },
+                    "stopVideo": { "-value": "true" }
+                }
+            },
+            {
+                "-id": "7",
+                "-name": "SpeedTest",
+                "posterUrl": "Widgets/icons/_icon_speedtest.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "true",
+                "needSecureLogin": "false",
+                "swfToLoad": "Widgets/BrowserLauncher.swf",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "SPEED TEST",
+                        "description": "Use this application to check your internet connection speed"
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "HIZ TESTİ",
+                        "description": "İnternete ve digiturk sunucularına bağlantı kalitenizi bu uygulama üzerinden kontrol edebilirsiniz"
+                    }
+                ],
+                "params": {
+                    "url": { "-value": "https://nitv.digiturk.com.tr/IQSpeedControl" },
+                    "querystrings": { "-value": "smartCardNumber,portalCode,dbsCode" },
+                    "stopVideo": { "-value": "true" }
+                }
+            },
+            {
+                "-id": "8",
+                "-name": "DasAuto",
+                "posterUrl": "Widgets/icons/_icon_VW.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "true",
+                "needSecureLogin": "true",
+                "swfToLoad": "Widgets/BrowserLauncher.swf",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "VOLKSWAGEN",
+                        "description": "Discover the world of Volkswagen"
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "VOLKSWAGEN",
+                        "description": "Volkswagen dünyasını keşfedin."
+                    }
+                ],
+                "params": {
+                    "url": { "-value": "http://nitv.digiturk.com.tr/DigiturkVolkswagen" },
+                    "querystrings": { "-value": "smartCardNumber,portalCode,dbsCode" },
+                    "stopVideo": { "-value": "true" }
+                }
+            },
+            {
+                "-id": "9",
+                "-name": "Dini Programlar",
+                "posterUrl": "Widgets/icons/_icon_dini_programlar.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "true",
+                "needSecureLogin": "true",
+                "swfToLoad": "Widgets/BrowserLauncher.swf",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "RELIGIOUS CONTENTS",
+                        "description": "You can find religious contents via this application."
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "DİNİ PROGRAMLAR",
+                        "description": "Hadis’ten İlahi’ye, filmden belgesele pek çok dini programa buradan ulaşabilirsiniz."
+                    }
+                ],
+                "params": {
+                    "url": { "-value": "http://nitv.digiturk.com.tr/RamazanOzel" },
+                    "querystrings": { "-value": "smartCardNumber,portalCode,dbsCode,SerialCode" },
+                    "stopVideo": { "-value": "true" }
+                }
+            },
+            {
+                "-id": "10",
+                "-name": "VideoClip",
+                "posterUrl": "Widgets/icons/_icon_video_klip.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "true",
+                "needSecureLogin": "false",
+                "swfToLoad": "Widgets/BrowserLauncher.swf",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "VIDEO CLIP",
+                        "description": "You can find losts of video clips and concerts in HD quality via this application. Choose from thousands of video clips and concerts, watch and enjoy "
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "VİDEO KLİP",
+                        "description": "Videoklip uygulamasıyla, dilediğiniz zaman en güzel videoklip ve konserleri HD kalitesinde izleyin. Binlerce videoklip ve onlarca konser içinden istediğinizi seçin, izleyin ve eğlenin"
+                    }
+                ],
+                "params": {
+                    "url": { "-value": "http://nitv.digiturk.com.tr/videoclip" },
+                    "querystrings": { "-value": "smartCardNumber,portalCode,dbsCode" },
+                    "stopVideo": { "-value": "true" }
+                }
+            },
+            {
+                "-id": "11",
+                "-name": "DigiGame",
+                "posterUrl": "Widgets/icons/_icon_digigame.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "true",
+                "needSecureLogin": "false",
+                "swfToLoad": "Widgets/BrowserLauncher.swf",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "DIGIGAME",
+                        "description": "You can find lots of games in this application "
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "DIGIOYUN",
+                        "description": "Çeşitli oyunlara bu uygulama altından ulaşabilirsiniz."
+                    }
+                ],
+                "params": {
+                    "url": { "-value": "http://nitv.digiturk.com.tr/digiturkgame/index.html" },
+                    "querystrings": { "-value": "smartCardNumber,portalCode,dbsCode" },
+                    "stopVideo": { "-value": "true" }
+                }
+            },
+            {
+                "-id": "12",
+                "-name": "YoutubeTV",
+                "posterUrl": "Widgets/icons/_icon_youtube.png",
+                "needHDD": "false",
+                "needConnection": "true",
+                "needPlayer": "true",
+                "needSecureLogin": "false",
+                "swfToLoad": "dtapp",
+                "uitexts": [
+                    {
+                        "-lang": "en",
+                        "title": "YOUTUBE",
+                        "description": "Use YouTube application to discover, watch and share videos"
+                    },
+                    {
+                        "-lang": "tr",
+                        "title": "YOUTUBE",
+                        "description": "YouTube'da yer alan videoları izleyebilirsiniz"
+                    }
+                ],
+                "params": {
+                    "url": { "-value": "http://www.youtube.com/tv" },
+                    "stopVideo": { "-value": "true" }
+                }
+            }
+        ]
+    }
+}

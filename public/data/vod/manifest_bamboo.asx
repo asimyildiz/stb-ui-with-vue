@@ -1,0 +1,23 @@
+<asx version="3.0">
+    <!-- GMX -->
+    <param name="encoding" value="utf-8" />
+    <title>                     </title>
+    <MOREINFO HREF = "" />
+
+    <entry>
+        <PARAM NAME="EntryType" VALUE="Content" />
+
+        <param name="encoding" value="utf-8" />
+        <PARAM NAME="CastUP_AssociatedURL" VALUE="" />
+        <PARAM NAME="CastUP_Content_Config" VALUE="" />
+        <PARAM NAME="CastUP_Content_ClipMediaID" VALUE="13026535" />
+        <PARAM NAME="CastUP_Content_ClipID" VALUE="11771878" />
+        <author>digiturktr</author>
+        <title> </title>
+
+        <ref href="http://127.0.0.1:81/videos/vod.mp4?" />
+        <ref href="http://127.0.0.1:81/videos/vod.mp4?" />
+        <ref href="http://127.0.0.1:81/videos/vod.mp4?" />
+
+    </entry>
+</asx>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EBSProvider version="1.0">
+    <tv type-info="AR" version="1.0">
+        <recommendation duration="279350" start="20160929112410" stop="20161002170000">
+            <title lang="en"/>
+            <title lang="trk">UYUMSUZ SERİSİ: YANDAŞ BÖLÜM 1</title>
+            <contentID>54313</contentID>
+            <broadcasterID>513</broadcasterID>
+            <masterProductionID>PT0000093799</masterProductionID>
+            <desc>SERİNİN 3. FİLMİNDE, DÖRT (SHAILENE WOODLEY) VE TRIS (THEO JAMES) SEVDİKLERİ ŞEHİRDEN ÇIKMAK ZORUNDA
+                KALIRLAR. GÜZEL OYUNCU NAOMI WATTS DA EVELYN ROLÜNDE KARŞIMIZDA.
+            </desc>
+            <actors>SHAILENE WOODLEY; NAOMI WATTS; THEO JAMES</actors>
+            <directors>ROBERT SCHWENTKE</directors>
+            <Year>2016</Year>
+            <category DVBContentID="0xE1" lang="en">Action</category>
+            <parental-rating>off</parental-rating>
+            <audioType>Dolby Digital</audioType>
+            <formatOfScreen>HD 16:9</formatOfScreen>
+            <duration>7111</duration>
+            <is3D>False</is3D>
+            <poster_file_name>54313.jpg</poster_file_name>
+        </recommendation>
+        <recommendation duration="279341" start="20160929112419" stop="20161002170000">
+            <title lang="en"/>
+            <title lang="trk">USTA</title>
+            <contentID>48809</contentID>
+            <broadcasterID>513</broadcasterID>
+            <masterProductionID>PT0000032649</masterProductionID>
+            <desc>2. DÜNYA SAVAŞI'NIN ARDINDAN ÜLKESİNE DÖNEN FREDDIE, YOLUNA NASIL DEVAM EDECEĞİNİ DÜSÜNÜRKEN "THE
+                CAUSE" TARIKATININ LİDERİYLE TANIŞINCA HAYATI TAMAMEN DEĞİŞİR.
+            </desc>
+            <actors>JOAQUIN PHOENIX; PHILIP SEYMOUR HOFFMAN; AMY ADAMS</actors>
+            <directors>PAUL THOMAS ANDERSON</directors>
+            <Year>2012</Year>
+            <category DVBContentID="0xE5" lang="en">Drama</category>
+            <parental-rating>off</parental-rating>
+            <audioType>Dolby Digital</audioType>
+            <formatOfScreen>HD 16:9</formatOfScreen>
+            <duration>7776</duration>
+            <is3D>False</is3D>
+            <poster_file_name>48809.jpg</poster_file_name>
+        </recommendation>
+    </tv>
+    <VoD type-info="dvbs" version="1.0">
+        <recommendation duration="279384" start="20160929112336" stop="20161002170000">
+            <title lang="en"/>
+            <title lang="trk">X-MEN: APOCALYPSE</title>
+            <broadcasterID>513</broadcasterID>
+            <contentID>51652</contentID>
+            <desc>(X-MEN: APOCALYPSE) EFSANE "X-MEN" SERİSİNİN 8. FİLMİ OLAN YAPIMDA, OSCAR'LI JENNIFER LAWRENCE'A
+                MICHAEL FASSBENDER VE JAMES MCAVOY EŞLİK EDİYOR.
+            </desc>
+            <actors>MICHAEL FASSBENDER;JENNIFER LAWRENCE;JAMES MCAVOY</actors>
+            <directors>BRYAN SINGER</directors>
+            <Year>2016</Year>
+            <category DVBContentID="0xE1" lang="en">Action</category>
+            <parental-rating>off</parental-rating>
+            <validity_date>20160928000000</validity_date>
+            <licensing_window_start>20160923000000</licensing_window_start>
+            <licensing_window_end>20160930000000</licensing_window_end>
+            <productDuration>8267</productDuration>
+            <contentHD>False</contentHD>
+            <audioType>Stereo</audioType>
+            <formatOfScreen>Widescreen</formatOfScreen>
+            <is3D>False</is3D>
+            <poster_file_name>51652.jpg</poster_file_name>
+        </recommendation>
+        <recommendation duration="192964" start="20160929112356" stop="20161001170000">
+            <title lang="en"/>
+            <title lang="trk">SENDEN ÖNCE BEN</title>
+            <broadcasterID>513</broadcasterID>
+            <contentID>43527</contentID>
+            <desc>(ME BEFORE YOU) "AÇLIK OYUNLARI" SERİSİNDEN FINNICK (SAM CLAFLIN) VE "TAHT OYUNLARI" DİZİSİYLE
+                KALPLERİ FETHEDEN KHALEESI (EMILIA CLARKE) ARASINDA GEÇEN ROMANTİK BİR AŞK HİKAYESİ.
+            </desc>
+            <actors>EMILIA CLARKE;SAM CLAFLIN;JANET McTEER</actors>
+            <directors>THEA SHARROCK</directors>
+            <Year>2016</Year>
+            <category DVBContentID="0xE5" lang="en">Drama</category>
+            <parental-rating>13+</parental-rating>
+            <validity_date>20161015000000</validity_date>
+            <licensing_window_start>20160926000000</licensing_window_start>
+            <licensing_window_end>20161017000000</licensing_window_end>
+            <productDuration>6327</productDuration>
+            <contentHD>False</contentHD>
+            <audioType>Stereo</audioType>
+            <formatOfScreen>Widescreen</formatOfScreen>
+            <is3D>False</is3D>
+            <poster_file_name>43527.jpg</poster_file_name>
+        </recommendation>
+    </VoD>
+    <tv type-info="live" version="1.0">
+        <recommendation duration="279350" _start="20160929112410" stop="20161002170000">
+            <poster_file_name>54313.jpg</poster_file_name>
+            <directors>ROBERT SCHWENTKE</directors>
+            <category DVBContentID="0xE1" lang="en">Action</category>
+            <schedule>
+                <name>Live Content 1</name>
+                <_eventID>70658152</_eventID>
+                <service_id>ITELE</service_id>
+                <description>SERİNİN 3. FİLMİNDE, DÖRT (SHAILENE WOODLEY) VE TRIS (THEO JAMES) SEVDİKLERİ ŞEHİRDEN
+                    ÇIKMAK ZORUNDA
+                    KALIRLAR. GÜZEL OYUNCU NAOMI WATTS DA EVELYN ROLÜNDE KARŞIMIZDA.
+                </description>
+                <_start>20200929112410</_start>
+                <_stop>20200929122410</_stop>
+                <parental-rating>off</parental-rating>
+                <audioType>Dolby Digital</audioType>
+                <formatOfScreen>HD 16:9</formatOfScreen>
+                <duration>7111</duration>
+                <_channelONID>ITELE</_channelONID>
+                <_channelTSID></_channelTSID>
+                <_channelSID></_channelSID>
+            </schedule>
+            <schedule>
+                <name>Live Content 1</name>
+                <_eventID>70658152</_eventID>
+                <service_id>ITELE</service_id>
+                <description>SERİNİN 3. FİLMİNDE, DÖRT (SHAILENE WOODLEY) VE TRIS (THEO JAMES) SEVDİKLERİ ŞEHİRDEN
+                    ÇIKMAK ZORUNDA
+                    KALIRLAR. GÜZEL OYUNCU NAOMI WATTS DA EVELYN ROLÜNDE KARŞIMIZDA.
+                </description>
+                <_start>20200929112410</_start>
+                <_stop>20200929122410</_stop>
+                <parental-rating>off</parental-rating>
+                <audioType>Dolby Digital</audioType>
+                <formatOfScreen>HD 16:9</formatOfScreen>
+                <duration>7111</duration>
+                <_channelONID>ITELE</_channelONID>
+                <_channelTSID></_channelTSID>
+                <_channelSID></_channelSID>
+            </schedule>
+        </recommendation>
+        <recommendation duration="279350" _start="20160929112410" stop="20161002170000">
+            <poster_file_name>54313.jpg</poster_file_name>
+            <directors>ROBERT SCHWENTKE</directors>
+            <category DVBContentID="0xE1" lang="en">Action</category>
+            <schedule>
+                <name>Live Content 2</name>
+                <_eventID>70668368</_eventID>
+                <service_id>BFMTV</service_id>
+                <description>Un journal complet de l'actualité nationale et internationale
+                </description>
+                <_start>20200929112410</_start>
+                <_stop>20200929122410</_stop>
+                <parental-rating>off</parental-rating>
+                <audioType>Dolby Digital</audioType>
+                <formatOfScreen>HD 16:9</formatOfScreen>
+                <duration>7111</duration>
+                <_channelONID>BFMTV</_channelONID>
+                <_channelTSID></_channelTSID>
+                <_channelSID></_channelSID>
+            </schedule>
+            <schedule>
+                <name>Live Content 2</name>
+                <_eventID>70668368</_eventID>
+                <service_id>BFMTV</service_id>
+                <description>Un journal complet de l'actualité nationale et internationale
+                </description>
+                <_start>20200929112410</_start>
+                <_stop>20200929122410</_stop>
+                <parental-rating>off</parental-rating>
+                <audioType>Dolby Digital</audioType>
+                <formatOfScreen>HD 16:9</formatOfScreen>
+                <duration>7111</duration>
+                <_channelONID>BFMTV</_channelONID>
+                <_channelTSID></_channelTSID>
+                <_channelSID></_channelSID>
+            </schedule>
+        </recommendation>
+    </tv>
+</EBSProvider>

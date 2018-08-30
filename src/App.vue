@@ -1,29 +1,32 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <component ref="main" v-bind:is="layout"></component>
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+import DefaultLayout from './layouts/default.vue';
+
+export default {
+  _mainApp: null,
+  methods: {
+    volUp() {
+      this._mainApp.$refs.volumeWidget.increaseVolume();
     }
+  },
+  computed: {
+    layout() {
+      return this.$route.params.layout || this.$store.getters.layout;
+    }
+  },
+  components: {
+    default: DefaultLayout
+  },
+  mounted() {
+    this._mainApp = this.$refs.main;
+    this.$root.$on('VolUp', this.volUp.bind(this));
   }
-}
-</style>
+};
+</script>
+
+<style src="@/assets/css/1920x1080/theme.less" lang="less"></style>
