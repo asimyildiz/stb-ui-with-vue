@@ -8,10 +8,9 @@
 import DefaultLayout from './layouts/default.vue';
 
 export default {
-  _mainApp: null,
   methods: {
     volUp() {
-      this._mainApp.$refs.volumeWidget.increaseVolume();
+      this.$store.commit('INCREASE_VOLUME');
     }
   },
   computed: {
@@ -23,8 +22,11 @@ export default {
     default: DefaultLayout
   },
   mounted() {
-    this._mainApp = this.$refs.main;
     this.$root.$on('VolUp', this.volUp.bind(this));
+  },
+  beforeMount() {
+    this.$store.commit('SET_CURRENTVOLUME', 20);
+    this.$store.commit('SET_VOLUMESTEP', 16);
   }
 };
 </script>

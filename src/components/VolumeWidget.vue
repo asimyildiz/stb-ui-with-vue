@@ -12,36 +12,19 @@
 <script type="text/babel">
 export default {
   name: 'volumeWidget',
-  data() {
-    return {
-      volumeStep: 0
-    };
-  },
   props: {
     numberOfSteps: {
       type: Number,
       default: () => 16
-    },
-    currentVolume: {
-      type: Number,
-      default: () => 0
     }
-  },
-  mounted() {
-    this.volumeStep = Math.ceil(100 / this.numberOfSteps);
   },
   methods: {
     classObject(stepId) {
+      const volume = this.$store.getters.volume;
       return {
         step: true,
-        highLight: Math.ceil((stepId * 100) / this.numberOfSteps) >= (100 - this.currentVolume)
+        highLight: Math.ceil((stepId * 100) / this.numberOfSteps) >= (100 - volume)
       };
-    },
-    increaseVolume() {
-      this.currentVolume = Math.min(100, this.currentVolume + this.volumeStep);
-    },
-    decreaseVolume() {
-      this.currentVolume = Math.max(0, this.currentVolume - this.volumeStep);
     }
   }
 };
