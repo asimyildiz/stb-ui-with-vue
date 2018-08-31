@@ -17,6 +17,7 @@ module.exports = {
       "exports": "never",
       "functions": "ignore"
     }],
+    "no-param-reassign": [2, { "props": false }],
     "no-underscore-dangle": 0,
     "semi": 2,
     "indent": ["error", 4]

@@ -28,7 +28,7 @@ export default {
         VolumeWidget
     },
     computed: {
-        isVolumeVisible () {
+        isVolumeVisible() {
             return this.$store.getters.isVolumeVisible;
         }
     }

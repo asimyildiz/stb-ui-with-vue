@@ -24,13 +24,13 @@ export default {
         }
     },
     actions: {
-        INCREASE_VOLUME ({ commit }) {
+        INCREASE_VOLUME({ commit }) {
             commit('INCREASE_VOLUME');
             setTimeout(() => {
                 commit('HIDE_VOLUME');
             }, 3000);
         },
-        DECREASE_VOLUME ({ commit }) {
+        DECREASE_VOLUME({ commit }) {
             commit('DECREASE_VOLUME');
             setTimeout(() => {
                 commit('HIDE_VOLUME');
