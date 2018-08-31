@@ -10,7 +10,7 @@ import DefaultLayout from './layouts/default.vue';
 export default {
     methods: {
         volUp() {
-            this.$store.commit('INCREASE_VOLUME');
+            this.$store.dispatch('INCREASE_VOLUME');
         }
     },
     computed: {

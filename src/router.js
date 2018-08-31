@@ -1,15 +1,16 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import store from './store/index';
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
     mode: 'history',
     base: process.env.BASE_URL,
     routes: [
         {
             path: '/',
-            name: 'home',
+            name: 'liveScreen',
             component: () => import('./views/LiveScreen.vue'),
             props: {
                 layout: 'default' // name of the layout
@@ -28,3 +29,10 @@ export default new Router({
         }
     ]
 });
+
+router.beforeEach((to, from, next) => {
+    store.commit('SET_SCREEN', to.name);
+    next();
+});
+
+export default router;
