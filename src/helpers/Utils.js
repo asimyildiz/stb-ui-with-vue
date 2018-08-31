@@ -5,8 +5,8 @@
  * @returns {*}
  */
 export default {
-  getModule(files, filename) {
-    const file = files(filename);
-    return file.default ? file.default : file;
-  }
+    getModule(files, filename) {
+        const file = files(filename);
+        return file.default ? file.default : file;
+    }
 };

@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'liveTuneScreen'
+    name: 'liveTuneScreen'
 };
 </script>

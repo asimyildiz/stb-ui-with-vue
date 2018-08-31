@@ -8,26 +8,26 @@
 import DefaultLayout from './layouts/default.vue';
 
 export default {
-  methods: {
-    volUp() {
-      this.$store.commit('INCREASE_VOLUME');
+    methods: {
+        volUp() {
+            this.$store.commit('INCREASE_VOLUME');
+        }
+    },
+    computed: {
+        layout() {
+            return this.$route.params.layout || this.$store.getters.layout;
+        }
+    },
+    components: {
+        default: DefaultLayout
+    },
+    mounted() {
+        this.$root.$on('VolUp', this.volUp.bind(this));
+    },
+    beforeMount() {
+        this.$store.commit('SET_CURRENTVOLUME', 20);
+        this.$store.commit('SET_VOLUMESTEP', 16);
     }
-  },
-  computed: {
-    layout() {
-      return this.$route.params.layout || this.$store.getters.layout;
-    }
-  },
-  components: {
-    default: DefaultLayout
-  },
-  mounted() {
-    this.$root.$on('VolUp', this.volUp.bind(this));
-  },
-  beforeMount() {
-    this.$store.commit('SET_CURRENTVOLUME', 20);
-    this.$store.commit('SET_VOLUMESTEP', 16);
-  }
 };
 </script>
 

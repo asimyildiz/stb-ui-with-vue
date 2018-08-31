@@ -18,7 +18,8 @@ module.exports = {
       "functions": "ignore"
     }],
     "no-underscore-dangle": 0,
-    "semi": 2
+    "semi": 2,
+    "indent": ["error", 4]
   },
   parserOptions: {
     parser: 'babel-eslint',

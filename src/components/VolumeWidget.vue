@@ -11,22 +11,22 @@
 
 <script type="text/babel">
 export default {
-  name: 'volumeWidget',
-  props: {
-    numberOfSteps: {
-      type: Number,
-      default: () => 16
+    name: 'volumeWidget',
+    props: {
+        numberOfSteps: {
+            type: Number,
+            default: () => 16
+        }
+    },
+    methods: {
+        classObject(stepId) {
+            const volume = this.$store.getters.volume;
+            return {
+                step: true,
+                highLight: Math.ceil((stepId * 100) / this.numberOfSteps) >= (100 - volume)
+            };
+        }
     }
-  },
-  methods: {
-    classObject(stepId) {
-      const volume = this.$store.getters.volume;
-      return {
-        step: true,
-        highLight: Math.ceil((stepId * 100) / this.numberOfSteps) >= (100 - volume)
-      };
-    }
-  }
 };
 </script>
 

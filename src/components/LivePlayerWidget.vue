@@ -6,13 +6,13 @@
 
 <script>
 export default {
-  name: 'livePlayerWidget',
-  props: {
-    url: {
-      type: String,
-      default: () => '/videos/broadcast1.mp4'
+    name: 'livePlayerWidget',
+    props: {
+        url: {
+            type: String,
+            default: () => '/videos/broadcast1.mp4'
+        }
     }
-  }
 };
 </script>
 

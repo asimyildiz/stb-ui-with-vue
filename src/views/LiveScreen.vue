@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'liveScreen'
+    name: 'liveScreen'
 };
 </script>
