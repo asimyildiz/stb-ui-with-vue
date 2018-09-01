@@ -12,7 +12,7 @@ Vue.config.productionTip = false;
 const translations = LanguageHelper.createTranslations();
 const i18n = new VueI18n({
     locale: 'tr', // TODO set current language from a manager or something
-    translations
+    messages: translations
 });
 
 new Vue({

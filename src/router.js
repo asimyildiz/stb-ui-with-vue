@@ -24,7 +24,8 @@ const router = new Router({
             // which is lazy-loaded when the route is visited.
             component: () => import('./views/LiveTuneScreen.vue'),
             props: {
-                layout: 'default' // name of the layout
+                layout: 'default', // name of the layout
+                key: 0
             }
         }
     ]
