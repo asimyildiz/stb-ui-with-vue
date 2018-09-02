@@ -15,6 +15,26 @@ const i18n = new VueI18n({
     messages: translations
 });
 
+// extend Vue mounted and beforeDestroy methods to enable component based listeners
+Vue.mixin({
+    mounted() {
+        if (this.observes) {
+            const observes = this.observes();
+            Object.keys(observes).forEach((key) => {
+                this.$root.$on(key, observes[key].bind(this));
+            });
+        }
+    },
+    beforeDestroy() {
+        if (this.observes) {
+            const observes = this.observes();
+            Object.keys(observes).forEach((key) => {
+                this.$root.$off(key);
+            });
+        }
+    }
+});
+
 new Vue({
     i18n,
     router,

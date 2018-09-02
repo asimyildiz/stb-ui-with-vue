@@ -20,15 +20,18 @@ export default {
         TuneWidget
     },
     methods: {
-        numKey(event) {
-            const numericValue = KeyHelper.getNumericValueFromKey(event.keyCode);
-            if (numericValue != null) {
-                this.channelNumber += numericValue;
-            }
+        observes() {
+            return {
+                numKey(event) {
+                    const numericValue = KeyHelper.getNumericValueFromKey(event.keyCode);
+                    if (numericValue != null) {
+                        this.channelNumber += numericValue;
+                    }
+                }
+            };
         }
     },
     mounted() {
-        this.$root.$on('NumKey', this.numKey.bind(this));
         // TODO extract this code block into another method for code modularity
         const currentKey = this.$route.params.key;
         const numericValue = KeyHelper.getNumericValueFromKey(currentKey);
@@ -37,14 +40,9 @@ export default {
         }
 
         // read timeout value from a config file and go to liveInfoScreen not liveScreen
-        setTimeout(function(){
+        setTimeout(() => {
             router.push({ name: 'liveScreen' });
         }, 3000);
-    },
-    beforeRouteLeave(to, from, next) {
-        // TODO check if we need to do this everytime
-        this.$root.$off('NumKey');
-        next();
     }
 };
 </script>

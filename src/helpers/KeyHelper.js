@@ -9,7 +9,7 @@ export default {
         this.$root.$emit('keyDown', event);
         switch (event.keyCode) {
         case 86:
-            this.$root.$emit('VolUp', event);
+            this.$root.$emit('volUp', event);
             break;
         case 48:
         case 49:
@@ -21,7 +21,7 @@ export default {
         case 55:
         case 56:
         case 57:
-            this.$root.$emit('NumKey', event);
+            this.$root.$emit('numKey', event);
             break;
         }
     },
