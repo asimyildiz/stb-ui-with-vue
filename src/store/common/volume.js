@@ -1,7 +1,21 @@
+import aliases from '../../middleware/aliases';
+
+let currentTimeout = null;
+const volumeService = aliases.volumeService;
+function setAndshowVolume(commit, state) {
+    volumeService.setVolume(state.currentVolume);
+    clearTimeout(currentTimeout);
+    currentTimeout = setTimeout(() => {
+        commit('HIDE_VOLUME');
+    }, 3000);
+}
+
 export default {
     state: {
+        lastVolume: 0,
         currentVolume: 0,
         volumeStep: 0,
+        muteState: false,
         showVolume: false
     },
     mutations: {
@@ -19,22 +33,45 @@ export default {
             state.currentVolume = Math.max(0, state.currentVolume - state.volumeStep);
             state.showVolume = true;
         },
+        MUTE_VOLUME(state) {
+            state.lastVolume = state.currentVolume;
+            state.currentVolume = 0;
+            state.muteState = true;
+            state.showVolume = true;
+        },
+        UNMUTE_VOLUME(state) {
+            state.currentVolume = state.lastVolume;
+            state.muteState = false;
+            state.showVolume = true;
+        },
         HIDE_VOLUME(state) {
             state.showVolume = false;
         }
     },
     actions: {
-        INCREASE_VOLUME({ commit }) {
+        INCREASE_VOLUME({ commit, state }) {
             commit('INCREASE_VOLUME');
-            setTimeout(() => {
-                commit('HIDE_VOLUME');
-            }, 3000);
+            setAndshowVolume(commit, state);
         },
-        DECREASE_VOLUME({ commit }) {
+        DECREASE_VOLUME({ commit, state }) {
             commit('DECREASE_VOLUME');
-            setTimeout(() => {
-                commit('HIDE_VOLUME');
-            }, 3000);
+            setAndshowVolume(commit, state);
+        },
+        MUTE_VOLUME({ commit, state }) {
+            commit('MUTE_VOLUME');
+            setAndshowVolume(commit, state);
+        },
+        UNMUTE_VOLUME({ commit, state }) {
+            commit('UNMUTE_VOLUME');
+            setAndshowVolume(commit, state);
+        },
+        TOGGLE_MUTE({ commit, state }) {
+            if (state.muteState) {
+                commit('UNMUTE_VOLUME');
+            } else {
+                commit('MUTE_VOLUME');
+            }
+            setAndshowVolume(commit, state);
         }
     },
     getters: {
@@ -43,6 +80,9 @@ export default {
         },
         isVolumeVisible(state) {
             return state.showVolume;
+        },
+        isMuted(state) {
+            return state.muteState;
         }
     }
 };

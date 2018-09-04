@@ -11,6 +11,9 @@ export default {
         case 86:
             this.$root.$emit('volUp', event);
             break;
+        case 66:
+            this.$root.$emit('volDown', event);
+            break;
         case 48:
         case 49:
         case 50:

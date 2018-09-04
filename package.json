@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "generator": "node scripts/i18nGenerator.js",
+    "aliases": "node scripts/aliases.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -31,6 +32,7 @@
     "commander": "^2.17.1",
     "csv-parse": "^2.5.0",
     "glob": "^7.1.2",
+    "jsdoc3-parser": "^2.0.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "npm-run": "^5.0.1",

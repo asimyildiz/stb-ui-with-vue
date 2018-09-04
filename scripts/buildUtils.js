@@ -13,6 +13,7 @@ let isCommandSuccessful = true;
  */
 let commands = {
     preBuildCommand: 'npm run-script generator i18n ',
+    aliasesCommand: 'npm run-script aliases ',
     buildCommand: 'npm run-script build',
     serveCommand: 'npm run-script serve'
 };
@@ -67,7 +68,10 @@ module.exports = {
         console.log("Current Profile : %s", profile);
         runCommand(commands.preBuildCommand + profile, "preBuild", "");
         if (isCommandSuccessful) {
-            connectToStdout(runCommand(commands.serveCommand, "serve", ""));
+            runCommand(commands.aliasesCommand + profile, "aliases", "");
+            if (isCommandSuccessful) {
+                connectToStdout(runCommand(commands.serveCommand, "serve", ""));
+            }
         }
     },
 
@@ -79,7 +83,10 @@ module.exports = {
         console.log("Current Profile : %s", profile);
         runCommand(commands.preBuildCommand + profile, "preBuild", "");
         if (isCommandSuccessful) {
-            runCommand(commands.buildCommand, "build", "");
+            runCommand(commands.aliasesCommand + profile, "aliases", "");
+            if (isCommandSuccessful) {
+                runCommand(commands.buildCommand, "build", "");
+            }
         }
     }
 };

@@ -6,11 +6,15 @@
 
 <script type="text/babel">
 import DefaultLayout from './layouts/default.vue';
+import aliases from './middleware/aliases';
 
 export default {
     methods: {
         volUp(event) {
             this.$store.dispatch('INCREASE_VOLUME');
+        },
+        volDown(event) {
+            this.$store.dispatch('DECREASE_VOLUME');
         }
     },
     computed: {
@@ -22,11 +26,16 @@ export default {
         default: DefaultLayout
     },
     mounted() {
-        this.$root.$on('VolUp', this.volUp.bind(this));
+        this.$root.$on('volUp', this.volUp.bind(this));
+        this.$root.$on('volDown', this.volDown.bind(this));
     },
     beforeMount() {
-        this.$store.commit('SET_CURRENTVOLUME', 20);
-        this.$store.commit('SET_VOLUMESTEP', 16);
+        const volumeService = aliases.volumeService;
+        volumeService.getVolume({})
+            .then((volume) => {
+                this.$store.commit('SET_CURRENTVOLUME', volume);
+                this.$store.commit('SET_VOLUMESTEP', 16);
+            });
     }
 };
 </script>
