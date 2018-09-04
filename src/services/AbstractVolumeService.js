@@ -66,7 +66,7 @@ class AbstractVolumeService {
     /**
      * @returns {Promise<Number>} A Promise resolved when the volume is actually changed, with the volume percentage between 0 and 100 inclusive.
      * @abstract
-     * @private
+     * @protected
      */
     _setVolume(volume) {
         return this._notImplementedPromise('_setVolume');
@@ -75,7 +75,7 @@ class AbstractVolumeService {
     /**
      * @returns {Promise<Number>} A Promise resolved with the volume percentage between 0 and 100 inclusive.
      * @abstract
-     * @private
+     * @protected
      */
     _getVolume(options) {
         return this._notImplementedPromise('_getVolume');
@@ -84,7 +84,7 @@ class AbstractVolumeService {
     /**
      * @returns {Promise} A Promise resolved when the volume is actually muted.
      * @abstract
-     * @private
+     * @protected
      */
     _mute() {
         return this._notImplementedPromise('_mute');
@@ -93,7 +93,7 @@ class AbstractVolumeService {
     /**
      * @returns {Promise} A Promise resolved when the volume is actually unmuted.
      * @abstract
-     * @private
+     * @protected
      */
     _unMute() {
         return this._notImplementedPromise('_unMute');
@@ -102,7 +102,7 @@ class AbstractVolumeService {
     /**
      * @returns {Promise<boolean>} A Promise resolved with the mute status.
      * @abstract
-     * @private
+     * @protected
      */
     _isMuted(options) {
         return this._notImplementedPromise('_isMuted');
