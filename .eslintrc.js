@@ -24,6 +24,7 @@ module.exports = {
     "no-restricted-globals": 0,
     "no-throw-literal": 0,
     "no-plusplus": 0,
+    "class-methods-use-this": 0,
     "semi": 2,
     "indent": ["error", 4]
   },

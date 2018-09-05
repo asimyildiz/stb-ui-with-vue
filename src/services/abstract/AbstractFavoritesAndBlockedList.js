@@ -309,15 +309,13 @@ class AbstractFavoritesAndBlockedList {
      * event to fire when a source is locked
      * @param {AbstractBusinessModel} modelAdded
      */
-    onAddBlocked(modelAdded) {
-    }
+    onAddBlocked(modelAdded) {}
 
     /**
      * event to fire when a source is unlocked
      * @param {AbstractBusinessModel} modelRemoved
      */
-    onRemoveBlocked(modelRemoved) {
-    }
+    onRemoveBlocked(modelRemoved) {}
 }
 
 export default AbstractFavoritesAndBlockedList;

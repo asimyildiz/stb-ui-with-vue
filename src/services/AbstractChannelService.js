@@ -1,3 +1,4 @@
+import AbstractFilterChannelService from './abstract/AbstractFilterChannelService';
 import AbstractFavoritesAndBlockedList from './abstract/AbstractFavoritesAndBlockedList';
 import AbstractChannel from './models/AbstractChannel';
 import ServiceCache from './helpers/ServiceCache';
@@ -9,7 +10,7 @@ import Arrays from '../utils/Arrays';
  * class for volume service
  * @alias channelService
  */
-class AbstractChannelService extends AbstractFavoritesAndBlockedList {
+class AbstractChannelService extends AbstractFilterChannelService {
     /** ***************************************************************************************
      * STATIC DEFINITIONS
      **************************************************************************************** */
@@ -61,7 +62,6 @@ class AbstractChannelService extends AbstractFavoritesAndBlockedList {
     constructor() {
         super();
         this.__channelbyId = {};
-        this._currentOrderKey = null;
 
         this._currentChannelListId = AbstractFavoritesAndBlockedList.ALL_CHANNEL_LIST_ID;
         this._currentChannelListType = AbstractChannel.ALL_TYPE;
@@ -247,12 +247,12 @@ class AbstractChannelService extends AbstractFavoritesAndBlockedList {
      * @param {Boolean} [options.force=false] If true, don't use the value stored in the cache
      * @param {String} [options.listId=null] If set, get channel on a specific list
      * @returns {Promise<AbstractChannel[], Error>} A promise (channel(s), error)
+     * @override
      */
-    find(filterFunction, options) {
+    _find(filterFunction, options) {
         options = options || {};
         options.listId = this._currentChannelListId;
-        return this.getChannelList(options)
-            .then(list => list.filter(filterFunction));
+        return this.getChannelList(options);
     }
 
     /** ***************************************************************************************

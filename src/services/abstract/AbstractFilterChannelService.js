@@ -1,11 +1,13 @@
+import AbstractFavoritesAndBlockedList from './AbstractFavoritesAndBlockedList';
 import isFunction from '../../utils/IsFunction';
 import ServiceErrors from '../helpers/ServiceErrors';
+import LocalStorage from '../helpers/LocalStorage';
 
 /**
  * class for object properties
  * @name AbstractFilterChannelService
  */
-class AbstractFilterChannelService {
+class AbstractFilterChannelService extends AbstractFavoritesAndBlockedList {
     /**
      * @type {Object}
      */
@@ -115,8 +117,10 @@ class AbstractFilterChannelService {
      * @constructor
      */
     constructor() {
+        super();
         this.loadCurrentFilter();
         this.channels = {};
+        this._currentOrderKey = null;
         this.clearAllFavoriteLists = false;
     }
 
@@ -194,6 +198,20 @@ class AbstractFilterChannelService {
     }
 
     /**
+     * Find channel(s) using a function as filter.
+     *
+     * @param {Function|null} filterFunction A function that takes a channel in arg and return true or false (true mean keep channel)
+     * @param {Object} [options] Additional options
+     * @param {Boolean} [options.force=false] If true, don't use the value stored in the cache
+     * @param {String} [options.listId=null] If set, get channel on a specific list
+     * @returns {Promise<AbstractChannel[], Error>} A promise (channel(s), error)
+     */
+    find(filterFunction, options) {
+        return this._find(filterFunction, options)
+            .then(list => list.filter(filterFunction));
+    }
+
+    /**
      * cache the filtered channels on UI side
      * @param id
      * @param channelList
@@ -233,6 +251,30 @@ class AbstractFilterChannelService {
         return this.find(channel => (channel.resolution === channel.HD));
     }
 
+    /** ***************************************************************************************
+     * ABSTRACT
+     **************************************************************************************** */
+    /**
+     * get current order method
+     * @returns {AbstractChannelService.byNumberComparator|Promise}
+     */
+    getCurrentOrderMethod() {
+        return ServiceErrors.notImplementedPromise('AbstractFilterChannelService', 'getCurrentOrderMethod');
+    }
+
+    /**
+     * Find channel(s) using a function as filter.
+     *
+     * @param {Function|null} filterFunction A function that takes a channel in arg and return true or false (true mean keep channel)
+     * @param {Object} [options] Additional options
+     * @param {Boolean} [options.force=false] If true, don't use the value stored in the cache
+     * @param {String} [options.listId=null] If set, get channel on a specific list
+     * @returns {Promise<AbstractChannel[], Error>} A promise (channel(s), error)
+     */
+    _find(filterFunction, options) {
+        return ServiceErrors.notImplementedPromise('AbstractFilterChannelService', '_find');
+    }
+
     /**
      * Returns filtered list (must be override by vendor)
      * @param {String} id
@@ -252,7 +294,7 @@ class AbstractFilterChannelService {
      * @returns {*}
      */
     loadCurrentFilter() {
-        return this._retrieve(AbstractFilterChannelService.STORAGE.filter.key)
+        return LocalStorage.retrieve(AbstractFilterChannelService.STORAGE.filter.key)
             .then((currentFilter) => {
                 this._currentFilter = currentFilter || {};
             });
@@ -264,7 +306,7 @@ class AbstractFilterChannelService {
      * @returns {*}
      */
     setFilter(filter) {
-        return this._store(AbstractFilterChannelService.STORAGE.filter.key, filter)
+        return LocalStorage.store(AbstractFilterChannelService.STORAGE.filter.key, filter)
             .then((data) => {
                 this._currentFilter = filter;
                 this.onFilterChange();
@@ -300,11 +342,12 @@ class AbstractFilterChannelService {
      * @returns {Promise<boolean>}
      */
     isChannelFiltered() {
-        return Promise.resolve(this._currentFilter && this._currentFilter.key !== this.ALL_CHANNELS_KEY);
+        return Promise.resolve(this._currentFilter && this._currentFilter.key !== AbstractFilterChannelService.FILTERS.ALL.key);
     }
 
-    // Events
-
+    /** ***************************************************************************************
+     * EVENTs
+     **************************************************************************************** */
     /**
      * Is fired when filter change
      */
@@ -312,3 +355,5 @@ class AbstractFilterChannelService {
         this.clearFilteredList();
     }
 }
+
+export default AbstractFilterChannelService;

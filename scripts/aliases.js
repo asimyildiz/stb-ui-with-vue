@@ -31,15 +31,15 @@ const clearAliases = () => {
  */
 const writeAliases = (_imports, _exports) => {
     for (let i = 0; i < _imports.length; i++) {
-        fs.appendFile('src/middleware/aliases.js', _imports[i], 'utf8', writeToFileCallback);
+        fs.appendFileSync('src/middleware/aliases.js', _imports[i], 'utf8', writeToFileCallback);
     }
 
-    fs.appendFile('src/middleware/aliases.js', 'export default {' + os.EOL, 'utf8', writeToFileCallback);
+    fs.appendFileSync('src/middleware/aliases.js', 'export default {' + os.EOL, 'utf8', writeToFileCallback);
     for (let i = 0; i < _exports.length; i++) {
-        fs.appendFile('src/middleware/aliases.js', _exports[i], 'utf8', writeToFileCallback);
+        fs.appendFileSync('src/middleware/aliases.js', _exports[i], 'utf8', writeToFileCallback);
     }
 
-    fs.appendFile('src/middleware/aliases.js', '};' + os.EOL, 'utf8', writeToFileCallback);
+    fs.appendFileSync('src/middleware/aliases.js', '};' + os.EOL, 'utf8', writeToFileCallback);
 };
 
 /**
