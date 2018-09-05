@@ -30,6 +30,9 @@ export default {
         this.$root.$on('volDown', this.volDown.bind(this));
     },
     beforeMount() {
+        aliases.channelService.getChannelList()
+            .then((channels) => { console.log(channels); });
+
         const volumeService = aliases.volumeService;
         volumeService.getVolume({})
             .then((volume) => {

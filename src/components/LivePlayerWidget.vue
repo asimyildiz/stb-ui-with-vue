@@ -1,10 +1,10 @@
 <template>
-  <video controls>
-    <source :src="url" type="video/mp4">
-  </video>
+    <video controls>
+        <source :src="url" type="video/mp4">
+    </video>
 </template>
 
-<script>
+<script type="text/babel">
 export default {
     name: 'livePlayerWidget',
     props: {
@@ -16,14 +16,17 @@ export default {
 };
 </script>
 
-<style lang="less">
-  @import '../assets/css/1920x1080/positions.less';
+<style lang="less" rel="stylesheet/less">
+    @import '../assets/css/1920x1080/positions.less';
 
-  video {
-    position: absolute;
-    left: auto;
-    top: 0;
-    width: @WIDTH_FULL;
-    height: @HEIGHT_FULL;
-  }
+    /**************************************************************
+     * LivePlayerWidget (inline)
+     **************************************************************/
+    video {
+        position: absolute;
+        left: auto;
+        top: 0;
+        width: @WIDTH_FULL;
+        height: @HEIGHT_FULL;
+    }
 </style>

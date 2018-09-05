@@ -32,6 +32,9 @@ export default {
     @import '../assets/css/1920x1080/color.less';
     @import '../assets/css/1920x1080/font.less';
 
+    /**************************************************************
+     * TuneWidget (inline)
+     **************************************************************/
     #tuneWidget {
         overflow: visible;
         position: absolute;

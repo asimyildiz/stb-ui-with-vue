@@ -23,6 +23,7 @@ module.exports = {
     "max-len": 0,
     "no-restricted-globals": 0,
     "no-throw-literal": 0,
+    "no-plusplus": 0,
     "semi": 2,
     "indent": ["error", 4]
   },

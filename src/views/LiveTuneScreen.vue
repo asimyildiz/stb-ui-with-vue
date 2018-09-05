@@ -44,7 +44,7 @@ export default {
 
         // read timeout value from a config file and go to liveInfoScreen not liveScreen
         setTimeout(() => {
-            router.push({ name: 'liveScreen' });
+            router.push({ name: 'liveInfoScreen', params: { channelNumber: this.channelNumber } });
         }, 3000);
     }
 };

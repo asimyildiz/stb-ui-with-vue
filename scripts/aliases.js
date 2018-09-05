@@ -15,11 +15,13 @@ const writeToFileCallback = (err) => {
     }
 };
 
+let aliasesCreated = 0;
 /**
  * clear previously created aliases
  */
 const clearAliases = () => {
     fs.writeFile('src/middleware/aliases.js', '', 'utf8', writeToFileCallback);
+    aliasesCreated = 0;
 };
 
 /**
@@ -48,13 +50,19 @@ const writeAliases = (_imports, _exports) => {
  * @param {String} file - service path
  * @param {Array<String>} _imports - import statements
  * @param {Array<String>} _exports - export statements
+ * @param {Number} length - length of vendor services
  */
-const createAlias = (profile, alias, name, file, _imports, _exports) => {
+const createAlias = (profile, alias, name, file, _imports, _exports, length) => {
     if (alias && name) {
         const fileRelativePath = file.replace("src", "..");
         const filePathWithoutJs = fileRelativePath.replace(".js", "");
         _imports.push("import " + name + " from '" + filePathWithoutJs + "';" + os.EOL);
-        _exports.push(alias + ": new " + name + "()" + os.EOL);
+
+        let currentExport = alias + ": new " + name + "()";
+        currentExport = length > 0 ? currentExport + "," : currentExport;
+        _exports.push(currentExport + os.EOL);
+
+        aliasesCreated++;
     }
 };
 
@@ -69,14 +77,15 @@ const findVendorFilesFor = (profile, alias, _imports, _exports) => {
     if (alias) {
         glob("src/vendors/" + profile + "/services/**/*" + alias + ".js", {nocase: true}, function (er, files) {
             if (!er && files && files.length > 0) {
-                files.forEach((file, i) => {
-                    parser(file, function(profile, file, i, length, error, ast) {
-                        createAlias(profile, alias, ast[0].name, file, _imports, _exports);
-                        if (length === i + 1) {
+                let filesLength = files.length;
+                for (let i = 0; i < filesLength; i++) {
+                    parser(files[i], function(profile, file, error, ast) {
+                        createAlias(profile, alias, ast[0].name, file, _imports, _exports, filesLength);
+                        if (filesLength + 1 === aliasesCreated) {
                             writeAliases(_imports, _exports);
                         }
-                    }.bind(this, profile, file, i, files.length));
-                });
+                    }.bind(this, profile, files[i]));
+                }
             }
         });
     }

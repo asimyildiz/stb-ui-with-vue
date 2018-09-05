@@ -36,8 +36,8 @@ export default {
     @import '../assets/css/1920x1080/images.less';
 
     /**************************************************************
-    * volumeWidget (inline)
-    **************************************************************/
+     * VolumeWidget (inline)
+     **************************************************************/
     #volumeWidget {
         position: absolute;
         top: 0px;
