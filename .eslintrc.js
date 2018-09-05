@@ -17,8 +17,12 @@ module.exports = {
       "exports": "never",
       "functions": "ignore"
     }],
-    "no-param-reassign": [2, { "props": false }],
+    "no-param-reassign": 0,
+    "no-extend-native": 0,
     "no-underscore-dangle": 0,
+    "max-len": 0,
+    "no-restricted-globals": 0,
+    "no-throw-literal": 0,
     "semi": 2,
     "indent": ["error", 4]
   },

@@ -5,6 +5,7 @@ import router from './router';
 import store from './store/index';
 import LanguageHelper from './helpers/LanguageHelper';
 import KeyHelper from './helpers/KeyHelper';
+import DateUtils from './utils/DateUtils';
 
 Vue.use(VueI18n);
 Vue.config.productionTip = false;

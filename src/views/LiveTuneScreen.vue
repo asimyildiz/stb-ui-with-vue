@@ -1,6 +1,7 @@
 <template>
     <div class="liveTuneScreen">
         <TuneWidget ref="tuneWidget" id="tuneWidget" :channelNumber="channelNumber" />
+        <DateWidget ref="dateWidget" id="dateWidget" />
     </div>
 </template>
 
@@ -8,6 +9,7 @@
 import router from '@/router';
 import KeyHelper from '@/helpers/KeyHelper';
 import TuneWidget from '@/components/TuneWidget.vue';
+import DateWidget from '@/components/DateWidget.vue';
 
 export default {
     name: 'liveTuneScreen',
@@ -17,7 +19,8 @@ export default {
         };
     },
     components: {
-        TuneWidget
+        TuneWidget,
+        DateWidget
     },
     methods: {
         observes() {
