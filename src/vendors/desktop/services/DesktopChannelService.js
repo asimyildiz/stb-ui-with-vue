@@ -301,7 +301,7 @@ class DesktopChannelService extends AbstractChannelService {
      * @override
      * @protected
      */
-    _getFavoriteList(favoriteListId) {
+    _getFavoriteList(favoriteListId, options) {
         const listId = `${this.STORAGE_KEY_FAVORITES}:${favoriteListId}`;
         return LocalStorage.retrieve(listId)
             .then((ids) => {
@@ -310,12 +310,12 @@ class DesktopChannelService extends AbstractChannelService {
                 }
                 // The list is a list of ids, need to create a list of channel
                 const favoriteIds = {};
-                for (var i = 0; i < ids.length; i++) { // Create a map of favorite channel ids
+                for (let i = 0; i < ids.length; i++) { // Create a map of favorite channel ids
                     favoriteIds[ids[i]] = true;
                 }
                 const favoriteChannelsList = [];
                 if (ids.length > 0) {
-                    for (var i = 0; i < this._allChannelList.length; i++) {
+                    for (let i = 0; i < this._allChannelList.length; i++) {
                         if (favoriteIds[this._allChannelList[i].id]) {
                             favoriteChannelsList.push(this._allChannelList[i]);
                         }

@@ -5,6 +5,7 @@ import store from './store/index';
 Vue.use(Router);
 
 const router = new Router({
+    linkActiveClass: 'focus',
     mode: 'history',
     base: process.env.BASE_URL,
     routes: [
@@ -26,6 +27,9 @@ const router = new Router({
             props: {
                 layout: 'default', // name of the layout
                 key: 0
+            },
+            meta: {
+                widget: "TuneWidget"
             }
         },
         {
@@ -38,6 +42,9 @@ const router = new Router({
             props: {
                 layout: 'default', // name of the layout
                 channelNumber: 0
+            },
+            meta: {
+                widget: "LiveInfoChannelWidget"
             }
         }
     ]
@@ -45,6 +52,7 @@ const router = new Router({
 
 router.beforeEach((to, from, next) => {
     store.commit('SET_SCREEN', to.name);
+    store.commit('SET_WIDGET', to.meta && to.meta.widget);
     next();
 });
 

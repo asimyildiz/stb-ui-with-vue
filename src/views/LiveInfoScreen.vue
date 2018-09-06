@@ -29,26 +29,32 @@ export default {
         fetchData() {
             // TODO extract this code block into another method for code modularity
             const channelNumber = this.$route.params.channelNumber;
-            aliases.channelService.getNearestChannel(channelNumber)
-                    .then((channel) => {
-                        this.$store.commit('SET_CHANNEL', channel);
-                    });
+            if (channelNumber) {
+                aliases.channelService.getNearestChannel(channelNumber)
+                        .then((channel) => {
+                            this.$store.commit('SET_CHANNEL', channel);
+                        });
+            }else {
+                this.goToLiveScreen();
+            }
+        },
+        goToLiveScreen() {
+            router.push({ name: 'liveScreen' });
         }
     },
-    created () {
+    created() {
         // fetch the data when the view is created and the data is
         // already being observed
-        this.fetchData()
+        this.fetchData();
     },
     watch: {
         // call again the method if the route changes
-        '$route': 'fetchData'
+        $route: 'fetchData'
     },
     mounted() {
-
         // read timeout value from a config file and go to liveInfoScreen not liveScreen
         setTimeout(() => {
-            router.push({ name: 'liveScreen' });
+            this.goToLiveScreen();
         }, 10 * 60 * 1000);
     }
 };

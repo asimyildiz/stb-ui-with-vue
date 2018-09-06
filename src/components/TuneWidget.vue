@@ -1,5 +1,5 @@
 <template>
-    <div id="tuneWidget" class="TuneWidget Widget link hide">
+    <div id="tuneWidget" class="TuneWidget Widget link" v-bind:class="{ focus: $isFocused }">
         <div class="insideWidget bgTemplate size0">
             <div class="background"></div>
             <div class="templateShadows">

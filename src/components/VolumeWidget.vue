@@ -1,5 +1,5 @@
 <template>
-    <div id="volumeWidget" class="VolumeWidget Node link">
+    <div id="volumeWidget" class="VolumeWidget Node link" v-bind:class="{ focus: $isFocused }">
         <div class="backgroundContainer"></div>
         <div class="volumeContainer">
             <div class="steps">

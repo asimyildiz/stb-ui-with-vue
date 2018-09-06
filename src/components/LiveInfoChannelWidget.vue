@@ -1,5 +1,5 @@
 <template>
-    <div id="liveInfoChannelWidget" class="LiveInfoChannelWidget Widget">
+    <div id="liveInfoChannelWidget" class="LiveInfoChannelWidget Widget" v-bind:class="{ focus: $isFocused }">
         <div class="insideWidget bgTemplate size0">
             <div class="background"></div>
             <div class="templateShadows">
@@ -28,11 +28,11 @@
 <script type="text/babel">
 export default {
     name: 'liveInfoChannelWidget',
-    data: function() {
+    data() {
         return {
             isImageLoaded: false,
             isImageNotLoaded: false
-        }
+        };
     },
     computed: {
         channelNumber() {
@@ -47,7 +47,7 @@ export default {
             const channel = this.$store.getters.channel;
             let channelLogo = channel && channel.logo;
             if (channelLogo && this.$config.isServedFromPC) {
-                channelLogo = "data/channels/" + channel.logo;
+                channelLogo = `data/channels/${channel.logo}`;
             }
             return channelLogo;
         },

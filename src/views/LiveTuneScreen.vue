@@ -30,8 +30,16 @@ export default {
                     if (numericValue != null) {
                         this.channelNumber += numericValue;
                     }
+                },
+                click(event) {
+                    if (this.channelNumber) {
+                        this.goToLiveInfoScreen();
+                    }
                 }
             };
+        },
+        goToLiveInfoScreen() {
+            router.push({ name: 'liveInfoScreen', params: { channelNumber: this.channelNumber } });
         }
     },
     mounted() {
@@ -44,7 +52,7 @@ export default {
 
         // read timeout value from a config file and go to liveInfoScreen not liveScreen
         setTimeout(() => {
-            router.push({ name: 'liveInfoScreen', params: { channelNumber: this.channelNumber } });
+            this.goToLiveInfoScreen();
         }, 3000);
     }
 };

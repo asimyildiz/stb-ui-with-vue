@@ -11,6 +11,7 @@ import DateUtils from './utils/DateUtils';
 Vue.use(VueI18n);
 Vue.config.productionTip = false;
 Vue.prototype.$config = config;
+Vue.prototype.$isFocused = false;
 
 const translations = LanguageHelper.createTranslations();
 const i18n = new VueI18n({
@@ -27,6 +28,9 @@ Vue.mixin({
                 this.$root.$on(key, observes[key].bind(this));
             });
         }
+
+        const widget = this.$store.getters.widget;
+        this.$isFocused = widget && this.$options.name.toLowerCase() === widget.toLowerCase();
     },
     beforeDestroy() {
         if (this.observes) {
@@ -35,6 +39,8 @@ Vue.mixin({
                 this.$root.$off(key);
             });
         }
+
+        this.$isFocused = false;
     }
 });
 

@@ -26,6 +26,9 @@ export default {
         case 57:
             this.$root.$emit('numKey', event);
             break;
+        case 13:
+            this.$root.$emit('click', event);
+            break;
         }
     },
 

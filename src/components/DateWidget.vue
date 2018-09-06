@@ -1,5 +1,5 @@
 <template>
-    <div id="dateNode" class="DateNode Widget link hide">
+    <div id="dateNode" class="DateNode Widget link">
         <div class="insideWidget" id="dateTemplate">
             <div>{{ time }}</div>
             <div class="date">{{ date }}</div>
