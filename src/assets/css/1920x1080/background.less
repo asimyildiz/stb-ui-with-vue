@@ -1,0 +1,282 @@
+@import "color";
+@import "images";
+@import "positions";
+
+._btTemplateFocus {
+  &.size0 .background {
+    background-image: @BACKGROUND_SELECTED_CONTAINER_1080;
+  }
+  &.size1 .background {
+    background-image: @BACKGROUND_SELECTED_CONTAINER_600;
+  }
+  &.size2 .background {
+    background-image: @BACKGROUND_SELECTED_CONTAINER_432;
+  }
+  &.size3 .background {
+    background-image: @BACKGROUND_SELECTED_CONTAINER_312;
+  }
+}
+
+._btTemplateAlwaysFocused {
+  &.size0 .background {
+    background-image: @BACKGROUND_SELECTED_CONTAINER_1080;
+    .setOpacity();
+  }
+  &.size1 .background {
+    background-image: @BACKGROUND_SELECTED_CONTAINER_600;
+    .setOpacity();
+  }
+  &.size2 .background {
+    background-image: @BACKGROUND_SELECTED_CONTAINER_432;
+    .setOpacity();
+  }
+  &.size3 .background {
+    background-image: @BACKGROUND_SELECTED_CONTAINER_312;
+    .setOpacity();
+  }
+}
+
+._btTemplateUnFocus {
+  .templateShadows {
+    .rightShadow {
+      display: none;
+    }
+  }
+  &.size0 .background {
+    .setBlurOpacity();
+  }
+  &.size1 .background {
+    .setBlurOpacity();
+  }
+  &.size2 .background {
+    .setBlurOpacity();
+  }
+  &.size3 .background {
+    .setBlurOpacity();
+  }
+}
+
+.focus > .bgTemplate {
+  ._btTemplateFocus
+}
+
+:not(.focus) > .bgTemplate {
+  ._btTemplateUnFocus
+}
+
+.alwaysFocused > .bgTemplate {
+  ._btTemplateAlwaysFocused
+}
+
+.bgTemplate {
+  &.insideWidget {
+    width: @WIDTH_AUTO_FULL;
+    height: @HEIGHT_AUTO_FULL;
+  }
+  &.unselectable {
+    background-image: @BACKGROUND_UNSELECTABLE_CONTAINER;
+  }
+  .templateShadows .rightShadow {
+    position: absolute;
+    top: 0;
+    right: -24px;
+    background-image: @BACKGROUND_RIGHT_SHADOW;
+    background-repeat: repeat-y;
+    width: 24px;
+    height: @HEIGHT_AUTO_FULL;
+  }
+
+  .templateShadows .leftShadow {
+    position: absolute;
+    top: 0;
+    left: -24px;
+    background-image: @BACKGROUND_LEFT_SHADOW;
+    background-repeat: repeat-y;
+    width: 24px;
+    height: @HEIGHT_AUTO_FULL;
+  }
+
+  .background {
+    background-image: @BACKGROUND_UNSELECTED_CONTAINER;
+    width: 100%;
+    height: 100%;
+    .setOpacity();
+    &.unselectable {
+      background-image: @BACKGROUND_UNSELECTABLE_CONTAINER;
+    }
+  }
+}
+
+.menuOptionsWithTunerScreen .SettingsOptionsMenuWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+  &.focus {
+    .bgTemplate .templateShadows .leftShadow {
+      visibility: inherit;
+    }
+  }
+}
+
+.subMenuScreen .SubMenuWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+  &.focus {
+    .bgTemplate .templateShadows .leftShadow {
+      visibility: inherit;
+    }
+  }
+}
+
+.menuEmptyScreen .MenuBackgroundNode {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.liveInfoScreen .LiveInfoProgramWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.menuOptionsScreen .SettingsOptionsMenuWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.digiturkPortalScreen .MenuDescWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+.menuRecommendationScreen .MenuDescWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.okMenuWeekOnDigiturkScreen .MenuDescWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.digiturkPortalScreen .HorizontalMenuWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.menuRecommendationScreen .HorizontalMenuWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.okMenuWeekOnDigiturkScreen .HorizontalMenuWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.menuPinScreen .MenuPinWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.settingsInfoScreen .SettingsOptionsMenuWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.irdetoServiceStatusScreen .IrdetoServiceWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.loaderStatusScreen .IrdetoInfosWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.smartCardStatusScreen .IrdetoInfosWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.recordOrderScreen .SubMenuWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.vodErrorScreen .VodGridWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.vodScreen .VodGridWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.vodMoreInfoScreen .VodMoreInfoDescWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.vodMoreInfoScreen .VodMoreInfoDetailWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.vodEpisodeListScreen .VodEpisodeListWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.selectMenuScreen .SelectMenuWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+}
+
+.channelScanScreen .MenuDescWidget {
+  .bgTemplate .templateShadows .rightShadow {
+    visibility: visible;
+    display: block;
+  }
+}
+
+.menuParametersScreen .SettingsParametersMenuWidget {
+  .bgTemplate .templateShadows .leftShadow {
+    visibility: hidden;
+  }
+
+  &.focus {
+    .bgTemplate .templateShadows .leftShadow {
+      visibility: inherit;
+    }
+  }
+}
+
+.channelScanScreen .MenuDescWidget .bgTemplate .background {
+  background-image: none;
+}
+
+.wifiKeyboardScreen  .keyboardInputWidget .bgTemplate .background {
+  background-image: none;
+}

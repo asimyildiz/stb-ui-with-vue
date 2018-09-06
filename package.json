@@ -5,6 +5,7 @@
   "scripts": {
     "generator": "node scripts/i18nGenerator.js",
     "aliases": "node scripts/aliases.js",
+    "config": "node scripts/config.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",

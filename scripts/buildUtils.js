@@ -14,6 +14,7 @@ let isCommandSuccessful = true;
 let commands = {
     preBuildCommand: 'npm run-script generator i18n ',
     aliasesCommand: 'npm run-script aliases ',
+    configCommand: 'npm run-script config src ',
     buildCommand: 'npm run-script build',
     serveCommand: 'npm run-script serve'
 };
@@ -69,6 +70,7 @@ module.exports = {
         runCommand(commands.preBuildCommand + profile, "preBuild", "");
         if (isCommandSuccessful) {
             runCommand(commands.aliasesCommand + profile, "aliases", "");
+            runCommand(commands.configCommand + profile, "config", "");
             if (isCommandSuccessful) {
                 connectToStdout(runCommand(commands.serveCommand, "serve", ""));
             }

@@ -30,9 +30,6 @@ export default {
         this.$root.$on('volDown', this.volDown.bind(this));
     },
     beforeMount() {
-        aliases.channelService.getChannelList()
-            .then((channels) => { console.log(channels); });
-
         const volumeService = aliases.volumeService;
         volumeService.getVolume({})
             .then((volume) => {
@@ -44,3 +41,4 @@ export default {
 </script>
 
 <style src="@/assets/css/1920x1080/theme.less" lang="less"></style>
+<style src="@/assets/css/1920x1080/background.less" lang="less"></style>

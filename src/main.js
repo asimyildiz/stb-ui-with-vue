@@ -5,14 +5,16 @@ import router from './router';
 import store from './store/index';
 import LanguageHelper from './helpers/LanguageHelper';
 import KeyHelper from './helpers/KeyHelper';
+import config from './config.json';
 import DateUtils from './utils/DateUtils';
 
 Vue.use(VueI18n);
 Vue.config.productionTip = false;
+Vue.prototype.$config = config;
 
 const translations = LanguageHelper.createTranslations();
 const i18n = new VueI18n({
-    locale: 'tr', // TODO set current language from a manager or something
+    locale: config.defaultLocale, // TODO set current language from a manager or something
     messages: translations
 });
 

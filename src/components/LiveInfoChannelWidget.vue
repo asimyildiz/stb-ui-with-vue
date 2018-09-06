@@ -8,11 +8,14 @@
             </div>
         </div>
         <div class="liveInfoChannelContainer">
-            <div class="lcn">1</div>
-            <div class="logo" style="">TF1</div>
+            <div class="lcn">{{ channelNumber }}</div>
+            <div class="logo" v-bind:style= "[isImageLoaded ? {backgroundImage: `url(${channelLogo})`} : {}]">
+                <div v-if="canShowChannelName">{{ channelName }}</div>
+                <img :src="channelLogo" @error="imageLoadError" @load="imageLoaded" />
+            </div>
             <div class="lockedIcon"></div>
             <div class="activeListName"></div>
-            <div class="actionItem">İZLE</div>
+            <div class="actionItem">{{ $t("EVENTOPTION_WATCH_ACTION_WATCH") }}</div>
             <div class="underscore">_</div>
             <div class="upArrowIcon arrowIcon"></div>
             <div class="downArrowIcon arrowIcon"></div>
@@ -24,7 +27,44 @@
 
 <script type="text/babel">
 export default {
-    name: 'liveInfoChannelWidget'
+    name: 'liveInfoChannelWidget',
+    data: function() {
+        return {
+            isImageLoaded: false,
+            isImageNotLoaded: false
+        }
+    },
+    computed: {
+        channelNumber() {
+            const channel = this.$store.getters.channel;
+            return channel && channel.number;
+        },
+        channelName() {
+            const channel = this.$store.getters.channel;
+            return channel && channel.name;
+        },
+        channelLogo() {
+            const channel = this.$store.getters.channel;
+            let channelLogo = channel && channel.logo;
+            if (channelLogo && this.$config.isServedFromPC) {
+                channelLogo = "data/channels/" + channel.logo;
+            }
+            return channelLogo;
+        },
+        canShowChannelName() {
+            return !this.isImageLoaded && this.isImageNotLoaded;
+        }
+    },
+    methods: {
+        imageLoaded() {
+            this.isImageLoaded = true;
+            this.isImageNotLoaded = false;
+        },
+        imageLoadError() {
+            this.isImageLoaded = false;
+            this.isImageNotLoaded = true;
+        }
+    }
 };
 </script>
 
@@ -91,6 +131,10 @@ export default {
                 text-align: center;
                 color: @DGK_WHITE;
                 .largeBold();
+
+                img {
+                    display: none;
+                }
 
                 .channelLogo();
             }
