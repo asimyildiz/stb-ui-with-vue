@@ -1,5 +1,6 @@
 import AbstractChannelService from '../../../services/AbstractChannelService';
 import LocalStorage from '../../../services/helpers/LocalStorage';
+import Arrays from '../../../utils/Arrays';
 import DesktopChannel from '../models/DesktopChannel';
 import channelData from '../data/ChannelData';
 
@@ -105,6 +106,26 @@ class DesktopChannelService extends AbstractChannelService {
         return Promise.resolve(this._allChannelList);
     }
 
+    /**
+     * Get nearest channel by number
+     * Returns the channel with given number if it is present.
+     * Otherwise returns the closest of previous and next channels.
+     *
+     * @param {Number|AbstractChannel} channel channel number
+     * @param {Object} [options]
+     * @param {Number} [options.type] - The type of channel to look for : $Channel.TV_TYPE or $Channel.Radio_TYPE. If omitted, any type will match.
+     * @param {Boolean} [options.cyclic=true] - Whether or not to loop at the beginning and the end of the channel list.
+     * @param {String} [options.listId=null] If set, get channel on a specific list
+     * @returns {Promise} nearest channel
+     */
+    getNearestChannel(channel, options) {
+        options = options || {};
+        options.cyclic = false;
+        // Get the channel list and return the channel
+        return this.getNextChannel(channel, options)
+            .then(nextChannel => (nextChannel || this.getPreviousChannel(channel, options)));
+    }
+
     /** ***************************************************************************************
      * HELPERS
      **************************************************************************************** */
@@ -152,6 +173,171 @@ class DesktopChannelService extends AbstractChannelService {
             console.error('Can not get or initialize the blocked channel list', e);
         }
         return blockedChannelMap;
+    }
+
+    /** ***************************************************************************************
+     * FAVORITE LISTs
+     **************************************************************************************** */
+
+    /**
+     * @param {AbstractChannel} channel The model object
+     * @param {String} favoriteListId The id of the favorite list
+     * @returns {Promise<AbstractChannel|Error>} A Promise resolved with the model added, rejected in case of error
+     * @protected
+     * @override
+     */
+    _addFavorite(channel, favoriteListId) {
+        return this
+            ._getFavoriteList(favoriteListId)
+            .then((favoriteChannels) => {
+                favoriteChannels = favoriteChannels.map(favChannel => favChannel.id);
+                favoriteChannels.push(channel.id);
+                return favoriteChannels;
+            })
+            .then(LocalStorage.store.bind(null, `${this.STORAGE_KEY_FAVORITES}:${favoriteListId}`))
+            .then(() => channel);
+    }
+
+    /**
+     * @param {AbstractChannel} channel The model object
+     * @param {String} favoriteListId The id of the favorite list
+     * @returns {Promise<AbstractChannel|Error>} A Promise resolved with the model removed, rejected in case of error
+     * @override
+     * @protected
+     */
+    _removeFavorite(channel, favoriteListId) {
+        return this._getFavoriteList(favoriteListId)
+            .then((favoriteChannels) => {
+                const index = Arrays.search(favoriteChannels, channel.id, 'id');
+                favoriteChannels = favoriteChannels.map(favChannel => favChannel.id);
+                favoriteChannels.splice(index, 1);
+                return favoriteChannels;
+            })
+            .then(LocalStorage.store.bind(null, `${this.STORAGE_KEY_FAVORITES}:${favoriteListId}`))
+            .then(() => channel);
+    }
+
+    /**
+     * @return {Promise<Array>} An array of object containing information on the list ([ {id:"favoriteId", name"favorite name'} ...])
+     * @override
+     * @protected
+     */
+    _getAvailableFavoriteLists() {
+        return LocalStorage.retrieve(this.STORAGE_KEY_FAVORITES_IDS)
+            .then((ids) => {
+                if (ids == null) {
+                    // Initialize the list
+                    return LocalStorage.store(this.STORAGE_KEY_FAVORITES_IDS, []);
+                }
+                return ids;
+            });
+    }
+
+    /**
+     * @param {String} name The name of the favorite list
+     * @param {Object} [options] Additional options that may be needed by the middleware
+     * @returns {Promise<String>} The id of the created list
+     * @override
+     * @protected
+     */
+    _createFavoriteList(name) {
+        return this._getAvailableFavoriteLists()
+            .then((ids) => {
+                for (let i = 0; i < ids.length; i++) {
+                    if (ids[i].id === name) { // Favorite list already exists
+                        return ids[i];
+                    }
+                }
+                // Add the list
+                ids.push({
+                    id: name,
+                    name
+                });
+                return LocalStorage.store(this.STORAGE_KEY_FAVORITES_IDS, ids)
+                    .then(() => {
+                        const listId = `${this.STORAGE_KEY_FAVORITES}:${name}`;
+                        return LocalStorage.store(listId, []);
+                    });
+            })
+            .then(() => name);
+    }
+
+    /**
+     * @param {String} favoriteListId The id of the favorite list
+     * @param {Object} [options] Additional options that may be needed by the middleware
+     * @returns {Promise<String>} The id of the created list
+     * @override
+     * @protected
+     */
+    _deleteFavoriteList(favoriteListId, options) {
+        return this._getAvailableFavoriteLists()
+            .then((ids) => {
+                let favoriteListIndex;
+                for (let i = 0; i < ids.length; i++) {
+                    if (ids[i].id === favoriteListId) {
+                        favoriteListIndex = i;
+                    }
+                }
+                if (favoriteListIndex == null) {
+                    return null;
+                }
+
+                // Remove the list
+                ids.splice(favoriteListIndex, 1);
+
+                return LocalStorage.store(this.STORAGE_KEY_FAVORITES_IDS, ids)
+                    .then(() => {
+                        const listId = `${this.STORAGE_KEY_FAVORITES}:${name}`;
+                        LocalStorage.remove(listId);
+                        return favoriteListId;
+                    });
+            });
+    }
+
+    /**
+     * @param {String} favoriteListId The id of the favorite list
+     * @param {Object} [options] Additional options that may be needed by the middleware
+     * @returns {Promise<Array>}
+     * @override
+     * @protected
+     */
+    _getFavoriteList(favoriteListId) {
+        const listId = `${this.STORAGE_KEY_FAVORITES}:${favoriteListId}`;
+        return LocalStorage.retrieve(listId)
+            .then((ids) => {
+                if (ids == null) {
+                    throw new Error(`The favorite list '${listId}' does not exist !`);
+                }
+                // The list is a list of ids, need to create a list of channel
+                const favoriteIds = {};
+                for (var i = 0; i < ids.length; i++) { // Create a map of favorite channel ids
+                    favoriteIds[ids[i]] = true;
+                }
+                const favoriteChannelsList = [];
+                if (ids.length > 0) {
+                    for (var i = 0; i < this._allChannelList.length; i++) {
+                        if (favoriteIds[this._allChannelList[i].id]) {
+                            favoriteChannelsList.push(this._allChannelList[i]);
+                        }
+                    }
+                }
+                return favoriteChannelsList;
+            });
+    }
+
+    /** ***************************************************************************************
+     * FILTER LISTs
+     **************************************************************************************** */
+
+    /**
+     * return filtered list according to id
+     * @param {String} id
+     * @returns {Promise<AbstractChannel[]>}
+     * @override
+     * @protected
+     */
+    _getFilterList(id) {
+        return this.find(channel => channel);
     }
 }
 

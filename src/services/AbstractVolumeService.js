@@ -1,3 +1,5 @@
+import ServiceErrors from './helpers/ServiceErrors';
+
 /**
  * class for volume service
  * @alias volumeService
@@ -69,7 +71,7 @@ class AbstractVolumeService {
      * @protected
      */
     _setVolume(volume) {
-        return this._notImplementedPromise('_setVolume');
+        return ServiceErrors.notImplementedPromise('AbstractVolumeService', '_setVolume');
     }
 
     /**
@@ -78,7 +80,7 @@ class AbstractVolumeService {
      * @protected
      */
     _getVolume(options) {
-        return this._notImplementedPromise('_getVolume');
+        return ServiceErrors.notImplementedPromise('AbstractVolumeService', '_getVolume');
     }
 
     /**
@@ -87,7 +89,7 @@ class AbstractVolumeService {
      * @protected
      */
     _mute() {
-        return this._notImplementedPromise('_mute');
+        return ServiceErrors.notImplementedPromise('AbstractVolumeService', '_mute');
     }
 
     /**
@@ -96,7 +98,7 @@ class AbstractVolumeService {
      * @protected
      */
     _unMute() {
-        return this._notImplementedPromise('_unMute');
+        return ServiceErrors.notImplementedPromise('AbstractVolumeService', '_unMute');
     }
 
     /**
@@ -105,7 +107,7 @@ class AbstractVolumeService {
      * @protected
      */
     _isMuted(options) {
-        return this._notImplementedPromise('_isMuted');
+        return ServiceErrors.notImplementedPromise('AbstractVolumeService', '_isMuted');
     }
 }
 

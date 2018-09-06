@@ -1,4 +1,5 @@
 import ServiceCache from '../helpers/ServiceCache';
+import ServiceErrors from '../helpers/ServiceErrors';
 
 /**
  * class for object properties
@@ -213,7 +214,7 @@ class AbstractFavoritesAndBlockedList {
      * @protected
      */
     _addFavorite(model, favoriteListId) {
-        return this._notImplementedPromise('_addFavorite');
+        return ServiceErrors.notImplementedPromise('AbstractFavoritesAndBlockedList', '_addFavorite');
     }
 
     /**
@@ -225,7 +226,7 @@ class AbstractFavoritesAndBlockedList {
      * @protected
      */
     _removeFavorite(model, favoriteListId) {
-        return this._notImplementedPromise('_removeFavorite');
+        return ServiceErrors.notImplementedPromise('AbstractFavoritesAndBlockedList', '_removeFavorite');
     }
 
     /**
@@ -239,7 +240,7 @@ class AbstractFavoritesAndBlockedList {
      * @protected
      */
     _createFavoriteList(name, options) {
-        return this._notImplementedPromise('_createFavoriteList');
+        return ServiceErrors.notImplementedPromise('AbstractFavoritesAndBlockedList', '_createFavoriteList');
     }
 
     /**
@@ -252,7 +253,7 @@ class AbstractFavoritesAndBlockedList {
      * @protected
      */
     _deleteFavoriteList(favoriteListId, options) {
-        return this._notImplementedPromise('_deleteFavoriteList');
+        return ServiceErrors.notImplementedPromise('AbstractFavoritesAndBlockedList', '_deleteFavoriteList');
     }
 
     /**
@@ -262,7 +263,7 @@ class AbstractFavoritesAndBlockedList {
      * @protected
      */
     _getAvailableFavoriteLists() {
-        return this._notImplementedPromise('_getAvailableFavoriteLists');
+        return ServiceErrors.notImplementedPromise('AbstractFavoritesAndBlockedList', '_getAvailableFavoriteLists');
     }
 
     /**
@@ -274,7 +275,7 @@ class AbstractFavoritesAndBlockedList {
      * @protected
      */
     _getFavoriteList(favoriteListId, options) {
-        return this._notImplementedPromise('_getFavoriteList');
+        return ServiceErrors.notImplementedPromise('AbstractFavoritesAndBlockedList', '_getFavoriteList');
     }
 
     // ////////////////////////////////////////////////////////////////////////////////////////

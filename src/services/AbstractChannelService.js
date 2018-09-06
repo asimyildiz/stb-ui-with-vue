@@ -231,14 +231,128 @@ class AbstractChannelService extends AbstractFilterChannelService {
                 list.filter(AbstractChannelService.byTypeFilter(type)));
     }
 
+    /** *********************************************************************************************************
+     * ORDERING
+     ********************************************************************************************************** */
     /**
-     * get current order method
-     * @returns {AbstractChannelService.byNumberComparator}
+     * Oder the channel list by number (order by default)
+     * With the cache mechanism, the next call of getChannelList will be sorted by number until a call of orderChannelListByName
+     * @returns {*}
      */
-    getCurrentOrderMethod() {
-        return AbstractChannelService.byNumberComparator;
+    orderChannelListByNumber() {
+        if (!this._currentOrderKey || this._currentOrderKey == 'CHANNELS_ORDERLIST_BREADCRUMB_NAME') {
+            this._currentOrderKey = 'CHANNELS_ORDERLIST_BREADCRUMB_NUMBER';
+            return this.getOrderedChannelList();
+        }
+        return Promise.resolve();
     }
 
+    /**
+     * Order the channel list by name
+     * With the cache mechanism, the next call of getChannelList will be sorted by name until a call of orderChannelListByNumber
+     * @returns {*}
+     */
+    orderChannelListByName() {
+        if (!this._currentOrderKey || this._currentOrderKey == 'CHANNELS_ORDERLIST_BREADCRUMB_NUMBER') {
+            this._currentOrderKey = 'CHANNELS_ORDERLIST_BREADCRUMB_NAME';
+            return this.getOrderedChannelList();
+        }
+        return Promise.resolve();
+    }
+
+    /**
+     * get ordered channel list
+     * @returns {*}
+     */
+    getOrderedChannelList() {
+        return this.getFilter()
+            .then((filter) => {
+                const listId = filter && filter.name && filter.name.indexOf('CHANNELS_CHANLIST_VALUE_CHGPUSE') > -1 ? filter.name : undefined;
+                return this.getChannelList({
+                    force: false,
+                    filter,
+                    listId
+                });
+            });
+    }
+
+    /**
+     * returns current order method based on current order type
+     * @returns {*}
+     */
+    getCurrentOrderMethod() {
+        switch (this._currentOrderKey) {
+        case 'CHANNELS_ORDERLIST_BREADCRUMB_NAME':
+            return AbstractChannelService.byNameComparator;
+        case 'CHANNELS_ORDERLIST_BREADCRUMB_NUMBER':
+        default:
+            return AbstractChannelService.byNumberComparator;
+        }
+    }
+
+    /**
+     * reset channel list order
+     */
+    clearChannelListOrder() {
+        this._currentOrderKey = null;
+    }
+
+    /**
+     * Get the name of the current order of the channel list
+     * TODO DEPENDENT TO TRANSLATION MODULE, SO IT SHOULD NOT BE HERE
+     * @returns {*}
+     */
+    getChannelListOrderName(translator) {
+        return Promise.resolve(translator(this._currentOrderKey));
+    }
+
+    /** *********************************************************************************************************
+     * LOCKED / BLOCKED
+     ********************************************************************************************************** */
+    /**
+     * Get locked and blocked channels
+     * @returns {*}
+     */
+    getBlockedAndLockedChannelList() {
+        return Promise.all([
+            this.getBlockedChannelList(),
+            this.getLockedChannelList()
+        ]).then(results => results[0].concat(results[1]));
+    }
+
+    /**
+     * Get manual blocked channel list
+     * @returns {*}
+     */
+    getBlockedChannelList() {
+        return this.getBlockedList()
+            .then((blocked) => {
+                const newItems = [];
+                const listPromises = [];
+                // We want to return the channels object and not the list of ids
+                for (let i = 0; i < blocked.length; i++) {
+                    const channel = blocked[i];
+                    listPromises.push(wtv.channelService.getChannelById(channel.id)
+                        .then((channel) => {
+                            newItems.push(channel);
+                        }));
+                }
+                return Promise.all(listPromises)
+                    .then(() => Promise.resolve(newItems));
+            });
+    }
+
+    /**
+     * Get unlockable channel list (adults channels)
+     * @returns {*}
+     */
+    getLockedChannelList() {
+        return this.find(item => item.isLocked());
+    }
+
+    /** *********************************************************************************************************
+     * ABSTRACT
+     ********************************************************************************************************** */
     /**
      * Find channel(s) using a function as filter.
      *
@@ -338,6 +452,51 @@ class AbstractChannelService extends AbstractFilterChannelService {
     /** ***************************************************************************************
      * CHANNEL
      **************************************************************************************** */
+    /**
+     * Return a channel by id
+     * @param {String} id
+     * @param {Object} options
+     * @returns {*|Promise<AbstractChannel>}
+     */
+    getChannelById(id, options) {
+        return this.getChannel(id, options, 'id');
+    }
+
+    /**
+     * Return a channel by number
+     * @param {String} number
+     * @param {Object} options
+     * @returns {*|Promise<AbstractChannel>}
+     */
+    getChannelByNumber(number, options) {
+        return this.getChannel(number, options, 'number');
+    }
+
+    /**
+     * returns a channel by searching it from sid from channel triplet
+     * @param {String} id
+     * @param {Object} options
+     * @returns {*|Promise<AbstractChannel>}
+     */
+    getChannelBySId(id, options) {
+        // Check input args
+        if (id == null) {
+            return ServiceErrors.throwErrorAsPromise('getChannel: id is null !');
+        }
+        options = options || {};
+        // Get the channel list and return the channel
+        return this
+            .getChannelList(options)
+            .then((channelList) => {
+                for (let i = 0; i < channelList.length; i++) {
+                    const channelIdParts = channelList[i].id.split('.');
+                    if (channelIdParts && channelIdParts.length === 3 && channelIdParts[2] === id) {
+                        return channelList[i];
+                    }
+                }
+                return null;
+            });
+    }
 
     /**
      * Get a channel by its ID.
@@ -348,9 +507,10 @@ class AbstractChannelService extends AbstractFilterChannelService {
      * @param {Number} [options.type] - The type of channel to look for : $Channel.TV_TYPE or $Channel.Radio_TYPE. If omitted, any type will match.
      * @param {Boolean} [options.force=false] If true, refresh the channel list (ie renew the cache)
      * @param {String} [options.listId=null] If set, get channel on a specific list
+     * @param {String} key of the selector
      * @returns {Promise<AbstractChannel|Error>} A promise resolved with the channel data (or undefined if not found).
      */
-    getChannel(id, options) {
+    getChannel(id, options, key) {
         // Check input args
         if (id == null) {
             return ServiceErrors.throwErrorAsPromise('getChannel: id is null !');
@@ -360,8 +520,25 @@ class AbstractChannelService extends AbstractFilterChannelService {
         return this
             .getChannelList(options)
             .then((channelList) => {
-                const index = Arrays.search(channelList, id, 'id');
+                const index = Arrays.search(channelList, id, key || 'id');
                 return channelList[index];
+            });
+    }
+
+    /**
+     * Get multiple channels by number
+     * @param {String[]} numberList
+     * @returns {*|Promise<AbstractChannel[]>}
+     */
+    getMultipleChannelsByNumber(numberList) {
+        const list = [];
+        return this.getChannelList()
+            .then((channelList) => {
+                for (let i = 0; i < numberList.length; i++) {
+                    const index = Arrays.search(channelList, numberList[i], 'number');
+                    index > 0 && list.push(channelList[index]);
+                }
+                return list;
             });
     }
 
@@ -550,7 +727,8 @@ class AbstractChannelService extends AbstractFilterChannelService {
      * @param {Object} oldChannelListDef The old list {listId:listId, type:listType}
      * @event onChannelListChange
      */
-    onChannelListChange(newChannelListDef, oldChannelListDef) {}
+    onChannelListChange(newChannelListDef, oldChannelListDef) {
+    }
 
     /**
      * Fired when the current list has been changed

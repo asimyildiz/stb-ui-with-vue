@@ -1,4 +1,4 @@
-import AbstractFavoritesAndBlockedList from './AbstractFavoritesAndBlockedList';
+import AbstractFavoritesAndBlockedChannelService from './AbstractFavoritesAndBlockedChannelService';
 import isFunction from '../../utils/IsFunction';
 import ServiceErrors from '../helpers/ServiceErrors';
 import LocalStorage from '../helpers/LocalStorage';
@@ -7,7 +7,7 @@ import LocalStorage from '../helpers/LocalStorage';
  * class for object properties
  * @name AbstractFilterChannelService
  */
-class AbstractFilterChannelService extends AbstractFavoritesAndBlockedList {
+class AbstractFilterChannelService extends AbstractFavoritesAndBlockedChannelService {
     /**
      * @type {Object}
      */
@@ -119,9 +119,9 @@ class AbstractFilterChannelService extends AbstractFavoritesAndBlockedList {
     constructor() {
         super();
         this.loadCurrentFilter();
+        this.initFilters();
         this.channels = {};
         this._currentOrderKey = null;
-        this.clearAllFavoriteLists = false;
     }
 
     /**
