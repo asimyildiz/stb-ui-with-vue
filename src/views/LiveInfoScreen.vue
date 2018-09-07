@@ -10,7 +10,6 @@ import router from '@/router';
 import KeyHelper from '@/helpers/KeyHelper';
 import LiveInfoChannelWidget from '@/components/LiveInfoChannelWidget.vue';
 import DateWidget from '@/components/DateWidget.vue';
-import aliases from '@/middleware/aliases';
 
 export default {
     name: 'liveInfoScreen',
@@ -30,7 +29,7 @@ export default {
             // TODO extract this code block into another method for code modularity
             const channelNumber = this.$route.params.channelNumber;
             if (channelNumber) {
-                aliases.channelService.getNearestChannel(channelNumber)
+                bein.channelService.getNearestChannel(channelNumber)
                         .then((channel) => {
                             this.$store.commit('SET_CHANNEL', channel);
                         });

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-var program = require('commander');
-var buildUtils = require('./buildUtils');
+const program = require('commander');
+const buildUtils = require('./buildUtils');
 
 /**
  * main algorithm for this program

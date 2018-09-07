@@ -6,7 +6,6 @@
 
 <script type="text/babel">
 import DefaultLayout from './layouts/default.vue';
-import aliases from './middleware/aliases';
 
 export default {
     methods: {
@@ -30,8 +29,7 @@ export default {
         this.$root.$on('volDown', this.volDown.bind(this));
     },
     beforeMount() {
-        const volumeService = aliases.volumeService;
-        volumeService.getVolume({})
+        bein.volumeService.getVolume({})
             .then((volume) => {
                 this.$store.commit('SET_CURRENTVOLUME', volume);
                 this.$store.commit('SET_VOLUMESTEP', 16);

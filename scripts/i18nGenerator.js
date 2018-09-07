@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-var program = require('commander');
-var fs = require('fs');
-var parse = require('csv-parse');
-var glob = require("glob");
+const program = require('commander');
+const fs = require('fs');
+const parse = require('csv-parse');
+const glob = require('glob');
 
 /**
  * write to file callback
@@ -10,7 +10,7 @@ var glob = require("glob");
  */
 const writeToFileCallback = (err) => {
     if (err) {
-        console.error("Error while creating translation files : %s", err);
+        console.error('Error while creating translation files : %s', err);
     }
 };
 
@@ -21,16 +21,20 @@ const writeToFileCallback = (err) => {
  * @param {String} profile - current profile to package the project
  */
 const runnable = (path, profile) => {
-    let bundlesFilePath = path + "/" + "bundles-" + profile + ".csv";
+    let bundlesFilePath = `${path}/` + `bundles-${profile}.csv`;
     if (!fs.existsSync(bundlesFilePath)) {
-        bundlesFilePath = path + "/" + "bundles.csv";
+        bundlesFilePath = `${path}/` + 'bundles.csv';
     }
 
     console.log('using bundles file : %s', bundlesFilePath);
-    let _obj = {}, _keys = [], numberOfColumns = 0, currentLine = 0, isFirstLine = false;
+    let _obj = {};
+    let _keys = [];
+    let numberOfColumns = 0;
+    let currentLine = 0;
+    let isFirstLine = false;
     fs.createReadStream(bundlesFilePath)
-        .pipe(parse({comment: '#', delimiter: ';', skip_empty_lines: true}))
-        .on('data', function (csvrow) {
+        .pipe(parse({ comment: '#', delimiter: ';', skip_empty_lines: true }))
+        .on('data', (csvrow) => {
             currentLine++;
             if (!isFirstLine) {
                 numberOfColumns = csvrow.length;
@@ -39,18 +43,18 @@ const runnable = (path, profile) => {
                     _keys.push(csvrow[i]);
                 }
                 isFirstLine = true;
-            } else if (csvrow.length == numberOfColumns) {
+            } else if (csvrow.length === numberOfColumns) {
                 _keys.forEach((lang, i) => {
                     _obj[lang][csvrow[0]] = csvrow[i + 2];
                 });
             } else {
-                console.log("line not correct inside bundles : %s", currentLine);
+                console.log('line not correct inside bundles : %s', currentLine);
             }
         })
-        .on('end', function () {
-            _keys.forEach((lang, i) => {
-                let translation = JSON.stringify(_obj[lang]);
-                fs.writeFile('src/assets/i18n/' + lang + '.json', translation, 'utf8', writeToFileCallback);
+        .on('end', () => {
+            _keys.forEach((lang, index) => {
+                const translation = JSON.stringify(_obj[lang]);
+                fs.writeFile(`src/assets/i18n/${lang}.json`, translation, 'utf8', writeToFileCallback);
             });
         });
 };
@@ -61,5 +65,4 @@ program
     .arguments('<path> <profile>')
     .action(runnable)
     .parse(process.argv);
-
 

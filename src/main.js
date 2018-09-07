@@ -7,6 +7,7 @@ import LanguageHelper from './helpers/LanguageHelper';
 import KeyHelper from './helpers/KeyHelper';
 import config from './config.json';
 import DateUtils from './utils/DateUtils';
+import aliases from './middleware/aliases';
 
 Vue.use(VueI18n);
 Vue.config.productionTip = false;

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-var program = require('commander');
-var fs = require('fs');
+const program = require('commander');
+const fs = require('fs');
 
 /**
  * write to file callback
@@ -8,7 +8,7 @@ var fs = require('fs');
  */
 const writeToFileCallback = (err) => {
     if (err) {
-        console.error("Error while creating translation files : %s", err);
+        console.error('Error while creating translation files : %s', err);
     }
 };
 
@@ -19,11 +19,11 @@ const writeToFileCallback = (err) => {
  * @param {String} profile - current profile to package the project
  */
 const runnable = (path, profile) => {
-    let configFilePath = path + "/config.json";
+    const configFilePath = `${path}/config.json`;
     if (fs.existsSync(configFilePath)) {
         console.log('using config file : %s', configFilePath);
         const config = JSON.parse(fs.readFileSync(configFilePath, 'utf8'));
-        config["isServedFromPC"] = (profile === 'desktop');
+        config.isServedFromPC = (profile === 'desktop');
         fs.writeFileSync(configFilePath, JSON.stringify(config), 'utf8', writeToFileCallback);
     }
 };
@@ -34,5 +34,4 @@ program
     .arguments('<path> <profile>')
     .action(runnable)
     .parse(process.argv);
-
 

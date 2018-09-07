@@ -1,9 +1,6 @@
-import aliases from '../../middleware/aliases';
-
 let currentTimeout = null;
-const volumeService = aliases.volumeService;
 function setAndshowVolume(commit, state) {
-    volumeService.setVolume(state.currentVolume);
+    bein.volumeService.setVolume(state.currentVolume);
     clearTimeout(currentTimeout);
     currentTimeout = setTimeout(() => {
         commit('HIDE_VOLUME');
