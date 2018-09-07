@@ -112,27 +112,27 @@ GENERIC_COUNTRY_VALUE_GR;;GREECE;YUNANİSTAN
 # FIRST INSTALL
 SETUP_GENERIC_TEXT_VALUE_ENGLISH;;ENGLISH;ENGLISH
 SETUP_GENERIC_TEXT_VALUE_TURKISH;;TÜRKÇE;TÜRKÇE
-FIRST_INSTALL_MESSAGE_WELCOME_TURKISH;;Hoşgeldiniz!%cr%TV izleme keyfinize yeni bir boyut kazandıracak, yeni nesil uydu alıcınızla keyifli seyirler dileriz.;Hoşgeldiniz!%cr%TV izleme keyfinize yeni bir boyut kazandıracak, yeni nesil uydu alıcınızla keyifli seyirler dileriz.
-FIRST_INSTALL_MESSAGE_WELCOME_ENGLISH;;Welcome%cr%We wish you enjoyable TV viewing experience with the the new-generation receiver Digiturk Plus+ IQ.;Welcome%cr%We wish you enjoyable TV viewing experience with the the new-generation receiver Digiturk Plus+ IQ.
-SETUP_INSTALL_MESSAGE_WELCOME;;This option is a 4 steps process %cr%(recommended). %cr%Press OK to start.;Bu işlem 4 aşamada tamamlanacaktır.%cr%Başlamak için OK tuşuna basınız.
+FIRST_INSTALL_MESSAGE_WELCOME_TURKISH;;Hoşgeldiniz!<br>TV izleme keyfinize yeni bir boyut kazandıracak, yeni nesil uydu alıcınızla keyifli seyirler dileriz.;Hoşgeldiniz!<br>TV izleme keyfinize yeni bir boyut kazandıracak, yeni nesil uydu alıcınızla keyifli seyirler dileriz.
+FIRST_INSTALL_MESSAGE_WELCOME_ENGLISH;;Welcome<br>We wish you enjoyable TV viewing experience with the the new-generation receiver Digiturk Plus+ IQ.;Welcome<br>We wish you enjoyable TV viewing experience with the the new-generation receiver Digiturk Plus+ IQ.
+SETUP_INSTALL_MESSAGE_WELCOME;;This option is a 4 steps process <br>(recommended). <br>Press OK to start.;Bu işlem 4 aşamada tamamlanacaktır.<br>Başlamak için OK tuşuna basınız.
 SETUP_INSTALL_MESSAGE_STARTSCAN_TITLE;;Find channels!;Kanal aranıyor
 SETUP_INSTALL_MESSAGE_SCANSUCCESS_TITLE;;Done !;Kanallar bulundu!
-SETUP_INSTALL_MESSAGE_SCANSUCCESS;;Installation was successful. %cr%You can now watch TV and plenty more. %cr%%cr%Enjoy;Kanal kurulumu başarıyla tamamlandı.%cr%Digiturk izlemeye başlayabilirsiniz. %cr%%cr%Keyifli Seyirler!
+SETUP_INSTALL_MESSAGE_SCANSUCCESS;;Installation was successful. <br>You can now watch TV and plenty more. <br><br>Enjoy;Kanal kurulumu başarıyla tamamlandı.<br>Digiturk izlemeye başlayabilirsiniz. <br><br>Keyifli Seyirler!
 SETUP_INSTALL_MESSAGE_STARTSCAN_PROGRESS_TV;;TV %1;TV %1
 SETUP_INSTALL_MESSAGE_STARTSCAN_PROGRESS_RADIO;;Radio %1;Radyo %1
 SETUP_INSTALL_MESSAGE_STARTSCAN_PROGRESS_TOTAL;;Total Channel Number %1;Toplam Kanal Sayısı %1
 SETUP_INSTALL_MESSAGE_STARTSCAN_SCAN;;Scan in progress... %1 %;Arama devam ediyor... %1 %
 SETUP_INSTALL_MESSAGE_SCAN_COMPLETE;;Scan is completed;Kurulum tamamlandı
-SETUP_INSTALL_MESSAGE_LANGUAGE_TURKISH;;Seçtiğiniz dil bütün menüler için geçerli olacaktır. %cr%OK tuşlayarak seçiminizi onaylayınız.;Seçtiğiniz dil bütün menüler için geçerli olacaktır. %cr%OK tuşlayarak seçiminizi onaylayınız.
-SETUP_INSTALL_MESSAGE_LANGUAGE_ENGLISH;;This setting will affect all menus%cr%and action items. Press OK to validate.;This setting will affect all menus%cr%and action items. Press OK to validate.
-SETUP_INSTALL_MESSAGE_SELECTSAT;;This defines the most suitable %cr%satellite for your area. %cr%Press OK to start scanning.;Kurulum yapılacak uyduyu seçiniz.%cr%OK tuşlayarak seçiminizi onaylayınız.
-SETUP_INSTALL_MESSAGE_DONE;;To find out about the plenty more, %cr%watch the getting started video (3 min.)%cr% Enjoy !;Uydu alıcınız hakkında daha fazlasını izlemek için Başlarken Videosunu izleyebilirsiniz. %cr%Keyifli seyirler!
+SETUP_INSTALL_MESSAGE_LANGUAGE_TURKISH;;Seçtiğiniz dil bütün menüler için geçerli olacaktır. <br>OK tuşlayarak seçiminizi onaylayınız.;Seçtiğiniz dil bütün menüler için geçerli olacaktır. <br>OK tuşlayarak seçiminizi onaylayınız.
+SETUP_INSTALL_MESSAGE_LANGUAGE_ENGLISH;;This setting will affect all menus<br>and action items. Press OK to validate.;This setting will affect all menus<br>and action items. Press OK to validate.
+SETUP_INSTALL_MESSAGE_SELECTSAT;;This defines the most suitable <br>satellite for your area. <br>Press OK to start scanning.;Kurulum yapılacak uyduyu seçiniz.<br>OK tuşlayarak seçiminizi onaylayınız.
+SETUP_INSTALL_MESSAGE_DONE;;To find out about the plenty more, <br>watch the getting started video (3 min.)<br> Enjoy !;Uydu alıcınız hakkında daha fazlasını izlemek için Başlarken Videosunu izleyebilirsiniz. <br>Keyifli seyirler!
 SETUP_INSTALL_MESSAGE_TVFORMAT_TITLE;;Select your tv format.;Ekran boyutu
-SETUP_INSTALL_MESSAGE_TVFORMAT;;This is the size of your TV set. %cr%The decoder is designed for optimal %cr%use of HD ready TV sets. %cr%Press OK to validate.;Kullandığınız televizyonun ekran boyutunu seçiniz. %cr%OK tuşlayarak seçiminizi onaylayınız.
+SETUP_INSTALL_MESSAGE_TVFORMAT;;This is the size of your TV set. <br>The decoder is designed for optimal <br>use of HD ready TV sets. <br>Press OK to validate.;Kullandığınız televizyonun ekran boyutunu seçiniz. <br>OK tuşlayarak seçiminizi onaylayınız.
 SETUP_INSTALL_MESSAGE_TIME_TITLE;;Select your time zone.;Zaman dilimi seçiniz
-SETUP_INSTALL_MESSAGE_TIME;;This defines your decoder clock %cr%and the programming %cr%correct time information. %cr%Press OK to validate.;Uydu alıcınızın saatini ayarlayınız. %cr%OK tuşlayarak seçiminizi onaylayınız.
+SETUP_INSTALL_MESSAGE_TIME;;This defines your decoder clock <br>and the programming <br>correct time information. <br>Press OK to validate.;Uydu alıcınızın saatini ayarlayınız. <br>OK tuşlayarak seçiminizi onaylayınız.
 SETUP_INSTALL_MESSAGE_SCANFAILED_TITLE;;Scan Failed !;Tarama Başarısız!
-SETUP_INSTALL_MESSAGE_SCANFAILED;;Installation has failed.%cr%Check that your set-top box is properly connected to the cable point and try again.;Kanal kurulumu başarısız.%cr%Uydu alıcınızın bağlantılarını kontrol ettikten sonra tekrar deneyiniz.
+SETUP_INSTALL_MESSAGE_SCANFAILED;;Installation has failed.<br>Check that your set-top box is properly connected to the cable point and try again.;Kanal kurulumu başarısız.<br>Uydu alıcınızın bağlantılarını kontrol ettikten sonra tekrar deneyiniz.
 
 # ADVANCED INSTALL
 ADVINSTALL_START_ACTION_START;;PERFORM INSTALLATION;KURULUMU BAŞLAT
@@ -213,6 +213,7 @@ SEARCH_RESULTS_LIST_BREADCRUMB_DECADE;;YEAR : %1;YAPIM YILI : %1
 SEARCH_RESULTS_LIST_BREADCRUMB_SCOPE;;SEARCH SCOPE : %1;ARAMA KAPSAMI : %1
 
 # DVB GENRES
+SEARCH_GENRE_VALUE_DVBGENRE_0;;;
 SEARCH_GENRE_VALUE_DVBGENRE_00;;;
 SEARCH_GENRE_VALUE_DVBGENRE_e0;;Romantic Comedy;Romantik Komedi
 SEARCH_GENRE_VALUE_DVBGENRE_e1;;Action;Aksiyon
@@ -246,7 +247,7 @@ SEARCH_GENRE_VALUE_DVBGENRE_fc;;Entertainment;Eğlence
 SEARCH_GENRE_VALUE_DVBGENRE_fd;;Music;Müzik
 SEARCH_GENRE_VALUE_DVBGENRE_fe;;Adult;Yetişkin
 SEARCH_GENRE_VALUE_DVBGENRE_ff;;Reality;Reality
-SEARCH_MENU_NOT_AVAILABLE;;Program informations will be uploaded soon.%cr%Please try again later.; Arama yapabilmeniz için program bilgileri kısa süre içinde yüklenecektir.%cr%Lütfen daha sonra tekrar deneyiniz.
+SEARCH_MENU_NOT_AVAILABLE;;Program informations will be uploaded soon.<br>Please try again later.; Arama yapabilmeniz için program bilgileri kısa süre içinde yüklenecektir.<br>Lütfen daha sonra tekrar deneyiniz.
 
 # POPUP - ACTION MESSAGES
 POPUP_ACTIONNOTIFICATION_ACTION_IGNORE;;IGNORE;VAZGEÇ
@@ -261,7 +262,7 @@ POPUP_ACTIONNOTIFICATION_MESSAGE_SMARTCARDERROR;;SMART CARD ERROR;DİJİTAL KART
 POPUP_ACTIONNOTIFICATION_PARAMETER_TAGNOTIFICATION;;TAG NOTIFICATION;ETİKET UYARISI
 POPUP_ACTIONNOTIFICATION_MESSAGE_FILTERS;;Do you really want to limit your channel list with the channels of selected list?;Kanal listenizi seçtiğiniz listedeki kanallarla sınırlayarak sadece bu kanallarda zaplamak istediğinizden emin misiniz?
 POPUP_NOTIFICATIONS_LABEL_WARNING;;Warning;Uyarı
-POPUP_NOTIFICATIONS_MESSAGE_LASTWATCH;;If you stop watching now, you will not have authorization to play it again.;İçeriğin son izleme tarihi bugün.%cr%Videoyu durdurmanız halinde tekrar oynatamayabilirsiniz.
+POPUP_NOTIFICATIONS_MESSAGE_LASTWATCH;;If you stop watching now, you will not have authorization to play it again.;İçeriğin son izleme tarihi bugün.<br>Videoyu durdurmanız halinde tekrar oynatamayabilirsiniz.
 POPUP_NOTIFICATIONS_ACTION_RESUME;;Resume;Devam
 POPUP_NOTIFICATIONS_ACTION_STOPWATCHING;;Stop watching;Videoyu durdur
 POPUP_NOTIFICATIONS_MESSAGE_EXPIRATIONDATE;;You can still watch this video until %1;Bu programı  %1 tarihine kadar izleyebilirsiniz.
@@ -273,33 +274,33 @@ POPUP_NOTIFICATIONS_MESSAGE_HDCP;;Resolution option you have selected is not sup
 POPUP_NOTIFICATIONS_MESSAGE_NOHDCP;;This service can only be watched through HDMI and with HDCP supported TV display. You are either using analogue outputs of your TV or your TV does NOT have HDCP support.;Bu içerik sadece HDMI bağlantı üzerinden ve HDCP desteği olan bir TV ile izlenebilir. Şu an televizyonunuzun analog çıkışlarını kullanmaktasınız veya televizyonunuzda HDCP desteği bulunmamaktadır.
 
 # POPUP - ACTION MESSAGES - PIN
-POPUP_ACTIONNOTIFICATION_MESSAGE_ENTRY;;This channel is locked. %cr%Please enter your PIN. ;Kanal kilitli! %cr% İzlemek için lütfen PIN Kodunuzu giriniz.
-POPUP_ACTIONNOTIFICATION_MESSAGE_ENTRYAFTERWRONGPIN;;Wrong PIN Code, you have %1 attempts left.%cr%%crIn order to reset your PIN code to 0000, please send “PIN“ SMS to 3555 via%cr%your registered phone.%cr%0212 473 73 73 ;Hatalı PIN girdiniz, %1 hakkınız kaldı.%cr%Kanal şifrenizi sıfırlamak için sistemimize kayıtlı cep telefonunuzdan PIN yazıp 3555’e SMS gönderebilir veya 0212 473 7373'ten önce 1 sonra tekrar 1 tuşlayarak şifrenizi 0000 olarak değiştirebilirsiniz.
-POPUP_ACTIONNOTIFICATION_MESSAGE_WAIT;;Wrong PIN Code, you have %1 attempts left.%cr%Please try again after %2 minutes.%cr%%cr%In order to reset your PIN code to 0000, please send “PIN“ SMS to 3555 via%cr%your registered phone or call 0212 473 73 73 for support.;Hatalı PIN girdiniz, %1 hakkınız kaldı.%cr%Lütfen %2 dakika sonra tekrar deneyiniz.%cr%%cr%Pin kodunuzu 0000 olarak yenilemek için Digiturk'e kayıtlı cep telefonunuzdan%cr%PIN yazıp 3555'e SMS gönderebilir ya da 0212 473 73 73'ten destek %cr%alabilirsiniz.
-POPUP_ACTIONNOTIFICATION_MESSAGE_LOCK;;Your PIN code is blocked!%cr%%cr%In order to reset your PIN code to 0000, please send “PIN“ SMS to 3555 via%cr%your registered phone or call 0212 473 73 73 for support.;PIN kodunu yenilemeniz gerekmektedir!%cr%%cr%PIN kodunuzu 0000 olarak yenilemek için Digiturk'e kayıtlı cep telefonunuzdan%cr%PIN yazıp 3555’e SMS gönderebilir ya da 0212 473 73 73'ten destek %cr%alabilirsiniz.
+POPUP_ACTIONNOTIFICATION_MESSAGE_ENTRY;;This channel is locked. <br>Please enter your PIN. ;Kanal kilitli! <br> İzlemek için lütfen PIN Kodunuzu giriniz.
+POPUP_ACTIONNOTIFICATION_MESSAGE_ENTRYAFTERWRONGPIN;;Wrong PIN Code, you have %1 attempts left.<br>%crIn order to reset your PIN code to 0000, please send “PIN“ SMS to 3555 via<br>your registered phone.<br>0212 473 73 73 ;Hatalı PIN girdiniz, %1 hakkınız kaldı.<br>Kanal şifrenizi sıfırlamak için sistemimize kayıtlı cep telefonunuzdan PIN yazıp 3555’e SMS gönderebilir veya 0212 473 7373'ten önce 1 sonra tekrar 1 tuşlayarak şifrenizi 0000 olarak değiştirebilirsiniz.
+POPUP_ACTIONNOTIFICATION_MESSAGE_WAIT;;Wrong PIN Code, you have %1 attempts left.<br>Please try again after %2 minutes.<br><br>In order to reset your PIN code to 0000, please send “PIN“ SMS to 3555 via<br>your registered phone or call 0212 473 73 73 for support.;Hatalı PIN girdiniz, %1 hakkınız kaldı.<br>Lütfen %2 dakika sonra tekrar deneyiniz.<br><br>Pin kodunuzu 0000 olarak yenilemek için Digiturk'e kayıtlı cep telefonunuzdan<br>PIN yazıp 3555'e SMS gönderebilir ya da 0212 473 73 73'ten destek <br>alabilirsiniz.
+POPUP_ACTIONNOTIFICATION_MESSAGE_LOCK;;Your PIN code is blocked!<br><br>In order to reset your PIN code to 0000, please send “PIN“ SMS to 3555 via<br>your registered phone or call 0212 473 73 73 for support.;PIN kodunu yenilemeniz gerekmektedir!<br><br>PIN kodunuzu 0000 olarak yenilemek için Digiturk'e kayıtlı cep telefonunuzdan<br>PIN yazıp 3555’e SMS gönderebilir ya da 0212 473 73 73'ten destek <br>alabilirsiniz.
 POPUP_ACTIONNOTIFICATION_MESSAGE_TUNERS;You can only view the 2 channels you are recording.;You can only view the 2 channels you are recording.;İki kayıt devam ederken sadece kaydettiğiniz kanalları izleyebilirsiniz.
 
 # POPUP - ACTION MESSAGES - WARNINGS
 RECORDINGS_WARNING_ACTION_LOWSPACEONHDD;;HDD FREE SPACE BELOW 5 %;DİSKTE BOŞ ALAN %5'DEN AZ
 RECORDINGS_WARNING_ACTION_FULLHDD;;HDD FULL;SABİT DİSK DOLU
 POPUP_ALARM_MESSAGE_LOWSPACEONHDD;;Your HDD free space is below 5 %, your record may not be complete.;Sabit diskinizdeki boş alan %5'in altında, kaydınız tamamlanamayabilir.
-POPUP_ALARM_MESSAGE_FULLHDD;;Your HDD is full. %cr%You can go to MANAGE RECORDINGS/DELETE RECORDINGS to make space easily with multiple deletion.;Sabit diskiniz dolu. %cr%KAYITLARI DÜZENLE/KAYIT SİLME menüsünden seçtiğiniz kayıtları topluca silerek sabit diskinizde yer açabilirsiniz.
+POPUP_ALARM_MESSAGE_FULLHDD;;Your HDD is full. <br>You can go to MANAGE RECORDINGS/DELETE RECORDINGS to make space easily with multiple deletion.;Sabit diskiniz dolu. <br>KAYITLARI DÜZENLE/KAYIT SİLME menüsünden seçtiğiniz kayıtları topluca silerek sabit diskinizde yer açabilirsiniz.
 POPUP_ALARM_ACTION_GOTORECLIST;;GO TO RECORDING LIST;KAYIT LİSTESİNE GİT
 POPUP_ALARM_MESSAGE_TEMPERATUREHDD;;Warning : hard disk temperature is too high.;Uyarı : Sabit diskiniz fazla ısındı
 POPUP_ALARM_MESSAGE_EXPIRATION;;Warning : VOD expiration date.;Uyarı: Seç-İzle içeriğin son izleme tarihi
-POPUP_ALARM_MESSAGE_WATCH;;Are you sure you wish to stop ? You can still watch this video until %1 .;İzlemeyi sonlandırmak istediğinizden emin misiniz? %cr%Bu videyou izleyebileceğiniz son tarih: %1 .
+POPUP_ALARM_MESSAGE_WATCH;;Are you sure you wish to stop ? You can still watch this video until %1 .;İzlemeyi sonlandırmak istediğinizden emin misiniz? <br>Bu videyou izleyebileceğiniz son tarih: %1 .
 GENERIC_UNIT_SYMBOL_MINREMAINING;;%1 min. left;%1 dk kaldı
-POPUP_ALARM_MESSAGE_SERIES;;There is an ongoing recording. You can spy only recording channel. ;Bir kanalda kayıt devam ediyor. %cr%Sadece kaydettiğiniz kanalı takibe alabilirsiniz.
-POPUP_ALARM_MESSAGE_SCHEDULED;;There is an ongoing recording. You can spy only recording channel. ;Bir kanalda kayıt devam ediyor. %cr%Sadece kaydettiğiniz kanalı takibe alabilirsiniz.
-POPUP_ALARM_MESSAGE_REMOTE;;There is an ongoing recording. You can spy only recording channel. ;Bir kanalda kayıt devam ediyor. %cr%Sadece kaydettiğiniz kanalı takibe alabilirsiniz.
-POPUP_ALARM_MESSAGE_PPV;;There is an ongoing recording. You can spy only recording channel. ;Bir kanalda kayıt devam ediyor. %cr%Sadece kaydettiğiniz kanalı takibe alabilirsiniz.
+POPUP_ALARM_MESSAGE_SERIES;;There is an ongoing recording. You can spy only recording channel. ;Bir kanalda kayıt devam ediyor. <br>Sadece kaydettiğiniz kanalı takibe alabilirsiniz.
+POPUP_ALARM_MESSAGE_SCHEDULED;;There is an ongoing recording. You can spy only recording channel. ;Bir kanalda kayıt devam ediyor. <br>Sadece kaydettiğiniz kanalı takibe alabilirsiniz.
+POPUP_ALARM_MESSAGE_REMOTE;;There is an ongoing recording. You can spy only recording channel. ;Bir kanalda kayıt devam ediyor. <br>Sadece kaydettiğiniz kanalı takibe alabilirsiniz.
+POPUP_ALARM_MESSAGE_PPV;;There is an ongoing recording. You can spy only recording channel. ;Bir kanalda kayıt devam ediyor. <br>Sadece kaydettiğiniz kanalı takibe alabilirsiniz.
 POPUP_ALARM_MESSAGE_IMPULSE;;Impulsive/TimeBased record take over PIP or LIVE.;Zaman bazlı kayıt başlamak üzere, takipteki veya ana ekrandaki yayın kapanacak.
 POPUP_ALARM_MESSAGE_LIVE;;Live take over PIP.;Ana ekrandaki kanal takibe alınacak
 POPUP_ALARM_MESSAGE_PIP_4K;;You cannot use PIP on this channel.;Bu kanal için takip ekranı açamazsınız.
 
 # POPUP - ACTION MESSAGES - CONFLICTS
-POPUP_CONFLICTS_MESSAGE_TOOMANYREC;;A record try to start  but there is two ongoing recording.%cr%To start new recording on time, you have to stop one of on going recordings.;Planlanmış bir kaydın başlangıç saati geldi. %cr%Devam eden iki kayıt var, yeni kaydın zamanında başlaması için birini durdurmalısınız.
-POPUP_CONFLICTS_MESSAGE_RECFORCEZAP;;A record try to start  and there is one ongoing recording.%cr%After second recording starts you can watch only the channels which are recording.;Planlanmış bir kaydın başlangıç saati geldi. %cr%Devam eden bir kayıt var, ikinci kayıt başladıktan sonra sadece kaydedilen kanallar izlenebilir.
+POPUP_CONFLICTS_MESSAGE_TOOMANYREC;;A record try to start  but there is two ongoing recording.<br>To start new recording on time, you have to stop one of on going recordings.;Planlanmış bir kaydın başlangıç saati geldi. <br>Devam eden iki kayıt var, yeni kaydın zamanında başlaması için birini durdurmalısınız.
+POPUP_CONFLICTS_MESSAGE_RECFORCEZAP;;A record try to start  and there is one ongoing recording.<br>After second recording starts you can watch only the channels which are recording.;Planlanmış bir kaydın başlangıç saati geldi. <br>Devam eden bir kayıt var, ikinci kayıt başladıktan sonra sadece kaydedilen kanallar izlenebilir.
 POPUP_CONFLICTS_MESSAGE_STOPRECORDA;;STOP 1st RECORDING;1. KAYDI DURDUR
 POPUP_CONFLICTS_MESSAGE_STOPRECORDB;;STOP 2nd RECORDING;2. KAYDI DURDUR
 POPUP_CONFLICTS_MESSAGE_STOPINCOMINGREC;;STOP NEW RECORDING;YENİ KAYDI İPTAL ET
@@ -310,11 +311,11 @@ POPUP_CONFLICTS_MESSAGE_STOPBANDZAP;;STOP 2nd REC. AND ZAP;2. KAYDI DURDUR
 POPUP_CONFLICTS_MESSAGE_GOTOCONFLICTMENU;;SHOW CONFLICTED RECORDINGS;ÇAKIŞAN KAYITLARI GÖRÜNTÜLE
 
 # PIN
-ENTERPIN_LOCK_MESSAGE_CHANLOCK;;This channel is locked. %cr%Please, enter your PIN Code.;Kanal kilitli. %cr%Lütfen, PIN kodunuzu giriniz.
-ENTERPIN_LOCK_MESSAGE_EVENTLOCK;;This event is protected under parental control. %cr%Please, enter your PIN Code.;Bu program tanımlanmış yaş sınırını aşmaktadır.%cr%Lütfen, PIN Kodunuzu giriniz.
+ENTERPIN_LOCK_MESSAGE_CHANLOCK;;This channel is locked. <br>Please, enter your PIN Code.;Kanal kilitli. <br>Lütfen, PIN kodunuzu giriniz.
+ENTERPIN_LOCK_MESSAGE_EVENTLOCK;;This event is protected under parental control. <br>Please, enter your PIN Code.;Bu program tanımlanmış yaş sınırını aşmaktadır.<br>Lütfen, PIN Kodunuzu giriniz.
 ENTERPIN_LOCK_MESSAGE_TRANSACTIONLOCK;;Please, enter your PIN Code to confirm the transaction.;İşlemi onlaymak için PIN Kodunuzu giriniz.
 ENTERPIN_LOCK_MESSAGE_KIRALA_IZLE_LOCK;;Please, enter your PIN Code to rent this content for %1 hours.;Bu içerigi %1 saatliğine kiralamak için lütfen PIN Kodunuzu giriniz.
-ENTERPIN_LOCK_MESSAGE_SECTIONLOCK;;This feature is protected. %cr%Please, enter your PIN Code.;Burada erişim kontrolü bulunmaktadır.%cr%Lütfen, PIN Kodunuzu giriniz.
+ENTERPIN_LOCK_MESSAGE_SECTIONLOCK;;This feature is protected. <br>Please, enter your PIN Code.;Burada erişim kontrolü bulunmaktadır.<br>Lütfen, PIN Kodunuzu giriniz.
 ENTERPIN_LOCK_MESSAGE_GENERICLOCK;;Please, enter your PIN Code.;Lütfen, PIN Kodunuzu giriniz
 ENTERPIN_LOCK_MESSAGE_WRONGPIN;;The PIN Code you entered is not valid. Please try again.;Girdiğiniz PIN Kodu hatalı. Lütfen, tekrar deneyiniz.
 
@@ -330,7 +331,7 @@ MYDECODER_SETUP_VALUE_TUNER2;;TUNER 2;TUNER2
 MYDECODER_TUNER_VALUE_QUALITY;;QUALITY;KALİTE
 MYDECODER_TUNER_VALUE_STRENGTH;;STRENGTH;GÜÇ
 MYDECODER_TUTORIAL_ACTION_TUTORIAL;;GETTING STARTED;BAŞLARKEN
-SIGNAL_TUNER_MESSAGE_SIGNALLOSS;;Loss of signal.%cr%%cr%Check your signal connections, power off and power on your receiver and perform channel installation by DIGITURK Easy Installation.%cr%%cr%0212 473 7373;Sinyal seviyesinde azalma var.%cr%%cr%Sinyal bağlantılarını kontrol edip, uydu alıcınızı fişten çıkarıp tekrar fişe takınız ve DIGITURK Kolay Kurulum ekranından kanal kurulumu yapınız.%cr%%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SIGNAL_TUNER_MESSAGE_SIGNALLOSS;;Loss of signal.<br><br>Check your signal connections, power off and power on your receiver and perform channel installation by DIGITURK Easy Installation.<br><br>0212 473 7373;Sinyal seviyesinde azalma var.<br><br>Sinyal bağlantılarını kontrol edip, uydu alıcınızı fişten çıkarıp tekrar fişe takınız ve DIGITURK Kolay Kurulum ekranından kanal kurulumu yapınız.<br><br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
 
 # CHANNEL LIST
 CHANNELS_CHANLIST_PARAMETER_THEMES;;THEMES;TEMA LİSTELERİ
@@ -363,7 +364,7 @@ CHANNELS_CHANLIST_VALUE_CHGPUSE5;;FAVOURITES 5;FAVORİ 5
 CHANNELS_CHANLIST_VALUE_CHGPUSE6;;FAVOURITES 6;FAVORİ 6
 CHANNELS_CHANLIST_VALUE_HDCHANNEL;;HD;HD
 CHANNELS_CHANLIST_HELP_CLEARFILTERING;;Press OK to reset the filter on your channel list and access all channels.;OK tuşuna basarak, aktif kanal filtresini kaldırıp, tüm kanallarda zaplayama başlayabilirsiniz.
-CHANNELS_CHANLIST_HELP_FILTERS;;Press OK to activate your theme or favorite filter. %cr%Press right to navigate through the list.;Seçtiğiniz liste üzerinde OK tuşuna basarak kanallarınızı bu listeye göre filtreleyebilirsiniz.
+CHANNELS_CHANLIST_HELP_FILTERS;;Press OK to activate your theme or favorite filter. <br>Press right to navigate through the list.;Seçtiğiniz liste üzerinde OK tuşuna basarak kanallarınızı bu listeye göre filtreleyebilirsiniz.
 
 # ACTIONS
 EVENTOPTION_PLAY_ACTION_PLAY;;PLAY;İZLE
@@ -423,7 +424,7 @@ EVENTOPTION_MORELIKETHIS_ACTION_MORELIKETHIS;;MORE LIKE THIS;BENZER ÖNERİLER
 EVENTOPTION_SEARCH_ACTION_RERUNS;;RERUNS;TEKRARINI BUL
 EVENTOPTION_WATCH_ACTION_PORTAL;;WATCH IN beIN CONNECT;beIN CONNECT'TE İZLE
 EVENTOPTION_WATCH_ACTION_BEGINNING;;WATCH FROM BEGINNING;BAŞTAN İZLE
-EVENTOPTION_MORE_ACTION_MOREINFO;;MORE INFO;BİLGİ VE%cr%SEÇENEKLER
+EVENTOPTION_MORE_ACTION_MOREINFO;;MORE INFO;BİLGİ VE<br>SEÇENEKLER
 SCHEDULING_REMINDER_VALUE_TAG;;TAG;ETİKETLE
 SCHEDULING_RECORD_VALUE_TBR;;TBR;ZBK
 
@@ -518,7 +519,7 @@ SETUP_TIME_ACTION_OFFSET;;TIME OFFSET;ZAMAN DİLİMİ
 SETUP_SOFTWARE_ACTION_NEWSOFTWARESEARCH;;NEW SOFTWARE SEARCH;YENİ YAZILIM ARA
 SETUP_SOFTWARE_ACTION_START_SEARCH;;START SEARCH;ARAMAYI BAŞLAT
 SOFTWARE_SEARCH_ERROR_MESSAGE_TEXT;;There is no connection to software download system. Please try again later.;Şu an yazılım indirme sistemine bağlanılamıyor. Lütfen daha sonra tekrar deneyiniz.
-NEW_SOFTWARE_UPDATE_POPUP_MESSAGE;;A new SW is found.%cr% Your STB will reboot and upgrade with new SW. Without any action, your STB's upgrade process will automatically start.;Yeni bir yazılım bulundu.%cr% Uydu alıcınız kapanıp açılacak ve yeni yazılım yüklenecektir. Bir seçim yapmamanız durumunda yazılım yükleme işlemi otomatik olarak başlayacaktır.
+NEW_SOFTWARE_UPDATE_POPUP_MESSAGE;;A new SW is found.<br> Your STB will reboot and upgrade with new SW. Without any action, your STB's upgrade process will automatically start.;Yeni bir yazılım bulundu.<br> Uydu alıcınız kapanıp açılacak ve yeni yazılım yüklenecektir. Bir seçim yapmamanız durumunda yazılım yükleme işlemi otomatik olarak başlayacaktır.
 NOW_UPGRADE_SOFTWARE;;UPGRADE NOW;ŞİMDİ YÜKLE
 CANCEL_UPGRADE_SOFTWARE;;UPGRADE LATER;DAHA SONRA
 
@@ -575,7 +576,7 @@ WIFI_SETTINGS_MENU_NOT_AVAILABLE;;To be able to access this menu, you have to co
 ETHERNET_SETTINGS_MENU_NOT_AVAILABLE;;To be able to access this menu, you have to connect your Ethernet cable to your STB;Bu menü seçeneğine ulaşmanız için Ethernet kablosunu uydu alıcınıza takmanız gerekmektedir.
 
 # MAINMENU - SETTINGS - TEST CONNECTION
-TESTCONNECTION_DISPLAY_MESSAGE_WAIT;;Connection is being tested %cr%Please wait;Bağlantı test ediliyor
+TESTCONNECTION_DISPLAY_MESSAGE_WAIT;;Connection is being tested <br>Please wait;Bağlantı test ediliyor
 TESTCONNECTION_MESSAGE_CONNECTED;;Your internet connection is working properly.;Bağlantınız düzgün çalışıyor.
 TESTCONNECTION_MESSAGE_HOME_CONNECTED;;Connected to home network but internet is not working.;Ev ağına bağlanıldı ancak internet çalışmıyor.
 TESTCONNECTION_MESSAGE_NOT_CONNECTED;;There is no internet connection. Check your connections.;İnternet bağlantısı yok. Bağlantıları kontrol ediniz.
@@ -690,7 +691,7 @@ LANGUAGESETTINGS_SUBTITLE_HELP_SUBTITLELANGUAGE;;Choose your default subtitle la
 DISPLAYSETTINGS_TVTYPE_PARAMETER_TVTYPE;;TV TYPE;TV TİPİ
 DISPLAYSETTINGS_TVTYPE_VALUE_16_9;;16:9;16:9
 DISPLAYSETTINGS_TVTYPE_VALUE_4_3;;4:3;4:3
-DISPLAYSETTINGS_TVTYPE_HELP_TVTYPE;;Select the format for your TV set: 16:9 (widescreen) or 4:3 (standard TV).;TV setinizin formatını seçin: %cr%16:9 (geniş ekran), 4:3 (standard)
+DISPLAYSETTINGS_TVTYPE_HELP_TVTYPE;;Select the format for your TV set: 16:9 (widescreen) or 4:3 (standard TV).;TV setinizin formatını seçin: <br>16:9 (geniş ekran), 4:3 (standard)
 DISPLAYSETTINGS_DISPLAYFORMAT_PARAMETER_DISPLAYFORMAT;;DISPLAY FORMAT;GÖRÜNTÜ FORMATI
 DISPLAYSETTINGS_DISPLAYFORMAT_HELP_ASPECT;;This setting allows to resize the picture on the screen according to the format of the broadcast programme and the TV format.;Yayın ve televizyon formatına göre görüntünün nasıl boyutlanacağını belirleyebilirsiniz.
 DISPLAYSETTINGS_DISPLAYFORMAT_VALUE_LETTERBOX;;BOX;KUTU
@@ -762,7 +763,7 @@ DIGITURKKEYINFO_INFOCENTRAL_ACTION_INSTALLINFORMATION;;INSTALLATION INFORMATION;
 DIGITURKKEYINFO_INFOCENTRAL_ACTION_STBANDSMARTCARDINFO;;STB AND SMART CARD INFO;KUTU VE KART BİLGİLERİ
 DIGITURKKEYINFO_INFOCENTRAL_ACTION_DIGITURKCONTACTINFO;;DIGITURK CONTACT INFO;DIGITURK İLETİŞİM BİLGİSİ
 DIGITURKKEYINFO_INFOCENTRAL_ACTION_POWERCYCLE;;POWER CYCLE;YENİDEN BAŞLAT
-DIGITURKKEYINFO_INFOCENTRAL_MESSAGE_POWERCYCLE;;Press OK to power cycle your set top box.%cr%;OK tuşlayarak kutunuzun elektrik bağlantısını kesip, yeniden başlamasını sağlayabilirsiniz.
+DIGITURKKEYINFO_INFOCENTRAL_MESSAGE_POWERCYCLE;;Press OK to power cycle your set top box.<br>;OK tuşlayarak kutunuzun elektrik bağlantısını kesip, yeniden başlamasını sağlayabilirsiniz.
 DIGITURKKEYINFO_INFOCENTRAL_ACTION_MAIL;;MAIL;POSTA
 MYDECODER_PREFERENCES_ACTION_IRDETOCLIENTSTATUS;;IRDETO CLIENT STATUS;IRDETO CA DURUMU
 
@@ -802,8 +803,8 @@ WEB_ADDRESS_VALUE_ADDRESS;;www.digiturk.com.tr;www.digiturk.com.tr
 CHANNELS_CHANLIST_MESSAGE_EDIT;;Use arrows or SMS mode to enter a new name. When you are done, press OK.;Use arrows or SMS mode to enter a new name. When you are done, press OK.
 CHANNELS_CHANLIST_ACTION_ADD_REMOVE;ADD / REMOVE; ADD / REMOVE;EKLE / KALDIR
 CHANNELS_ORDERLIST_LABEL;;The selected order will be applied to all your lists.;Seçilen sıralama tüm listelere uygulanacaktır.
-CHANNELS_ORDERLIST_BY_NAME;;All your channel list has been ordered by name.%cr%This order will be valid until you quit menu.;Tüm kanal listesi isme göre sıralanacaktır.%cr%Bu sıralama menüden çıkana kadar aktif olacaktır.
-CHANNELS_ORDERLIST_BY_NUMBER;;All your channel list has been ordered by number.%cr%This order will be valid until you quit menu.;Tüm kanal listesi kanal numarasına göre sıralanacaktır.%cr%Bu sıralama menüden çıkana kadar aktif olacaktır.
+CHANNELS_ORDERLIST_BY_NAME;;All your channel list has been ordered by name.<br>This order will be valid until you quit menu.;Tüm kanal listesi isme göre sıralanacaktır.<br>Bu sıralama menüden çıkana kadar aktif olacaktır.
+CHANNELS_ORDERLIST_BY_NUMBER;;All your channel list has been ordered by number.<br>This order will be valid until you quit menu.;Tüm kanal listesi kanal numarasına göre sıralanacaktır.<br>Bu sıralama menüden çıkana kadar aktif olacaktır.
 CHANNELS_ORDERLIST_VALUE_ORDER;;CHANGE ORDER;SIRALAMAYI DEĞİŞTİR
 CHANNELS_ORDERLIST_ACTION_NUMBER;;ORDERED BY NUMBER;KANAL NO İLE SIRALI
 CHANNELS_ORDERLIST_ACTION_NAME;;ORDERED BY NAME;İSME GÖRE SIRALI
@@ -839,7 +840,7 @@ DATA_MINING_STATUS_DAILY_TRIALS_LEFT;;Daily Trials Left;Daily Trials Left
 
 # MOREINFO
 EVENTOPTION_DELETE_ACTION_FROM_HDD;;DELETE FROM HARD DISK;SABİT DİSKTEN SİL
-RECORDINGS_TEXTENTRY_MESSAGE_RENAME;;Use arrows or SMS mode to enter the new name. %cr%When you are done, press OK.;Yön tuşları veya nümerik tuşlarla ismi giriniz. %cr%Girişi tamamladığınızda OK tuşlayarak onaylayınız.
+RECORDINGS_TEXTENTRY_MESSAGE_RENAME;;Use arrows or SMS mode to enter the new name. <br>When you are done, press OK.;Yön tuşları veya nümerik tuşlarla ismi giriniz. <br>Girişi tamamladığınızda OK tuşlayarak onaylayınız.
 EVENTOPTION_RERUNS_MESSAGE_NODATA;;There is no data available. ;Bilgi bulunmuyor
 
 # GENERIC DATES
@@ -957,8 +958,8 @@ PREFERENCES_TRANSPARENCY_VALUE_OPAQUE;;OPAQUE;OPAK
 LAYOUT_MOREINFO_MESSAGE_DIRECTOR;;DIRECTOR: ;YÖNETMEN:
 LAYOUT_MOREINFO_MESSAGE_CAST;;CAST: ;OYUNCU:
 LAYOUT_MOREINFO_MESSAGE_EXPIRATIONDATE;;EXPIRATION DATE: ;YAYINDAN KALKACAĞI TARİH:
-EVENTOPTION_RERUNS_MESSAGE_RERUNS;;Find out when %cr%you can see that programme again.;Tekrarı ne zaman
-EVENTOPTION_MORELIKETHIS_MESSAGE_MORELIKETHIS;;Discover content %cr%similar to this one in a brand new navigation mode.;Benzerini bul
+EVENTOPTION_RERUNS_MESSAGE_RERUNS;;Find out when <br>you can see that programme again.;Tekrarı ne zaman
+EVENTOPTION_MORELIKETHIS_MESSAGE_MORELIKETHIS;;Discover content <br>similar to this one in a brand new navigation mode.;Benzerini bul
 EVENTOPTION_WATCH_ACTION_SPY;;SPY;KANALI TAKİBE AL
 EVENTOPTION_SHARE_ACTION_SHARE;;SHARE;PAYLAŞ
 EVENTOPTION_VOD_ACTION_CATCHUP;;CATCH-UP TV;TEKRAR İZLE
@@ -980,9 +981,9 @@ GUIDE_GUIDE_ACTION_CHANGUID;;CHANNEL GUIDE;TEK KANAL AKIŞ
 GUIDE_SPECIFICDAY_PARAMETER_DATE;;DATE;TARİH
 GUIDE_SPECIFICDAY_PARAMETER_TIME;;TIME;SAAT
 GUIDE_GOTO_PARAMETER_TIME;;DATE & TIME;TARİH&SAAT
-NOW_GUIDE_MESSAGE_LIST;;This feature is not available for the moment. %cr%It will be updated soon. ;Bu fonksiyon şu anda aktif değil. %cr%Otomatik yazılım güncellemeleri ile aktive edilecektir.
+NOW_GUIDE_MESSAGE_LIST;;This feature is not available for the moment. <br>It will be updated soon. ;Bu fonksiyon şu anda aktif değil. <br>Otomatik yazılım güncellemeleri ile aktive edilecektir.
 NETWORK_START_ACTION_SEARCH;;START SEARCH;ARAMAYI BAŞLAT
-NETWORK_SEARCH_MESSAGE_WAIT;;Search in progress … %cr%Please wait;Arama yapılıyor…
+NETWORK_SEARCH_MESSAGE_WAIT;;Search in progress … <br>Please wait;Arama yapılıyor…
 SEARCH_RESULTS_ACTION_NEWSEARCH;;NEW SEARCH;YENİ ARAMA
 SEARCH_RESULTS_ACTION_BACK;;BACK TO REFINE;ARAMAYI DÜZENLE
 NETWORK_SYSTEM_MESSAGE_UPTODATEINFO;;Your system is up to date;Yazılımınız günceldir.
@@ -1135,49 +1136,49 @@ OMENU_WEEKONDIGITURK_DESC;;Standing out contents in Digiturk channels this week;
 SEARCH_TEXTENTRY_MESSAGE;;Use SMS mode or virtual keyboard enter your keyword.; Nümerik tuşlar veya sanal klavyeyi kullanarak giriş yapabilirsiniz.
 SEARCH_TEXTENTRY_MESSAGE_PROGRAMME_NAME;;Enter minimum 3 character of the title you are searching by using SMS entry.;Aradığınız içeriği bulmak için nümerik tuşları (1-9,0) kullanarak en az 3 harf giriniz..
 SEARCH_TEXTENTRY_MESSAGE_ACTOR_NAME;;Enter minimum 3 character of the cast you are searching by using SMS entry.;Aradığınız kişiyi bulmak için nümerik tuşları (1-9,0) kullanarak en az 3 harfi giriniz.
-SEARCH_TEXTENTRY_MESSAGE_KEYWORD;;Use arrows or SMS mode to enter your keyword. %cr%Words that are available at Digiturk contents and starting with your entry will be listed.;Yön tuşları veya nümerik tuşlarla anahtar kelime girebilirsiniz. %cr%Türkçe'ye özgü karakterleri kullanamayacaksınız, girdiğiniz karakterin Türkçe eşleniği otomatik olarak aranacaktır. (S için S,Ş gibi)
-RECORDINGS_EDIT_MESSAGE_INTRO;;This feature allows you to cut out the beginning %cr%and the end of your recording, so that you can %cr%save disk space.;Daha az sabit disk alanı kullanmak için kaydın başından ve sonundan istediğiniz kadar süreyi silebilirsiniz.
+SEARCH_TEXTENTRY_MESSAGE_KEYWORD;;Use arrows or SMS mode to enter your keyword. <br>Words that are available at Digiturk contents and starting with your entry will be listed.;Yön tuşları veya nümerik tuşlarla anahtar kelime girebilirsiniz. <br>Türkçe'ye özgü karakterleri kullanamayacaksınız, girdiğiniz karakterin Türkçe eşleniği otomatik olarak aranacaktır. (S için S,Ş gibi)
+RECORDINGS_EDIT_MESSAGE_INTRO;;This feature allows you to cut out the beginning <br>and the end of your recording, so that you can <br>save disk space.;Daha az sabit disk alanı kullanmak için kaydın başından ve sonundan istediğiniz kadar süreyi silebilirsiniz.
 ENTERPIN_LOCK_MESSAGE_PINBLOCK;;You have entered a wrong PIN Code;Hatalı PIN kodu girdiniz.
 SEARCH_NODATA_MESSAGE_NOMOODS;;You can choose the mood only when the value for theme is “All.”” ;"Moda göre arama yapabilmek için Tema olarak ""Hepsi"" seçili olmalı."
-ENTERPIN_LOCK_MESSAGE_SHOWLOCKS;;Please enter your PIN Code. %cr%Once you entered your PIN, You will see locked recordings in all lists. %cr%You can change your settings in user preferences.;Kilitli kayıtlarınızı görmek için lütfen PIN Kodunuzu giriniz.%cr%%cr%Kilitli kayıtların gizlenmesini istemiyorsanız, %cr%ERİŞİM KONTROLÜ menüsünden geçerli ayarı değiştirebilirsiniz.
-RECORDINGS_EDIT_MESSAGE_CONFIRM;;Do you want to only keep the highlighted portion of this recording? %cr%This operation cannot be reversed!;Kaydının belirtilen alan dışında kalan kısmını silmek istediğinizden emin misiniz? %cr%Bu işlem geri alınamaz!
-RECORDINGS_DELETE_MESSAGE_MULTIDELETE;;Deleting events removes them from the hard-disk and all playlists. You will be requested confirmation.;Kayıt silme işlemi seçilen kayıtları sabit diskten ve bütün kayıt klasörlerinden silecektir. %cr%Seçimi tamamladıktan sonra tekrar onayınız alınacaktır.
+ENTERPIN_LOCK_MESSAGE_SHOWLOCKS;;Please enter your PIN Code. <br>Once you entered your PIN, You will see locked recordings in all lists. <br>You can change your settings in user preferences.;Kilitli kayıtlarınızı görmek için lütfen PIN Kodunuzu giriniz.<br><br>Kilitli kayıtların gizlenmesini istemiyorsanız, <br>ERİŞİM KONTROLÜ menüsünden geçerli ayarı değiştirebilirsiniz.
+RECORDINGS_EDIT_MESSAGE_CONFIRM;;Do you want to only keep the highlighted portion of this recording? <br>This operation cannot be reversed!;Kaydının belirtilen alan dışında kalan kısmını silmek istediğinizden emin misiniz? <br>Bu işlem geri alınamaz!
+RECORDINGS_DELETE_MESSAGE_MULTIDELETE;;Deleting events removes them from the hard-disk and all playlists. You will be requested confirmation.;Kayıt silme işlemi seçilen kayıtları sabit diskten ve bütün kayıt klasörlerinden silecektir. <br>Seçimi tamamladıktan sonra tekrar onayınız alınacaktır.
 RECORDINGS_DELETE_MESSAGE_MULTIPLAYLIST;;This recording is also on playlist %1. If you delete it from hard disk, it will be deleted from all playlists.;Bu kayıt %1 isimli kayıt klasöründe de yer almaktadır.  Kaydı silmeniz durumunda bütün kayıt klasörlerinden silinecektir.
-RECORDINGS_DELETE_MESSAGE_DELETEALL;;Please enter your PIN Code to confirm deletion. All recordings will be removed from your disk! %cr%This operation cannot be reversed.;Bütün kayıtlarınızı silmek üzeresiniz. PIN Kodunuzu girerek işlemi onaylayınız.%cr%Bu işlem geri alınamaz!
+RECORDINGS_DELETE_MESSAGE_DELETEALL;;Please enter your PIN Code to confirm deletion. All recordings will be removed from your disk! <br>This operation cannot be reversed.;Bütün kayıtlarınızı silmek üzeresiniz. PIN Kodunuzu girerek işlemi onaylayınız.<br>Bu işlem geri alınamaz!
 ENTERPIN_LOCK_MESSAGE_SHOWLOCKSRECORDINGS;;Please enter your PIN Code to see locked recordings.;Kilitli kayıtlarınızı görmek için, lütfen PIN kodunuzu giriniz.
-MENU_NODATA_MESSAGE_CACHEEMPTY;;This feature is not available for the moment. It will be updated soon. If the problem persists, contact the customer service. 0212 473 7373 %cr%You can also connect your decoder to the IP service for a richer experience.;Bu kategoride içerik bulunmuyor. Kısa zamanda güncellenecektir. Problem devam ederse Müşteri Hizmetlerini arayabilirsiniz. 0212 4737373 %cr%Daha fazla içeriğe erişebilmek ve gelişmiş özellikleri kullanabilmek için uydu alıcınızı internete bağlayınız.
-MENU_NODATA_MESSAGE_NOHDD;;This menu can only be accessible when you plug a valid HDD Record.%cr%Please plug your HDD and restart your STB.;Bu menü sadece uydu alıcınıza bir HDD takılı iken kullanılabilir.%cr%Lütfen HDD'inizi bağlayıp uydu alıcınızı tekrardan başlatınız.
+MENU_NODATA_MESSAGE_CACHEEMPTY;;This feature is not available for the moment. It will be updated soon. If the problem persists, contact the customer service. 0212 473 7373 <br>You can also connect your decoder to the IP service for a richer experience.;Bu kategoride içerik bulunmuyor. Kısa zamanda güncellenecektir. Problem devam ederse Müşteri Hizmetlerini arayabilirsiniz. 0212 4737373 <br>Daha fazla içeriğe erişebilmek ve gelişmiş özellikleri kullanabilmek için uydu alıcınızı internete bağlayınız.
+MENU_NODATA_MESSAGE_NOHDD;;This menu can only be accessible when you plug a valid HDD Record.<br>Please plug your HDD and restart your STB.;Bu menü sadece uydu alıcınıza bir HDD takılı iken kullanılabilir.<br>Lütfen HDD'inizi bağlayıp uydu alıcınızı tekrardan başlatınız.
 MENU_NODATA_MESSAGE_NOSUBSCRIB;;Call the customer service to activate this feature. 0212 4737373;Bu fonksiyonu kullanabilmek için Müşteri Hizmetlerini arayınız. 0212 4737373
-MENU_NODATA_MESSAGE_NOREC;;You do not have  recorded content. Until you do, you can go to the IQ Portal for free and premium content right now!;Kaydettiğiniz içerik bulunmamaktadır. %cr%Digiturk portaldan sizin için hazırladığımız seçeneklere ulaşabilirsiniz.
-VOD_NODATA_MESSAGE_NOSELECT;;You have no active selection. Note that when content expires, it is automatically removed from your selection.;Seçtiğiniz bir içerik bulunmamaktadır. %cr%Son izleme tarihi gelen programlar SEÇTİKLERİM listesinden otomatik olarak çıkarılmaktadır.
+MENU_NODATA_MESSAGE_NOREC;;You do not have  recorded content. Until you do, you can go to the IQ Portal for free and premium content right now!;Kaydettiğiniz içerik bulunmamaktadır. <br>Digiturk portaldan sizin için hazırladığımız seçeneklere ulaşabilirsiniz.
+VOD_NODATA_MESSAGE_NOSELECT;;You have no active selection. Note that when content expires, it is automatically removed from your selection.;Seçtiğiniz bir içerik bulunmamaktadır. <br>Son izleme tarihi gelen programlar SEÇTİKLERİM listesinden otomatik olarak çıkarılmaktadır.
 OKMENU_SPY_MESSAGE_NOTUNER;;!!! Sorry, no tuner is currently available for this feature.;İki kayıt yapılyor. Bu fonksiyonu kullanabilmek için devam eden kayıtlardan birini durdurmalısınız.
 SCHEDULING_CONFLICT_MESSAGE_NEW;;A new conflict has been detected. ;Kayıtlarda çakışma oluştu.
-SCHEDULING_CONFLICT_MESSAGE_SOLVENOW;;A recording that is about to start is in conflict. Press OK to solve it now.;Diğer kayıt planlarıyla çakışan bir kayıt başlamak üzere. %cr%Çakışmayı şimdi çözmek için OK tuşuna basınız.
-SEARCH_RESULTS_MESSAGE_50RESULTS;;Your search returned more than 50 results. %cr%If you show all, the decoder may become slow.;Yaptığınız aramanın 50'den fazla sonucu bulundu. %cr%Hepsini göstermeniz halinde uydu alıcınız yavaşlayabilir.
-SEARCH_RESULTS_MESSAGE_NORES;;Your search returned no result.%cr%%cr%Keyword Search: Before you start searching, program might be finished %cr%Criteria Search : Please check your criteria and try it again%cr%;Sonuç bulunamadı.%cr%Anahtar kelime arama: Anahtar kelimeler yüklendiğinde listede olan program, arama yaptığınız saatten önce bitmiş olabilir.%cr%Kriterle arama: Kriterlerinizi gözden geçirip yeniden deneyin.
+SCHEDULING_CONFLICT_MESSAGE_SOLVENOW;;A recording that is about to start is in conflict. Press OK to solve it now.;Diğer kayıt planlarıyla çakışan bir kayıt başlamak üzere. <br>Çakışmayı şimdi çözmek için OK tuşuna basınız.
+SEARCH_RESULTS_MESSAGE_50RESULTS;;Your search returned more than 50 results. <br>If you show all, the decoder may become slow.;Yaptığınız aramanın 50'den fazla sonucu bulundu. <br>Hepsini göstermeniz halinde uydu alıcınız yavaşlayabilir.
+SEARCH_RESULTS_MESSAGE_NORES;;Your search returned no result.<br><br>Keyword Search: Before you start searching, program might be finished <br>Criteria Search : Please check your criteria and try it again<br>;Sonuç bulunamadı.<br>Anahtar kelime arama: Anahtar kelimeler yüklendiğinde listede olan program, arama yaptığınız saatten önce bitmiş olabilir.<br>Kriterle arama: Kriterlerinizi gözden geçirip yeniden deneyin.
 NO_SEARCH_RESULT;;Your search returned no result.;Sonuç bulunamadı.
 RECORDINGS_DELETE_MESSAGE_DELETEMULTI;;Do you confirm you want to delete all select items?;Seçilen kayıtları silmek istediğinizden emin misiniz?
 VOD_RENT_MESSAGE_DOWNLOADOK;;Your Vod download is complete.;Talep ettiğiniz Seç-İzle içerik indirildi.
-VOD_RENT_MESSAGE_BYSMS;;In order to rent this content for %1 hours, write%cr% %2 %cr%and send an SMS to 3555. %cr%The SMS transaction will be processed in just a %cr%few seconds. ;Bu içerigi %1 saatliğine kiralamak için %cr% %2 %cr%yazıp 3555'e SMS gönderiniz.%cr%Talebiniz birkaç saniye içinde işleme alınacaktır.
-VOD_RENT_MESSAGE_STARTDL;;Download will start when you press ok. %cr%You can find the content in the Downloads section after a few hours.%cr%%cr%You can then decide to confirm transaction or not.;OK tuşladığınızda program indirilmeye başlayacak ve işlem internet hızınıza göre birkaç saat sürecektir.%cr%İndirdiğiniz içeriklere İŞLEM MENÜSÜ altındaki İNDİRDİKLERİM adımından ulaşabilirsiniz. %cr%%cr%İçeriği izleyeceğiniz zaman ödemesiniz yapabilirsiniz.
-VOD_RENT_MESSAGE_DOWNLOADINPROGRESS;;Download is in progress. %cr%The operation may take an hour or more. You will find the content in the DOWNLOADS section.;Program indiriliyor.%cr%İşlemin tamamlanması internet bağlantı hızınıza göre birkaç saat sürebilir. %cr%Tamamlandığında  İŞLEM MENÜSÜ altındaki İNDİRDİKLERİM adımından ulaşabilirsiniz.
-VOD_RENT_MESSAGE_PROGDOWNLOADWAIT;;Your order will be ready in just a few minutes. You can wait or keep browsing in the meantime.;Talep ettiğiniz program birkaç dakika içinde hazır olacak. %cr%Bu sırada bekleyebilir veya diğer seçeneklere gözatmaya devam edebilirsiniz.
-VOD_RENT_MESSAGE_FAILED;;Your download has failed. The transaction is not validated. Please call the customer service for assistance.;İndirme başarısız. İşlem onaylanmadı. %cr%Destek almak için lütfen, Müşteri Hizmetlerini arayınız. 0212 473 7373
-VOD_RENT_MESSAGE_STREAMWAIT;;Your order will be ready in just a few seconds. Please wait.;Talep ettiğiniz program birkaç saniye içinde hazır olacak.  %cr%Lütfen bekleyiniz.
+VOD_RENT_MESSAGE_BYSMS;;In order to rent this content for %1 hours, write<br> %2 <br>and send an SMS to 3555. <br>The SMS transaction will be processed in just a <br>few seconds. ;Bu içerigi %1 saatliğine kiralamak için <br> %2 <br>yazıp 3555'e SMS gönderiniz.<br>Talebiniz birkaç saniye içinde işleme alınacaktır.
+VOD_RENT_MESSAGE_STARTDL;;Download will start when you press ok. <br>You can find the content in the Downloads section after a few hours.<br><br>You can then decide to confirm transaction or not.;OK tuşladığınızda program indirilmeye başlayacak ve işlem internet hızınıza göre birkaç saat sürecektir.<br>İndirdiğiniz içeriklere İŞLEM MENÜSÜ altındaki İNDİRDİKLERİM adımından ulaşabilirsiniz. <br><br>İçeriği izleyeceğiniz zaman ödemesiniz yapabilirsiniz.
+VOD_RENT_MESSAGE_DOWNLOADINPROGRESS;;Download is in progress. <br>The operation may take an hour or more. You will find the content in the DOWNLOADS section.;Program indiriliyor.<br>İşlemin tamamlanması internet bağlantı hızınıza göre birkaç saat sürebilir. <br>Tamamlandığında  İŞLEM MENÜSÜ altındaki İNDİRDİKLERİM adımından ulaşabilirsiniz.
+VOD_RENT_MESSAGE_PROGDOWNLOADWAIT;;Your order will be ready in just a few minutes. You can wait or keep browsing in the meantime.;Talep ettiğiniz program birkaç dakika içinde hazır olacak. <br>Bu sırada bekleyebilir veya diğer seçeneklere gözatmaya devam edebilirsiniz.
+VOD_RENT_MESSAGE_FAILED;;Your download has failed. The transaction is not validated. Please call the customer service for assistance.;İndirme başarısız. İşlem onaylanmadı. <br>Destek almak için lütfen, Müşteri Hizmetlerini arayınız. 0212 473 7373
+VOD_RENT_MESSAGE_STREAMWAIT;;Your order will be ready in just a few seconds. Please wait.;Talep ettiğiniz program birkaç saniye içinde hazır olacak.  <br>Lütfen bekleyiniz.
 PUSHVOD_RENT_MESSAGE_SUCCESS;;Rent was done successfully. Please wait a few seconds to watch content.;İşleminiz başarıyla gerçekleştirilmiştir. İzlemeye başlamak için kısa bir süre bekleyiniz.
-MULTIPLE_IP_MESSAGE_BOXNOTCO;;Connect your decoder to the IP service for a richer experience! Access 100s of movies, series in IQ Portal, never miss a show again with catch-up TV, get widgets, and more. Call customer service for assistance.;Uydu alıcınızı internete bağlayarak çok daha gelişmiş bir deneyim yaşayabiliriniz.%cr%Yüzlerce film, dizi, belgesel, uygulamalar ve fazlası...%cr%Dektek için Müşteri Hizmetlerini arayınız. 0212 4737373
-VOD_NODATA_MESSAGE_NOPUSHVOD;;The contents saved to your hard drive via satellite by Digiturk can be found here.%cr%Please leave your receiver open and make sure it receives the satellite signal in order to save these contents to your hdd.;Digiturk tarafından sizin için sabit diskinize uydu üzerinden kaydettiğimiz içeriklere buradan ulaşabilirsiniz.%cr%İçeriklerin düzenli olarak yüklenebilmesi için lüften uydu alıcınızı açık ve sinyal alır konumda bırakınız.
+MULTIPLE_IP_MESSAGE_BOXNOTCO;;Connect your decoder to the IP service for a richer experience! Access 100s of movies, series in IQ Portal, never miss a show again with catch-up TV, get widgets, and more. Call customer service for assistance.;Uydu alıcınızı internete bağlayarak çok daha gelişmiş bir deneyim yaşayabiliriniz.<br>Yüzlerce film, dizi, belgesel, uygulamalar ve fazlası...<br>Dektek için Müşteri Hizmetlerini arayınız. 0212 4737373
+VOD_NODATA_MESSAGE_NOPUSHVOD;;The contents saved to your hard drive via satellite by Digiturk can be found here.<br>Please leave your receiver open and make sure it receives the satellite signal in order to save these contents to your hdd.;Digiturk tarafından sizin için sabit diskinize uydu üzerinden kaydettiğimiz içeriklere buradan ulaşabilirsiniz.<br>İçeriklerin düzenli olarak yüklenebilmesi için lüften uydu alıcınızı açık ve sinyal alır konumda bırakınız.
 VOD_NODATA_MESSAGE_NODOWNLOAD;;You currently have no downloaded content available.;İndirilmiş program bulunmamaktadır. Son izleme tarihi gelen programlar İNDİRDİKLERİM listesinden otomatik olarak çıkarılmaktadır.
 VOD_NODATA_MESSAGE_NOIPDOWNLOAD;;Connect your box to choose from 100s of movies.;Yüzlerce seçeneğe ulaşmak için uydu alıcınızın internet başlantısını yapınız.
 VOD_NODATA_MESSAGE_NOVIDEO;;There is no content in selected category. Please try again later.;Seçmiş olduğunuz kategoride içerik bulunmamaktadır. Daha sonra tekrar deneyiniz.
 VOD_WAITING_INFO_FOR_RECOMMENDATION;;Please wait, a recommendation list is being presented according to your previous preferences.;Lütfen bekleyiniz, geçmiş seçimlerinize göre size özel öneri listesi hazırlanıyor.
 VOD_NODATA_MESSAGE_NORECOMMENDATION;;No recommendation list for you is available. Start watching movie in beIN CONNECT, and a recommendation list is presented according to your preferences.;Size özel öneri listesi oluşturulamadı. beIN CONNECT'te film izlemeye başlayın, seçimlerinize göre size özel öneri listesi oluşturalım.
-VOD_RENT_MESSAGE_NOCREDIT;;Your PIN Code is correct, but your credit is used.%cr%Send the following code by SMS to 3555, %1 %cr%to purchase  this content. %cr%%cr%, call 0212 473 73 73.;Doğru PIN kodu girdiniz ancak dijital kartınızda yeterli kredi bulunmuyor. %cr%Aşağıdaki kısa SMS kodunu kayıtlı telefonunuzdan 3555'e göndererek programı satınalabilir veya Müşteri Hizmetlerini arayarak destek alabilirsiniz. %cr% %1 %cr%%cr%212-473 7373
-VOD_MYACCOUNT_MESSAGE_ADDED;;This title has been added  to your selection. %cr%Find it in MY SELECTION menuunder FEATURES menu.;Bu program seçtiklerinize eklendi. %cr%Seçtiğiniz içeriklere İŞLEM MENÜSÜ altındaki SEÇTİKLERİM adımından ulaşabilirsiniz.
+VOD_RENT_MESSAGE_NOCREDIT;;Your PIN Code is correct, but your credit is used.<br>Send the following code by SMS to 3555, %1 <br>to purchase  this content. <br><br>, call 0212 473 73 73.;Doğru PIN kodu girdiniz ancak dijital kartınızda yeterli kredi bulunmuyor. <br>Aşağıdaki kısa SMS kodunu kayıtlı telefonunuzdan 3555'e göndererek programı satınalabilir veya Müşteri Hizmetlerini arayarak destek alabilirsiniz. <br> %1 <br><br>212-473 7373
+VOD_MYACCOUNT_MESSAGE_ADDED;;This title has been added  to your selection. <br>Find it in MY SELECTION menuunder FEATURES menu.;Bu program seçtiklerinize eklendi. <br>Seçtiğiniz içeriklere İŞLEM MENÜSÜ altındaki SEÇTİKLERİM adımından ulaşabilirsiniz.
 RECORDINGS_NODATA_MESSAGE_NOSERIES;;None of your recordings is series-linked.;Otomatik dizi kaydı özelliği olan kaydınız bulunmamaktadır.
-TAGS_NODATA_MESSAGE_NOTAG;;You have no active tag. You can tag events from all content discovery tools just by pressing OK on tag.;Geçerli etiket bulunmamaktadır. %cr%Program başlama saatinde uyarılmak için, program listesine ulaştığınız bütün menülerde program üzerinde iken OK tuşuna basarak etiketleme yapabilirsiniz.
-RECORDINGS_NODATA_MESSAGE_NOSCHEDULE;;You have no activated schedule. %cr%You can schedule events for recordings from all content discovery tools just by pressing REC on them, or OK on Record.;Kayıt planınız bulunmamaktadır.%cr%İstediğiniz programın otomatik olarak kaydedilmesi için, program listesine ulaştığınız bütün menülerde program üzerinde Kırmızı KAYIT tuşuna basarak kayıt planı yapabilirsiniz.
-RECORDINGS_NODATA_MESSAGE_NORECORD;;You have not recorded anything yet. Until you do, you can go to the Video on Demand Section for free and premium content.;Kayıtlı içerik bulunmamaktadır. %cr%İstediğiniz programın otomatik olarak kaydedilmesi için, program listesine ulaştığınız bütün menülerde program üzerinde iken Kırmızı KAYIT tuşuna basarak kayıt planı yapabilirsiniz.
+TAGS_NODATA_MESSAGE_NOTAG;;You have no active tag. You can tag events from all content discovery tools just by pressing OK on tag.;Geçerli etiket bulunmamaktadır. <br>Program başlama saatinde uyarılmak için, program listesine ulaştığınız bütün menülerde program üzerinde iken OK tuşuna basarak etiketleme yapabilirsiniz.
+RECORDINGS_NODATA_MESSAGE_NOSCHEDULE;;You have no activated schedule. <br>You can schedule events for recordings from all content discovery tools just by pressing REC on them, or OK on Record.;Kayıt planınız bulunmamaktadır.<br>İstediğiniz programın otomatik olarak kaydedilmesi için, program listesine ulaştığınız bütün menülerde program üzerinde Kırmızı KAYIT tuşuna basarak kayıt planı yapabilirsiniz.
+RECORDINGS_NODATA_MESSAGE_NORECORD;;You have not recorded anything yet. Until you do, you can go to the Video on Demand Section for free and premium content.;Kayıtlı içerik bulunmamaktadır. <br>İstediğiniz programın otomatik olarak kaydedilmesi için, program listesine ulaştığınız bütün menülerde program üzerinde iken Kırmızı KAYIT tuşuna basarak kayıt planı yapabilirsiniz.
 RECORDINGS_NODATA_MESSAGE_NORECORDINFILTER;;You have not recorded anything yet. Until you do, you can go to the Video on Demand Section for free and premium content.;Kayıtlı içerik bulunmamaktadır, İstediğiniz programın otomatik olarak kaydedilmesi için, program listesine ulaştığınız bütün menülerde program üzerinde iken Kırmızı KAYIT tuşuna basarak kayıt planı yapabilirsiniz.
 RECORDINGS_NODATA_MESSAGE_NOCONFLICTS;;There is no conflicting schedule at this time.;Çakışan kayıt planınız bulunmamaktadır.
 RECORDINGS_NODATA_MESSAGE_PLAYLISTEMPTY;;This playlist has no recordings. You can use the Manage recordings feature to allocate your recordings to playlists easily.;Bu klasöre atanmış kayıt bulunmamaktadır. KAYITLARI DÜZENLE menüsünden kayıtlarınızı klasörlere kopyalarak düzenleyebilirsiniz.
@@ -1192,7 +1193,7 @@ EVENTOPTION_FAVOURITES_MESSAGE_ADD;;This channel has been added to the selected 
 EVENTOPTION_CATCHUP_MESSAGE_ACCESS;;Access the Catch-up TV content for this channel.;Bu kanala ait Tekrar İzle seçeneklerine ulaşmanızı sağlar.
 EVENTOPTION_CATCHUP_MESSAGE_NOCO;;Connect your box and never miss a show again!;Bu kanaldan takip ettiğiniz pek çok programı Tekrar İzle seçenekleri arasında bulabilirsiniz. Tekrar İzle seçeneklerine ulaşabilmek için uydu alıcınızı internete bağlayınız.
 VOD_NODATA_MESSAGE_NORENTAL;;You currently have no active rental.;Kiralanmış içerik bulunmamaktadır.
-SEARCH_KEYWORD_MESSAGE_ENTRYMODES;;Use arrows or SMS mode to enter your keyword. %cr%Words that are available at Digiturk contents and starting with your entry will be listed. ;Anahtar kelime girmek için yön tuşlarını kullanabilir veya nümerik tuşlar ile SMS modunda giriş yapabilirsiniz. %cr%Yandaki listede girdiğiniz harflerle başlayan, Digiturk içeriklerinde yer alan, kelimeler listelenecektir.
+SEARCH_KEYWORD_MESSAGE_ENTRYMODES;;Use arrows or SMS mode to enter your keyword. <br>Words that are available at Digiturk contents and starting with your entry will be listed. ;Anahtar kelime girmek için yön tuşlarını kullanabilir veya nümerik tuşlar ile SMS modunda giriş yapabilirsiniz. <br>Yandaki listede girdiğiniz harflerle başlayan, Digiturk içeriklerinde yer alan, kelimeler listelenecektir.
 SEARCH_KEYWORD_MISC_KEYWORDSFOUND;;%1 keywords found;%1 kelime bulundu
 SEARCH_KEYWORD_MISC_NOCO;;%1 more if you connect your box to IP.;Uydu alıcınızı internete bağlayarak %1 sonuca daha ulaşabilirsiniz.
 EVENTOPTION_TAG_MESSAGE_NOTTAGGED;;The event cannot be tagged. Both tuners will be in use at that time.;Program etiketlenemiyor. Program başlangıç saatinde iki kayıt devam ediyor olacağından diğer kanalları izlemeniz mümkün olmayacaktır.
@@ -1200,62 +1201,62 @@ VOD_BONUS_MESSAGE_BONUSKO;;You need to rent the content to be able to watch the 
 RECORDINGS_CONFLICT_MESSAGE_SOLVED;;This conflict is now solved.;Kayıtlar arasındaki çakışma çözüldü.
 EVENTOPTION_SCHEDULING_MESSAGE_DISKFULL;;Your disk is full. You can go to “recordings management” to make space easily with multiple deletion and display of recordings’ size.;Sabit diskiniz dolu. KAYITLARI DÜZENLE menüsünden Çoklu Silme seçeneği ile silmek istediğiniz kayıtları seçip kolayca silebilirsiniz.
 EVENTOPTION_SCHEDULING_MESSAGE_NOENTITL;;You are not entitled to record this event because of your subscription status. Call xxx to update your status.;Bu içerik kaydedilemez.
-EVENTOPTION_SCHEDULING_MESSAGE_CONFLICT;;New conflict - This schedule is in conflict with previous ones. One of your recordings will not be performed correctly;Yeni Çakışma %cr%Bu kayıt planı daha önce planladığınız kayıtlarla çakışıyor. Bazı kayıtlarınız tam olarak yapılamayabilir.
-SMARTCARD_RIGHTS_MESSAGE_1;;Validation of smart card in progress.  %cr%Please wait for up to 10 minutes. %cr%If validation fails, please call 0212 473 7373.;Dijital kartın doğrulanması işlemi başladı. %cr%Lütfen 10 dakika kadar bekleyiniz. %cr%Doğrulama tamamlanamaz ise, lütfen Müşteri Hizmetlerini arayınız. %cr%0212 473 7373
+EVENTOPTION_SCHEDULING_MESSAGE_CONFLICT;;New conflict - This schedule is in conflict with previous ones. One of your recordings will not be performed correctly;Yeni Çakışma <br>Bu kayıt planı daha önce planladığınız kayıtlarla çakışıyor. Bazı kayıtlarınız tam olarak yapılamayabilir.
+SMARTCARD_RIGHTS_MESSAGE_1;;Validation of smart card in progress.  <br>Please wait for up to 10 minutes. <br>If validation fails, please call 0212 473 7373.;Dijital kartın doğrulanması işlemi başladı. <br>Lütfen 10 dakika kadar bekleyiniz. <br>Doğrulama tamamlanamaz ise, lütfen Müşteri Hizmetlerini arayınız. <br>0212 473 7373
 SMARTCARD_RIGHTS_MESSAGE_2;;Please insert smart card.;Lütfen dijital kartınızı takınız.
-SMARTCARD_RIGHTS_MESSAGE_4;;Service temporarily disconnected. %cr%Please call 0212 473 7373.;Servis geçici olarak kesilmiştir. %cr%Lütfen 0212 473 7373'ü arayınız.
-SMARTCARD_RIGHTS_MESSAGE_5;;Smart card is wrongly inserted.;Dijital kart hatalı takıldı.%cr%Lütfen kartın yönüne dikkat ederek tekrar deneyiniz.
+SMARTCARD_RIGHTS_MESSAGE_4;;Service temporarily disconnected. <br>Please call 0212 473 7373.;Servis geçici olarak kesilmiştir. <br>Lütfen 0212 473 7373'ü arayınız.
+SMARTCARD_RIGHTS_MESSAGE_5;;Smart card is wrongly inserted.;Dijital kart hatalı takıldı.<br>Lütfen kartın yönüne dikkat ederek tekrar deneyiniz.
 SMARTCARD_RIGHTS_MESSAGE_6;;Please insert the correct smart card.;Lütfen doğru dijital kartı takınız.
-SMARTCARD_RIGHTS_MESSAGE_7;;Error reading smart card %cr%Please call 0212 473 7373.;Dijital kart okuma hatası. %cr%Lütfen Müşteri Hizmetlerini arayınız. %cr%0212 473 7373
-SMARTCARD_RIGHTS_MESSAGE_8;;Damaged smart card %cr%Please call 0212 473 7373.;Dijital kart hasar görmüş. %cr%Lütfen 0212 473 7373'ü arayınız.
+SMARTCARD_RIGHTS_MESSAGE_7;;Error reading smart card <br>Please call 0212 473 7373.;Dijital kart okuma hatası. <br>Lütfen Müşteri Hizmetlerini arayınız. <br>0212 473 7373
+SMARTCARD_RIGHTS_MESSAGE_8;;Damaged smart card <br>Please call 0212 473 7373.;Dijital kart hasar görmüş. <br>Lütfen 0212 473 7373'ü arayınız.
 SMARTCARD_RIGHTS_MESSAGE_9;;To subscribe to this channel please call 0212 473 7373.;Bu kanala üye olmak için lütfen 0212 473 73 73'ü arayınız.
 SMARTCARD_RIGHTS_MESSAGE_10;;To subscribe to this channel please call 0212 473 7373.;Bu  kanala üye olmak için lütfen 0212 473 73 73'ü arayınız.
-SMARTCARD_RIGHTS_MESSAGE_17;;You are not allowed to purchase IPPV events from this screen.  %cr%0212 4737373;Bu ekrandan İzle ve Öde programı satın almak için yetkili değilsiniz. %cr%0212 473 7373
+SMARTCARD_RIGHTS_MESSAGE_17;;You are not allowed to purchase IPPV events from this screen.  <br>0212 4737373;Bu ekrandan İzle ve Öde programı satın almak için yetkili değilsiniz. <br>0212 473 7373
 SMARTCARD_RIGHTS_MESSAGE_19;;You have no rights to record this channel.;Bu kanalın kaydedilmesi engellenmiştir.
-SMARTCARD_RIGHTS_MESSAGE_E107_4;;Your digital card and set top box are not paired. %cr%Please call 0212 473 7373.;Dijital kartınız ile DigiKutunuz eşlenmemiş. %cr%Lütfen 0212 473 73 73'ü arayınız.
-SMARTCARD_RIGHTS_MESSAGE_E124_4;;Your digital card and set top box are not paired. %cr%Please call 0212 473 7373.;Dijital kartınız ile uydu alıcınız eşlenmemiş. %cr%Lütfen Müşteri Hizmetlerini arayınız. %cr%0212 473 7373
-SMARTCARD_RIGHTS_MESSAGE_E108_4;;Digital Card error. %cr%Please plug your set top box to signal cable and electricity and wait for a while.;Dijital kart hatası. %cr%Lütfen uydu alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz. %cr%Yayınlarınız bir süre sonra açılacaktır.
-SMARTCARD_RIGHTS_MESSAGE_E129_4;;Recording has expired. %cr%You can not playback this recording anymore.;Kaydın son kullanma tarihi geçmiş. %cr%Bu kayıt artık izlenemez.
-SMARTCARD_RIGHTS_MESSAGE_E16_4;;Your package does not include this channel.%cr%-To learn the package price for this channel please write  %cr% %1 %cr%-To subscribe to this package please write %2 %cr%and send an SMS* to 3555. %cr%If you think that your subscription already includes the package, please write E164 and send an SMS* to 3555 from your Digiturk registered mobile phone . %cr%*For SMS prices please visit www.digiturk.com.tr/destek web site;Üyeliğiniz bu kanalın bulunduğu paketi kapsamamaktadır. %cr%Bu kanalı kapsayan : %cr%- Paket fiyatını öğrenmek için: %1 %cr%- Pakete hemen üye olmak için: %2 %cr%yazarak 3555'e SMS* gönderebilirsiniz. %cr%Pakete sahip olduğunuzu düşünüyorsanız, çözüm için Digiturk'e kayıtlı %cr%cep telefonunuz ile E164 yazıp 3555'e SMS* gönderebilirsiniz. %cr%*SMS ücretlendirmesi hakkında bilgi almak için %cr%www.digiturk.com.tr/destek adresini ziyaret edebilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E16_4_WITHOUT_SMS_CODE;;You are not authorized for this service.Order to learn the price information, please %cr% call 0212 473 7373.%cr%www.digiturk.com.tr/destek;Üyeliğiniz bu kanalın bulunduğu paketi kapsamamaktadır.%cr%Bu kanalı kapsayan pakete üye olmak ve bilgi almak için 0212 473 73 73 arayınız.%cr%www.digiturk.com.tr/destek
-SMARTCARD_RIGHTS_MESSAGE_E18_4;;If this is a PPV event, in order to rent this program, please write %cr%%1 and send an SMS* to 3555. %cr%If this is not a PPV event, please start channel installation using Menu/%cr%Installation/Easy Installation option. %cr%If you think you are either authorized for this service or there is no %cr%regional restriction, please write E184 and send an SMS* to 3555 from %cr%your Digiturk registered mobile phone. %cr%*For detailed information and SMS fees: www.digiturk.com.tr/destek %cr%0212 473 73 73;Bu bir İzle Öde Programı ise kiralamak için %1 yazıp 3555'e %cr%SMS* gönderebilirsiniz.%cr%İzle-Öde program değil ise, kumandanız üzerinden Menü/Kurulum/Kolay %cr%Digiturk Kurulumu adımlarını kullanarak kurulum yapabilirsiniz.%cr%Paketiniz bu kanalı kapsadığı ve bölgesel kısıtlama olmadığı halde hala %cr%hata almaya devam ediyorsanız E184 yazıp 3555’e SMS* gönderebilirsiniz.%cr%*Detaylı bilgi ve SMS ücretleri için: www.digiturk.com.tr/destek %cr%0212 473 73 73
-SMARTCARD_RIGHTS_MESSAGE_E18_4_WITHOUT_SMS_CODE;;If this is a PPV event, in order to rent this program, please call 0212 473 73 73.%cr%If this is not a PPV event, please start channel installation.%cr%Otherwise you are not authorized for this service or there may be regional restrictions.%cr% %cr%For detailed information: www.digiturk.com.tr/destek%cr%0212 473 73 73;Bu bir İzle Öde Programı ise kiralamak için 0212 473 73 73 arayınız.%cr%İzle-Öde program değil ise, lütfen kanal kurulumu yapınız.%cr%Hata almaya devam ediyor iseniz paketiniz bu kanalı kapsamıyor veya kanal için bölgesel kısıtlama uygulanmış olabilir.%cr%Detaylı bilgi için: %cr%www.digiturk.com.tr/destek%cr%0212 473 73 73
+SMARTCARD_RIGHTS_MESSAGE_E107_4;;Your digital card and set top box are not paired. <br>Please call 0212 473 7373.;Dijital kartınız ile DigiKutunuz eşlenmemiş. <br>Lütfen 0212 473 73 73'ü arayınız.
+SMARTCARD_RIGHTS_MESSAGE_E124_4;;Your digital card and set top box are not paired. <br>Please call 0212 473 7373.;Dijital kartınız ile uydu alıcınız eşlenmemiş. <br>Lütfen Müşteri Hizmetlerini arayınız. <br>0212 473 7373
+SMARTCARD_RIGHTS_MESSAGE_E108_4;;Digital Card error. <br>Please plug your set top box to signal cable and electricity and wait for a while.;Dijital kart hatası. <br>Lütfen uydu alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz. <br>Yayınlarınız bir süre sonra açılacaktır.
+SMARTCARD_RIGHTS_MESSAGE_E129_4;;Recording has expired. <br>You can not playback this recording anymore.;Kaydın son kullanma tarihi geçmiş. <br>Bu kayıt artık izlenemez.
+SMARTCARD_RIGHTS_MESSAGE_E16_4;;Your package does not include this channel.<br>-To learn the package price for this channel please write  <br> %1 <br>-To subscribe to this package please write %2 <br>and send an SMS* to 3555. <br>If you think that your subscription already includes the package, please write E164 and send an SMS* to 3555 from your Digiturk registered mobile phone . <br>*For SMS prices please visit www.digiturk.com.tr/destek web site;Üyeliğiniz bu kanalın bulunduğu paketi kapsamamaktadır. <br>Bu kanalı kapsayan : <br>- Paket fiyatını öğrenmek için: %1 <br>- Pakete hemen üye olmak için: %2 <br>yazarak 3555'e SMS* gönderebilirsiniz. <br>Pakete sahip olduğunuzu düşünüyorsanız, çözüm için Digiturk'e kayıtlı <br>cep telefonunuz ile E164 yazıp 3555'e SMS* gönderebilirsiniz. <br>*SMS ücretlendirmesi hakkında bilgi almak için <br>www.digiturk.com.tr/destek adresini ziyaret edebilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E16_4_WITHOUT_SMS_CODE;;You are not authorized for this service.Order to learn the price information, please <br> call 0212 473 7373.<br>www.digiturk.com.tr/destek;Üyeliğiniz bu kanalın bulunduğu paketi kapsamamaktadır.<br>Bu kanalı kapsayan pakete üye olmak ve bilgi almak için 0212 473 73 73 arayınız.<br>www.digiturk.com.tr/destek
+SMARTCARD_RIGHTS_MESSAGE_E18_4;;If this is a PPV event, in order to rent this program, please write <br>%1 and send an SMS* to 3555. <br>If this is not a PPV event, please start channel installation using Menu/<br>Installation/Easy Installation option. <br>If you think you are either authorized for this service or there is no <br>regional restriction, please write E184 and send an SMS* to 3555 from <br>your Digiturk registered mobile phone. <br>*For detailed information and SMS fees: www.digiturk.com.tr/destek <br>0212 473 73 73;Bu bir İzle Öde Programı ise kiralamak için %1 yazıp 3555'e <br>SMS* gönderebilirsiniz.<br>İzle-Öde program değil ise, kumandanız üzerinden Menü/Kurulum/Kolay <br>Digiturk Kurulumu adımlarını kullanarak kurulum yapabilirsiniz.<br>Paketiniz bu kanalı kapsadığı ve bölgesel kısıtlama olmadığı halde hala <br>hata almaya devam ediyorsanız E184 yazıp 3555’e SMS* gönderebilirsiniz.<br>*Detaylı bilgi ve SMS ücretleri için: www.digiturk.com.tr/destek <br>0212 473 73 73
+SMARTCARD_RIGHTS_MESSAGE_E18_4_WITHOUT_SMS_CODE;;If this is a PPV event, in order to rent this program, please call 0212 473 73 73.<br>If this is not a PPV event, please start channel installation.<br>Otherwise you are not authorized for this service or there may be regional restrictions.<br> <br>For detailed information: www.digiturk.com.tr/destek<br>0212 473 73 73;Bu bir İzle Öde Programı ise kiralamak için 0212 473 73 73 arayınız.<br>İzle-Öde program değil ise, lütfen kanal kurulumu yapınız.<br>Hata almaya devam ediyor iseniz paketiniz bu kanalı kapsamıyor veya kanal için bölgesel kısıtlama uygulanmış olabilir.<br>Detaylı bilgi için: <br>www.digiturk.com.tr/destek<br>0212 473 73 73
 SMARTCARD_RIGHTS_MESSAGE_E16_4_2;;No permission to use this audio.;Bu ses dilini kullanmaya yetkiniz yok
 SMARTCARD_RIGHTS_MESSAGE_E18_4_2;;This audio is not available in this location;Bu ses seçeneği bu bölgede mevcut değil
-SMARTCARD_RIGHTS_MESSAGE_E16_4_3;;This is a subscription program.%cr%%cr%www.digiturk.com.tr/destek;Üyeliğiniz bu kanalın bulunduğu paketi kapsamamaktadır. %cr%%cr%www.digiturk.com.tr/destek
-SMARTCARD_RIGHTS_MESSAGE_E18_4_3;;This is a subscription program.%cr%%cr%www.digiturk.com.tr/destek;Üyeliğiniz bu kanalın bulunduğu paketi kapsamamaktadır. %cr%%cr%www.digiturk.com.tr/destek
-SMARTCARD_RIGHTS_MESSAGE_E19_4;;Your channels are not authorized since you didn't use the service for a long time.%cr%You can wait a while on this channel for authorization or you can write E194 and send an SMS* to 3555 from your Digiturk registered cell phone.%cr%* For SMS prices please visit www.digiturk.com.tr/destek web site;Uzun süredir Digiturk kanallarını izlemediniz. %cr%Dilerseniz kanallarınızın yetkilendirilmesi için bir süre bekleyebilir ya da yetkilendirme işlemini hemen gerçekleştirmek için bu kanal açıkken Digiturk'e kayıtlı cep telefonunuzdan E194 yazıp 3555'e SMS* gönderebilirsiniz.%cr%* SMS ücretlendirmesi hakkında bilgi almak için: www.digiturk.com.tr/destek
-SMARTCARD_RIGHTS_MESSAGE_E20_4;;This program is not avaliable in your area/country. %cr%Please zap to another DIGITURK service.;Ülkesel/Bölgesel kanaldır. %cr%Lütfen başka bir DIGITURK kanalına geçiniz.
-SMARTCARD_RIGHTS_MESSAGE_E21_4;;This program is not avaliable in your area/country. %cr%Please zap to another DIGITURK service.;Ülkesel/Bölgesel kanaldır. %cr%Lütfen başka bir DIGITURK kanalına geçiniz.
-SMARTCARD_RIGHTS_MESSAGE_E30_4;;Validation of smart card is in progress, please wait. %cr%If problem continues power off and power on your receiver. %cr%If problem still continues, you can write E304 and send an SMS* to 3555 from your Digiturk registered cell phone. %cr%* For SMS prices please visit www.digiturk.com.tr/destek web site.;Digital kartınız doğrulanıyor, lütfen kısa bir süre bekleyiniz. %cr%Sorun çözülmezse uydu alıcınızı fişten çıkarıp tekrar fişe takınız. %cr%Uydu alıcınız açıldığında problem düzelmediyse Digiturk'e kayıtlı cep telefonunuzdan E304 yazıp 3555'e SMS* gönderebilirsiniz. %cr%* SMS ücretlendirmesi hakkında bilgi almak için: %cr%www.digiturk.com.tr/destek
-SMARTCARD_RIGHTS_MESSAGE_E05_4;;Error reading smart card%cr%Please call 0212 473 7373.;Dijital kart okuma hatası.%cr%Lütfen 0212 473 7373'ü arayınız.
-SMARTCARD_RIGHTS_MESSAGE_E100_2;;Smart card Error.%cr%Remove and insert back your smart card. %cr%If the problem persists, please call 0212 473 7373.;Dijital kart hatası%cr%Dijital katınızı çıkarıp tekrar takınız. %cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E101_29;;You don't have permission to use recording functions.%cr%Please call 0212 473 7373.;Kayıt fonksiyonlarını kullanma yetkiniz bulunmamaktadır.%cr%Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E102_29;;You don't have permission to use recording functions.%cr%Please call 0212 473 7373.;Kayıt fonksiyonlarını kullanma yetkiniz bulunmamaktadır.%cr%Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E103_29;;Recording error. %cr%Please stop recording and start again.;Kaydetme hatası %cr%Lütfen kaydı durdurup yeniden başlatınız.
-SMARTCARD_RIGHTS_MESSAGE_E104_29;;Recording error. %cr%Please stop recording and start again.;Kaydetme hatası %cr%Lütfen kaydı durdurup yeniden başlatın.
-SMARTCARD_RIGHTS_MESSAGE_E106_9;;Please zap to a free or DIGITURK channel.;Farklı şifreleme sistemi ile şifrelenmiş kanal. %cr%Lütfen, şifresiz veya DIGITURK tarafından şifrelenmiş bir kanala geçiniz.
-SMARTCARD_RIGHTS_MESSAGE_E127_4;;Recording has expired. %cr%You can not playback this recording anymore.;Kaydın son izleme tarihi geçmiş. %cr%Bu kayıt artık izlenemez.
-SMARTCARD_RIGHTS_MESSAGE_E128_4;;You don't have permission to use recording functions.%cr%Please call 0212 473 7373.;Kayıt fonksiyonlarını kullanma yetkiniz bulunmamaktadır.%cr%Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E16_4_3;;This is a subscription program.<br><br>www.digiturk.com.tr/destek;Üyeliğiniz bu kanalın bulunduğu paketi kapsamamaktadır. <br><br>www.digiturk.com.tr/destek
+SMARTCARD_RIGHTS_MESSAGE_E18_4_3;;This is a subscription program.<br><br>www.digiturk.com.tr/destek;Üyeliğiniz bu kanalın bulunduğu paketi kapsamamaktadır. <br><br>www.digiturk.com.tr/destek
+SMARTCARD_RIGHTS_MESSAGE_E19_4;;Your channels are not authorized since you didn't use the service for a long time.<br>You can wait a while on this channel for authorization or you can write E194 and send an SMS* to 3555 from your Digiturk registered cell phone.<br>* For SMS prices please visit www.digiturk.com.tr/destek web site;Uzun süredir Digiturk kanallarını izlemediniz. <br>Dilerseniz kanallarınızın yetkilendirilmesi için bir süre bekleyebilir ya da yetkilendirme işlemini hemen gerçekleştirmek için bu kanal açıkken Digiturk'e kayıtlı cep telefonunuzdan E194 yazıp 3555'e SMS* gönderebilirsiniz.<br>* SMS ücretlendirmesi hakkında bilgi almak için: www.digiturk.com.tr/destek
+SMARTCARD_RIGHTS_MESSAGE_E20_4;;This program is not avaliable in your area/country. <br>Please zap to another DIGITURK service.;Ülkesel/Bölgesel kanaldır. <br>Lütfen başka bir DIGITURK kanalına geçiniz.
+SMARTCARD_RIGHTS_MESSAGE_E21_4;;This program is not avaliable in your area/country. <br>Please zap to another DIGITURK service.;Ülkesel/Bölgesel kanaldır. <br>Lütfen başka bir DIGITURK kanalına geçiniz.
+SMARTCARD_RIGHTS_MESSAGE_E30_4;;Validation of smart card is in progress, please wait. <br>If problem continues power off and power on your receiver. <br>If problem still continues, you can write E304 and send an SMS* to 3555 from your Digiturk registered cell phone. <br>* For SMS prices please visit www.digiturk.com.tr/destek web site.;Digital kartınız doğrulanıyor, lütfen kısa bir süre bekleyiniz. <br>Sorun çözülmezse uydu alıcınızı fişten çıkarıp tekrar fişe takınız. <br>Uydu alıcınız açıldığında problem düzelmediyse Digiturk'e kayıtlı cep telefonunuzdan E304 yazıp 3555'e SMS* gönderebilirsiniz. <br>* SMS ücretlendirmesi hakkında bilgi almak için: <br>www.digiturk.com.tr/destek
+SMARTCARD_RIGHTS_MESSAGE_E05_4;;Error reading smart card<br>Please call 0212 473 7373.;Dijital kart okuma hatası.<br>Lütfen 0212 473 7373'ü arayınız.
+SMARTCARD_RIGHTS_MESSAGE_E100_2;;Smart card Error.<br>Remove and insert back your smart card. <br>If the problem persists, please call 0212 473 7373.;Dijital kart hatası<br>Dijital katınızı çıkarıp tekrar takınız. <br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E101_29;;You don't have permission to use recording functions.<br>Please call 0212 473 7373.;Kayıt fonksiyonlarını kullanma yetkiniz bulunmamaktadır.<br>Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E102_29;;You don't have permission to use recording functions.<br>Please call 0212 473 7373.;Kayıt fonksiyonlarını kullanma yetkiniz bulunmamaktadır.<br>Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E103_29;;Recording error. <br>Please stop recording and start again.;Kaydetme hatası <br>Lütfen kaydı durdurup yeniden başlatınız.
+SMARTCARD_RIGHTS_MESSAGE_E104_29;;Recording error. <br>Please stop recording and start again.;Kaydetme hatası <br>Lütfen kaydı durdurup yeniden başlatın.
+SMARTCARD_RIGHTS_MESSAGE_E106_9;;Please zap to a free or DIGITURK channel.;Farklı şifreleme sistemi ile şifrelenmiş kanal. <br>Lütfen, şifresiz veya DIGITURK tarafından şifrelenmiş bir kanala geçiniz.
+SMARTCARD_RIGHTS_MESSAGE_E127_4;;Recording has expired. <br>You can not playback this recording anymore.;Kaydın son izleme tarihi geçmiş. <br>Bu kayıt artık izlenemez.
+SMARTCARD_RIGHTS_MESSAGE_E128_4;;You don't have permission to use recording functions.<br>Please call 0212 473 7373.;Kayıt fonksiyonlarını kullanma yetkiniz bulunmamaktadır.<br>Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
 SMARTCARD_RIGHTS_MESSAGE_E130_4;;You have no rights to record this channel.;Bu kanalın kaydedilmesi engellenmiştir.
-SMARTCARD_RIGHTS_MESSAGE_E131_4;;You don't have authorization for recording.%cr% Please call 0212 473 7373.;Kayıt fonksiyonlarını kullanma yetkiniz bulunmamaktadır.%cr%Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E132_4;;You don't have permission to use recording functions.%cr%Please call 0212 473 7373.;Kayıt fonksiyonlarını kullanma yetkiniz bulunmamaktadır.%cr%Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E131_4;;You don't have authorization for recording.<br> Please call 0212 473 7373.;Kayıt fonksiyonlarını kullanma yetkiniz bulunmamaktadır.<br>Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E132_4;;You don't have permission to use recording functions.<br>Please call 0212 473 7373.;Kayıt fonksiyonlarını kullanma yetkiniz bulunmamaktadır.<br>Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
 SMARTCARD_RIGHTS_MESSAGE_E135_4;;You have no rights to record this channel.;Bu kanalın kaydedilmesi engellenmiştir.
-SMARTCARD_RIGHTS_MESSAGE_E33_4;;Error reading smart card. %cr%Please call 0212 473 7373.;Dijital kart hatası%cr%Dijital katınızı çıkarıp tekrar takınız. %cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E101_3;;Please call 0212 473 7373.;Lütfen uydu alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz
-SMARTCARD_RIGHTS_MESSAGE_E101_4;;Digital Card error. %cr%Please plug your set top box to signal cable and electricity and wait for a while.;Lütfen DigiKutunuz fişe takılı ve sinyal alıyor durumda bekleyiniz.%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E101_8;;Please call 0212 473 7373.;Uydu alıcınızı fişten çıkarıp tekrar fişe takınız ve 1 numaralı kanalda 5 dakika bekleyiniz.%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E101_11;;Please call 0212 473 7373.;Lütfen Uydu Alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E101_31;;Please call 0212 473 7373.;Lütfen Uydu Alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E102_6;;Please call 0212 473 7373.;Lütfen Uydu Alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E104_9;;Please call 0212 473 7373.;Lütfen Uydu Alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz
-SMARTCARD_RIGHTS_MESSAGE_E105_6;;Please call 0212 473 7373.;Lütfen Uydu Alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E37;;There is no service at this channel number.%cr% Please do channel installation.;Tuşladığınız numarada kanal yok. %cr%Lütfen, kanal kurulumu yapınız.
+SMARTCARD_RIGHTS_MESSAGE_E33_4;;Error reading smart card. <br>Please call 0212 473 7373.;Dijital kart hatası<br>Dijital katınızı çıkarıp tekrar takınız. <br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E101_3;;Please call 0212 473 7373.;Lütfen uydu alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.<br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz
+SMARTCARD_RIGHTS_MESSAGE_E101_4;;Digital Card error. <br>Please plug your set top box to signal cable and electricity and wait for a while.;Lütfen DigiKutunuz fişe takılı ve sinyal alıyor durumda bekleyiniz.<br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E101_8;;Please call 0212 473 7373.;Uydu alıcınızı fişten çıkarıp tekrar fişe takınız ve 1 numaralı kanalda 5 dakika bekleyiniz.<br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E101_11;;Please call 0212 473 7373.;Lütfen Uydu Alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.<br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E101_31;;Please call 0212 473 7373.;Lütfen Uydu Alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.<br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E102_6;;Please call 0212 473 7373.;Lütfen Uydu Alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.<br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E104_9;;Please call 0212 473 7373.;Lütfen Uydu Alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.<br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz
+SMARTCARD_RIGHTS_MESSAGE_E105_6;;Please call 0212 473 7373.;Lütfen Uydu Alıcınız fişe takılı ve sinyal alıyor durumda bekleyiniz.<br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E37;;There is no service at this channel number.<br> Please do channel installation.;Tuşladığınız numarada kanal yok. <br>Lütfen, kanal kurulumu yapınız.
 SMARTCARD_RIGHTS_MESSAGE_E38;;No broadcast at this channel.;Kanalda yayın yok.
-SMARTCARD_RIGHTS_MESSAGE_E39;;There is no service at this channel number.%cr% Please do channel installation.;Tuşladığınız numarada kanal yok. %cr%Lütfen, kanal kurulumu yapınız.
-SMARTCARD_RIGHTS_MESSAGE_E40;;Set top box memory is full. %cr%Unplug your set top box from electricity connection and plug again after 10 seconds.%cr% If the problem persists, please call 0212 473 7373.;Kutu hafızası dolu.%cr%Uydu Alıcınızın fişini çıkarıp 10 sn sonra tekrar takınız.%cr%Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E39;;There is no service at this channel number.<br> Please do channel installation.;Tuşladığınız numarada kanal yok. <br>Lütfen, kanal kurulumu yapınız.
+SMARTCARD_RIGHTS_MESSAGE_E40;;Set top box memory is full. <br>Unplug your set top box from electricity connection and plug again after 10 seconds.<br> If the problem persists, please call 0212 473 7373.;Kutu hafızası dolu.<br>Uydu Alıcınızın fişini çıkarıp 10 sn sonra tekrar takınız.<br>Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
 SMARTCARD_RIGHTS_MESSAGE_E44;;Please call 0212 473 7373.;Çözüm için www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E49;;LNB overload. Please call 0212 473 7373.;Uydu alıcınızı fişten çıkarıp 10 dk sonra tekrar fişe takınız.%cr%Problem düzelmezse lütfen 0212 473 7373'ü arayınız.
+SMARTCARD_RIGHTS_MESSAGE_E49;;LNB overload. Please call 0212 473 7373.;Uydu alıcınızı fişten çıkarıp 10 dk sonra tekrar fişe takınız.<br>Problem düzelmezse lütfen 0212 473 7373'ü arayınız.
 SMARTCARD_RIGHTS_MESSAGE_E120_4;;Please wait, while the card is being synchronized.;Digital Kartınızın zaman bilgileri güncelleniyor, lütfen kısa bir süre bekleyiniz.
 SMARTCARD_RIGHTS_MESSAGE_E151_4;;Timestamp not supplied.;Zaman damgası bulunamadı.
 SMARTCARD_RIGHTS_MESSAGE_E145_4;;No permission to view this channel on your secondary TV. To update your subscription, call %1. smart card number: %2;Lütfen 0212 473 7373'ü arayınız.
@@ -1274,8 +1275,8 @@ SMARTCARD_RIGHTS_MESSAGE_E109_4;;Currently unable to view this channel. If the p
 SMARTCARD_RIGHTS_MESSAGE_E100_4;;Currently unable to view this channel. If the problem persists, call %1. smart card number: %2;Lütfen 0212 473 7373'ü arayınız.
 SMARTCARD_RIGHTS_MESSAGE_E101_5;;Incomplete Definition.;Lütfen 0212 473 7373'ü arayınız.
 SMARTCARD_RIGHTS_MESSAGE_E101_10;;Cannot allocate descrambler.;Lütfen 0212 473 7373'ü arayınız.
-SMARTCARD_RIGHTS_MESSAGE_E24_12;;This is an IPPV event. Price: %1 TL%cr%In order to rent this program: %cr%- you can write %2 and send an SMS* to 3555.%cr%- you can visit our web page digiturk.com.tr/boxoffice%cr%- you can call 0212 473 73 73%cr%* For SMS fees, please visit digiturk.com/boxoffice;Bu bir İzle Öde programıdır.Fiyat: %1 TL%cr%Kiralamak için: %cr%- %2 yazıp 3555’e SMS* gönderebilir,%cr%- digiturk.com.tr/boxoffice adresini ziyaret edebilir,%cr%0212 473 73 73'ü arayabilirsiniz.%cr%* SMS ücretlendirmesi hakkında bilgi almak için digiturk.com.tr/boxoffice adresini ziyaret edebilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E24_12_WITHOUT_SMS_CODE;;This is an IPPV event.\n\nIn order to rent this program: %cr%- you can visit our web page digiturk.com.tr/boxoffice%cr%- you can call 0212 473 7373;Bu bir İzle Öde programıdır.%cr%Bu programı kiralamak için: %cr%- digiturk.com.tr/boxoffice adresini ziyaret edebilir,%cr%- 0212 473 7373’ü arayabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E24_12;;This is an IPPV event. Price: %1 TL<br>In order to rent this program: <br>- you can write %2 and send an SMS* to 3555.<br>- you can visit our web page digiturk.com.tr/boxoffice<br>- you can call 0212 473 73 73<br>* For SMS fees, please visit digiturk.com/boxoffice;Bu bir İzle Öde programıdır.Fiyat: %1 TL<br>Kiralamak için: <br>- %2 yazıp 3555’e SMS* gönderebilir,<br>- digiturk.com.tr/boxoffice adresini ziyaret edebilir,<br>0212 473 73 73'ü arayabilirsiniz.<br>* SMS ücretlendirmesi hakkında bilgi almak için digiturk.com.tr/boxoffice adresini ziyaret edebilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E24_12_WITHOUT_SMS_CODE;;This is an IPPV event.\n\nIn order to rent this program: <br>- you can visit our web page digiturk.com.tr/boxoffice<br>- you can call 0212 473 7373;Bu bir İzle Öde programıdır.<br>Bu programı kiralamak için: <br>- digiturk.com.tr/boxoffice adresini ziyaret edebilir,<br>- 0212 473 7373’ü arayabilirsiniz.
 SMARTCARD_RIGHTS_MESSAGE_E101_27;;Incomplete Definition.;Lütfen 0212 473 7373'ü arayınız.
 SMARTCARD_RIGHTS_MESSAGE_E101_28;;Incomplete Definition.;Lütfen 0212 473 7373'ü arayınız.
 SMARTCARD_RIGHTS_MESSAGE_E101_30;;PVR Encryption not available.;Lütfen 0212 473 7373'ü arayınız.
@@ -1290,12 +1291,12 @@ SMARTCARD_RIGHTS_MESSAGE_E89_48;;No Buy Window;Lütfen 0212 473 7373'ü arayın�
 SMARTCARD_RIGHTS_MESSAGE_E88_48;;No Order;Lütfen 0212 473 7373'ü arayınız.
 SMARTCARD_RIGHTS_MESSAGE_E87_48;;Ticket Record Store Full;Lütfen 0212 473 7373'ü arayınız.
 SMARTCARD_RIGHTS_MESSAGE_E93_49;;Wrong PPV Mode;Lütfen 0212 473 7373'ü arayınız.
-SMARTCARD_RIGHTS_MESSAGE_E207_4;;You need to upgrade to latest software for displaying content.%cr%You can upgrade to latest software using Menu/Settings/Installation/New Software Search;Yayınları izleyebilmek için uydu alıcınızın yazılımını güncellemelisiniz.%cr%Menü/Ayarlar/Kurulum/Yeni Yazılım Ara adımından yazılımı güncelleyebilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E207_4;;You need to upgrade to latest software for displaying content.<br>You can upgrade to latest software using Menu/Settings/Installation/New Software Search;Yayınları izleyebilmek için uydu alıcınızın yazılımını güncellemelisiniz.<br>Menü/Ayarlar/Kurulum/Yeni Yazılım Ara adımından yazılımı güncelleyebilirsiniz.
 POPUP_RIGHTS_MESSAGE_SUPERSCRAMBLE;;You can not use your HDD with another STB;Hard diskinizi başka bir uydu alıcısı ile kullanamazsınız
 STBANDSMARTCARDINFO_SEARCHINDEX_VALUE_NOFILE;;NO FILE;DOSYA YOK
 SETUP_INSTALL_MESSAGE_EASYDGTKINSTALL;;You can start channel search by pressing OK button.;Kanal aramaya başlamak için OK tuşuna basınız.
-SETUP_SOFTWARE_MESSAGE_NEWSOFTWARESEARCH;;If you suspect your software is not up to date, you can search for an update by pressing OK. For automatic update, make sure you frequently put your decoder on stand-by. %cr%Search may take 15 sec.;Uydu alıcınızda yüklü yazılımın güncel olup olmadığını kontrol etmek için OK tuşuna basınız.%cr%%cr%Yazılımınızın otomatik olarak güncelenebilmesi için uydu alıcınızı kullanmadığınız zamanlarda bekleme (standby) konumunda bırakınız.
-SETUP_SOFTWARE_MESSAGE_NEWSEARCH;;After OK confirmation, popup screen  (searching and dowloading a new sofware may take  some time. Do you want to continue?);Daha güncel yazılım bulunuyor. %cr%Şu anda güncelleme yapmanız halinde devam eden kayıtlarınız durdurulacak ve sistem yeniden başlatılacaktır. Bu işlem 30 dakika kadar sürebilir.%cr%Devam etmek istiyor musunuz?
+SETUP_SOFTWARE_MESSAGE_NEWSOFTWARESEARCH;;If you suspect your software is not up to date, you can search for an update by pressing OK. For automatic update, make sure you frequently put your decoder on stand-by. <br>Search may take 15 sec.;Uydu alıcınızda yüklü yazılımın güncel olup olmadığını kontrol etmek için OK tuşuna basınız.<br><br>Yazılımınızın otomatik olarak güncelenebilmesi için uydu alıcınızı kullanmadığınız zamanlarda bekleme (standby) konumunda bırakınız.
+SETUP_SOFTWARE_MESSAGE_NEWSEARCH;;After OK confirmation, popup screen  (searching and dowloading a new sofware may take  some time. Do you want to continue?);Daha güncel yazılım bulunuyor. <br>Şu anda güncelleme yapmanız halinde devam eden kayıtlarınız durdurulacak ve sistem yeniden başlatılacaktır. Bu işlem 30 dakika kadar sürebilir.<br>Devam etmek istiyor musunuz?
 SETDEFAULTPARAMETERS_DEFAULT_MESSAGE_INFO;;To Set all values to default pres OK.;Varsayılan değerlere geri dönmek için OK tuşuna basınız.
 AUTOMATICSTANDBY_AUTOMATICSTANDBY_PARAMETER_AUTOMATICSTANDBY;;AUTOMATIC STANDBY;OTOMATİK STANDBY
 AUTOMATICSTANDBY_AUTOMATICSTANDBY_HELP_ASPECT;;Your set-top-box will go to standby mode, if there is no action in the duration you set.;Uydu alıcınızda belirli bir süre boyunca hiçbir işlem yapılmaması halinde, otomatik olarak standby (bekleme) moduna geçecektir.
@@ -1304,9 +1305,9 @@ HDDSETTINGS_CAPACITY_FREE;;FREE DISK SPACE;BOŞ DİSK ALANI
 HDDSETTINGS_CAPACITY_USED;;USED DISK SPACE;DOLU DİSK ALANI
 HDDSETTINGS_CAPACITY_TOTAL;;TOTAL DISK SPACE;TOPLAM DİSK ALANI
 HDDSETTINGS_FORMAT_ACTION_HDD;;FORMAT HDD;SABİT DİSKİ FORMATLA
-HDDSETTINGS_HDD_MESSAGE_FORMATHDD;;Format all datas available in hdd.%cr%Your set top box will reboot automatically after format.;Sabit diskinizde kayıtlı herşey silinecek!%cr%Formatlama tamamlandıktan sonra kutunuz kapanıp, tekrar açılacaktır.
+HDDSETTINGS_HDD_MESSAGE_FORMATHDD;;Format all datas available in hdd.<br>Your set top box will reboot automatically after format.;Sabit diskinizde kayıtlı herşey silinecek!<br>Formatlama tamamlandıktan sonra kutunuz kapanıp, tekrar açılacaktır.
 ACCESSCONTROL_SETTINGS_ACTION_PINCODECHANGE;;PIN CODE CHANGE;PIN KODU DEĞİŞTİRME
-ACCESSCONTROL_SETTINGS_HELP_PINCODECHANGE;;You can modify your PIN Code. %cr%By default, PIN Code is set to 0000;PIN Kodunuzu buradan değiştirebilirsiniz.%cr%Daha önce değiştirmediyseniz, PIN Kodunuz 0000'dır.
+ACCESSCONTROL_SETTINGS_HELP_PINCODECHANGE;;You can modify your PIN Code. <br>By default, PIN Code is set to 0000;PIN Kodunuzu buradan değiştirebilirsiniz.<br>Daha önce değiştirmediyseniz, PIN Kodunuz 0000'dır.
 ACCESSCONTROL_SETTINGS_ACTION_CONTROLSETTINGS;;CONTROL SETTINGS;KONTROL AYARLARI
 ACCESSCONTROL_CHANNEL_ACTION_LOCKUNLOCK;;CHANNEL LOCK UNLOCK;KANAL KİLİDİ
 ACCESSCONTROL_SETTINGS_ACTION_TVWATCHINGLIMIT;;TV WATCHING LIMIT;TV İZLEME LİMİTİ
@@ -1349,7 +1350,7 @@ CALLCENTER_NUMBER_VALUE_NUMBER;;0212 473 73 73;0212 473 7373
 TECHNICALSERVICE_NUMBER_VALUE_NUMBER;;0212 473 73 73;0212 473 7373
 POWERCYCLE_START_ACTION_START;;START POWER CYCLE;ŞİMDİ YENİDEN BAŞLAT
 POWERCYCLE_START_ACTION_CONFIRM;;CONFIRM POWER CYCLE;YENİDEN BAŞLATMAYI ONAYLA
-POWERCYCLE_WARNING_MESSAGE_INSTRUCTION;;Your device will be reset. %cr%Do you want to continue?;Uydu alıcınız kapatılıp yeniden açılacaktır. %cr%Devam etmek istiyor musunuz?
+POWERCYCLE_WARNING_MESSAGE_INSTRUCTION;;Your device will be reset. <br>Do you want to continue?;Uydu alıcınız kapatılıp yeniden açılacaktır. <br>Devam etmek istiyor musunuz?
 DIGIAKTIF_MENU_ACTION_LAUNCH;;LAUNCH;BAĞLAN
 DIGIAKTIF_MENU_ACTION_INSTALL;;INSTALL;KUR
 DIGIAKTIF_WIDGET_MESSAGE_IPCONNECTION;;Connect your box to access this application as well as the beIN CONNECT service and enriched data.;beIN CONNECT’e erişmek için uydu alıcınızın internet bağlantısını yapınız.
@@ -1363,11 +1364,11 @@ PLANNER_TAG_PARAMETER_TIMEHELP;;Tag notification will be displayed on time you e
 SCHEDULING_TIME_PARAMETER_ENDTIMEHELP;;Enter recording end time.;Kaydın sonlanmasını istediğiniz saati giriniz.
 SCHEDULING_CHANNEL_MESSAGE_HELP;;Use up-down buttons or enter channel number to choose channel.;Aşağı-yukarı yön tuşlarıyla ilerleyerek veya kanal no girerek kanal seçebilirsiniz.
 SCHEDULING_TIME_PARAMETER_STARTTIMEHELP;;Enter recording start time.;Kaydın başlamasını istediğiniz saati giriniz.
-SMARTCARD_IPPV_MESSAGE_PREVIEW;;In order to rent this program (Price: %1 TL)  %cr%You can write %2 and send an SMS* to 3555 %cr%*For SMS fees please visit digiturk.com.tr/boxoffice;Bu programı kiralamak için (Fiyat: %1 TL) %cr% %2 yazıp 3555’e SMS* gönderebilirsiniz. %cr% *SMS ücretlendirmesi hakkında bilgi almak için digiturk.com.tr/boxoffice adresini ziyaret edebilirsiniz.
-SMARTCARD_IPPV_MESSAGE_PREVIEW_WITHOUT_SMS_CODE;;In order to rent this program: %cr%-you can visit our web page digiturk.com.tr/boxoffice %cr%-you can call 0212 473 7373;Bu programı kiralamak için: %cr%- digiturk.com.tr/boxoffice adresini ziyaret edebilir, %cr%- 0212 473 7373’ü arayabilirsiniz.
-SMARTCARD_IPPV_MESSAGE_IPREVIEW;;In order to rent this program (Price: %1 TL) %cr%You can press ‘OK’ then enter your PIN Code.;Bu programı kiralamak için (Fiyat: %1 TL)  %cr%‘OK’ tuşuna basıp PIN kodunuzu girebilirsiniz.
-SMARTCARD_IPPV_MESSAGE_PURCHASE;;This is pay per view event.Price:%1 TL%cr%In order to buy this program you can write %2 and send an SMS to 3555.%cr%ADVANTAGE packet subscribers will not be charged further for %cr%purchasing this program.(Adult channels are not included) 0212 473 73 73;Bu bir izle öde programıdır.Fiyat: %1 TL%cr% %2 yazıp 3555’e SMS gönderebilirsiniz.%cr%AVANTAJ paket üyeleri Salon Kanallarından, program satın aldıklarında ayrıca ücretlendirilmeyecektir. (Yetişkin kanallar dahil değildir) 0212 473 73 73
-SMARTCARD_IPPV_MESSAGE_IPURCHASE;;This is pay per view event.Price:%1 TL%cr%In order to buy this program you can press ‘OK’ then enter your pin code or %cr%you can write %2 and send an SMS to 3555.%cr%ADVANTAGE packet subscribers will not be charged further for %cr%purchasing this program.(Adult channels are not included) 0212 473 73 73;Bu bir izle öde programıdır.Fiyat:%1 TL%cr%Bu programı satın almak için ‘OK’ tuşuna basıp PIN kodunuzu girebilirsiniz veya %cr% %2 yazıp 3555’e SMS gönderebilirsiniz.%cr%AVANTAJ paket üyeleri Salon Kanallarından, program satın aldıklarında ayrıca ücretlendirilmeyecektir. (Yetişkin kanallar dahil değildir) 0212 473 73 73
+SMARTCARD_IPPV_MESSAGE_PREVIEW;;In order to rent this program (Price: %1 TL)  <br>You can write %2 and send an SMS* to 3555 <br>*For SMS fees please visit digiturk.com.tr/boxoffice;Bu programı kiralamak için (Fiyat: %1 TL) <br> %2 yazıp 3555’e SMS* gönderebilirsiniz. <br> *SMS ücretlendirmesi hakkında bilgi almak için digiturk.com.tr/boxoffice adresini ziyaret edebilirsiniz.
+SMARTCARD_IPPV_MESSAGE_PREVIEW_WITHOUT_SMS_CODE;;In order to rent this program: <br>-you can visit our web page digiturk.com.tr/boxoffice <br>-you can call 0212 473 7373;Bu programı kiralamak için: <br>- digiturk.com.tr/boxoffice adresini ziyaret edebilir, <br>- 0212 473 7373’ü arayabilirsiniz.
+SMARTCARD_IPPV_MESSAGE_IPREVIEW;;In order to rent this program (Price: %1 TL) <br>You can press ‘OK’ then enter your PIN Code.;Bu programı kiralamak için (Fiyat: %1 TL)  <br>‘OK’ tuşuna basıp PIN kodunuzu girebilirsiniz.
+SMARTCARD_IPPV_MESSAGE_PURCHASE;;This is pay per view event.Price:%1 TL<br>In order to buy this program you can write %2 and send an SMS to 3555.<br>ADVANTAGE packet subscribers will not be charged further for <br>purchasing this program.(Adult channels are not included) 0212 473 73 73;Bu bir izle öde programıdır.Fiyat: %1 TL<br> %2 yazıp 3555’e SMS gönderebilirsiniz.<br>AVANTAJ paket üyeleri Salon Kanallarından, program satın aldıklarında ayrıca ücretlendirilmeyecektir. (Yetişkin kanallar dahil değildir) 0212 473 73 73
+SMARTCARD_IPPV_MESSAGE_IPURCHASE;;This is pay per view event.Price:%1 TL<br>In order to buy this program you can press ‘OK’ then enter your pin code or <br>you can write %2 and send an SMS to 3555.<br>ADVANTAGE packet subscribers will not be charged further for <br>purchasing this program.(Adult channels are not included) 0212 473 73 73;Bu bir izle öde programıdır.Fiyat:%1 TL<br>Bu programı satın almak için ‘OK’ tuşuna basıp PIN kodunuzu girebilirsiniz veya <br> %2 yazıp 3555’e SMS gönderebilirsiniz.<br>AVANTAJ paket üyeleri Salon Kanallarından, program satın aldıklarında ayrıca ücretlendirilmeyecektir. (Yetişkin kanallar dahil değildir) 0212 473 73 73
 VOD_CATEGORY_ACTION_VOD;;DIGITURK PORTAL;DIGITURK PORTAL
 VOD_CATEGORY_ACTION_MENU;;MENU;MENÜ
 VOD_CATEGORY_ACTION_PREVIOUS;;PREVIOUS CATEGORY;GERİ DÖN
@@ -1458,21 +1459,21 @@ INSTALL_CONFLICT_ACTION_IGNORESCHEDULE;;IGNORE SCHEDULE;PLANI DİKKATE ALMA
 INSTALL_CONFLICT_ACTION_PERFORMINSTALL;;PERFORM INSTALLATION;KURULUMU BAŞLAT
 INSTALL_CONFLICT_ACTION_VIEWRECS;;VIEW SCHEDULED RECORDINGS;PLANLANMIŞ KAYITLARI GÖSTER
 INSTALL_CONFLICT_ACTION_CANCELCLOSE;;CANCEL & CLOSE;İPTAL ET & KAPAT
-POPUP_ACTIONNOTIFICATION_MESSAGE_RECLOCKED;;This recording is locked. %cr%Please enter your PIN.;Kayıt kilitli. %cr%Lütfen PIN Kodunuzu giriniz.
+POPUP_ACTIONNOTIFICATION_MESSAGE_RECLOCKED;;This recording is locked. <br>Please enter your PIN.;Kayıt kilitli. <br>Lütfen PIN Kodunuzu giriniz.
 SMARTCARD_IPPV_MESSAGE_PINLOCK;;To purchase this IPPV event, please enter your PIN code.;İzle-Öde programı satınalmak için lütfen PIN Kodunuzu giriniz.
 DIGIAKTIF_WIDGET_MESSAGE_FACEBOOK;;Interact with your friends while whaching TV.;Facebook'ta durumunuzu güncelleyin, arkadaşlarınız neler yapıyor takip edin.
 DIGIAKTIF_WIDGET_MESSAGE_TWITTER;;Send tweets, short text messages, to your community.;Twitter üzerinde tweet atabilir, takip ettiklerinizin tweetlerini okuyabilirsiniz
 DIGIAKTIF_WIDGET_MESSAGE_PICASA;;Share photo albums with your family and friends.;Picasa’da paylaşılmış albümlere ulaşabilirsiniz.
 DIGIAKTIF_WIDGET_MESSAGE_YOUTUBE;;Use this application to discover, watch and share videos.;Youtube’da yer alan videoları izleyebilirsiniz.
 DIGIAKTIF_WIDGET_MESSAGE_WIKIPEDIA;;Access the online free collaborative encyclopedia.;Wikipedia’nın türkçe versiyonuna erişip, çok çeşitli konuda bilgi bulabilirsiniz
-SCHEDULING_TIME_PARAMETER_DATEHELP;;Enter recording date.%cr%If you choose frequency, repeating recording plans will be generated automatically.;Kayıt tarihini giriniz. %cr%Sıklık seçerseniz sonraki kayıt planları bu tarihten itibaren otomatik olarak oluşturulur.
+SCHEDULING_TIME_PARAMETER_DATEHELP;;Enter recording date.<br>If you choose frequency, repeating recording plans will be generated automatically.;Kayıt tarihini giriniz. <br>Sıklık seçerseniz sonraki kayıt planları bu tarihten itibaren otomatik olarak oluşturulur.
 SCHEDULING_FREQUENCY_PARAMETER_FREQUENCYHELP;;If you want to repeat this plan, enter frequency.;Yaptığınız planın belli aralıklarla tekrarlanmasını istiyorsanız dilediğiniz sıklığı seçebilirsiniz.
 SCHEDULING_LOCK_PARAMETER_LOCKHELP;;To lock this recording choose YES.;Bu kayda PIN Kodu girilmeden erişilmesini engellemek için bu seçeneği EVET olarak değiştiriniz.
 SCHEDULING_PLAYLIST_PARAMETER_PLAYLISTHELP;;To copy recording one of your playlists choose list.;Bu kaydın bir kayıt klasörüne kopyalanmasını istiyorsanız, burada seçiminizi yapabilirsiniz.
 PLANNER_TAG_PARAMETER_FREQUENCYHELP;;If you want to repeat this tag, enter frequency.;Oluşturduğunuz etiket uyarısının düzenli olarak tekrar etmesi için dilediğiniz sıklığı seçebilirsiniz.
-SEARCH_NODATA_MESSAGE_NOTAVAILABLE;;Search index file will be updated soon.;İsterseniz modunuz, içeriğin formatı gibi kriterle arama yapabilir. Ne aradığımı biliyorum diyorsanız içeriğin adı veya oyuncu/yönetmen ismini girip arama yabilirsiniz.%cr%%cr%Arama kaynak dosyası kısa süre içinde yüklenecektir.
+SEARCH_NODATA_MESSAGE_NOTAVAILABLE;;Search index file will be updated soon.;İsterseniz modunuz, içeriğin formatı gibi kriterle arama yapabilir. Ne aradığımı biliyorum diyorsanız içeriğin adı veya oyuncu/yönetmen ismini girip arama yabilirsiniz.<br><br>Arama kaynak dosyası kısa süre içinde yüklenecektir.
 RECORDINGSETTINGS_HIDE_ACTION_LOCKRECORDINGS;;HIDE LOCKS;KİLİTLİLERİ SAKLA
-ENTERPIN_LOCK_MESSAGE_MIDPINBLOCK;;You have entered a wrong PIN.%cr%Please wait %1 min to try again.;Hatalı PIN kodu girdiniz. %cr%Lütfen %1 dakika sonra tekrar deneyiniz.
+ENTERPIN_LOCK_MESSAGE_MIDPINBLOCK;;You have entered a wrong PIN.<br>Please wait %1 min to try again.;Hatalı PIN kodu girdiniz. <br>Lütfen %1 dakika sonra tekrar deneyiniz.
 LANG_TUR;;TURKISH;TÜRKÇE
 LANG_TRK;;TURKISH;TÜRKÇE
 LANG_ENG;;ENGLISH;İNGİLİZCE
@@ -1491,22 +1492,22 @@ LANG_GRE;;GREEK;YUNANCA
 LANG_ELL;;GREEK;YUNANCA
 LANG_ORJ;;ORIGINAL;ORİJİNAL
 SMARTCARD_RIGHTS_MESSAGE_E04_4;;Please insert smart card.;Lütfen dijital kartınızı takınız.
-SMARTCARD_RIGHTS_MESSAGE_E06_4;;Smart card is wrongly inserted.%cr%Please check smart card direction and try again.%cr%For detailed information: www.digiturk.com.tr/destek;Dijital kart hatası.%cr%Dijital kartınızı çıkarıp tekrar takınız. %cr%Sorun devam ediyorsa, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.%cr%Detaylı bilgi için : www.digiturk.com.tr/destek
+SMARTCARD_RIGHTS_MESSAGE_E06_4;;Smart card is wrongly inserted.<br>Please check smart card direction and try again.<br>For detailed information: www.digiturk.com.tr/destek;Dijital kart hatası.<br>Dijital kartınızı çıkarıp tekrar takınız. <br>Sorun devam ediyorsa, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.<br>Detaylı bilgi için : www.digiturk.com.tr/destek
 SMARTCARD_RIGHTS_MESSAGE_E112_37;;You have no rights to record this channel.;Bu kanalın kaydedilmesi engellenmiştir.
 SMARTCARD_RIGHTS_MESSAGE_E118_37;;You have no rights to record this channel.;Bu kanalın kaydedilmesi engellenmiştir.
-SMARTCARD_RIGHTS_MESSAGE_E133_4;;Please call 0212 473 7373.;Uydu alıcınızı fişten çıkarıp tekrar fişe takınız ve 1 numaralı kanalda 5 dakika bekleyiniz.%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E133_4;;Please call 0212 473 7373.;Uydu alıcınızı fişten çıkarıp tekrar fişe takınız ve 1 numaralı kanalda 5 dakika bekleyiniz.<br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz.
 SMARTCARD_RIGHTS_MESSAGE_E200;;On this service timeshift is not allowed.;Bu kanalda zaman ötelemeye izin verilmemektedir.
-SMARTCARD_RIGHTS_MESSAGE_E27_12;;You are not allowed to purchase IPPV events from this screen.%cr%Please call 0212 473 7373.;Bu ekrandan İzle ve Öde programı satın almak için yetkili değilsiniz.%cr%Lütfen 0212 473 7373'ü arayınız.
-SMARTCARD_RIGHTS_MESSAGE_E28_12;;You are not allowed to purchase IPPV events from this screen.%cr%Please call 0212 473 7373.;Bu ekrandan İzle ve Öde programı satın almak için yetkili değilsiniz.%cr%Lütfen 0212 473 7373'ü arayınız.
-SMARTCARD_RIGHTS_MESSAGE_E37_32;;There is no service at this channel number.%cr%Please do channel installation.;Tuşladığınız numarada kanal yok.%cr%Lütfen, kanal kurulumu yapınız.
+SMARTCARD_RIGHTS_MESSAGE_E27_12;;You are not allowed to purchase IPPV events from this screen.<br>Please call 0212 473 7373.;Bu ekrandan İzle ve Öde programı satın almak için yetkili değilsiniz.<br>Lütfen 0212 473 7373'ü arayınız.
+SMARTCARD_RIGHTS_MESSAGE_E28_12;;You are not allowed to purchase IPPV events from this screen.<br>Please call 0212 473 7373.;Bu ekrandan İzle ve Öde programı satın almak için yetkili değilsiniz.<br>Lütfen 0212 473 7373'ü arayınız.
+SMARTCARD_RIGHTS_MESSAGE_E37_32;;There is no service at this channel number.<br>Please do channel installation.;Tuşladığınız numarada kanal yok.<br>Lütfen, kanal kurulumu yapınız.
 SMARTCARD_RIGHTS_MESSAGE_E42;;Please Enter Your PIN Code.;Lütfen PIN kodunuzu giriniz.
-SMARTCARD_RIGHTS_MESSAGE_E52_32;;Loss of signal. %cr%Check your signal connections, power off and power on your receiver and perform channel installation by Easy Installation%cr%%cr%0212 473 7373 ;Sinyal seviyesinde azalma var. %cr%Sinyal bağlantılarını kontrol edip, uydu alıcınızı fişten çıkarıp tekrar fişe takınız ve Kolay Kurulum ekranından kanal kurulumu yapınız.%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz
-SMARTCARD_RIGHTS_MESSAGE_E53;;Incorrect PIN code, please try again.;Hatalı PIN kodu. %cr%Lütfen tekrar deneyiniz.
-SMARTCARD_RIGHTS_MESSAGE_E58;;Loss of signal. %cr%Check your signal connections, power off and power on your receiver and perform channel installation by Easy Installation%cr%%cr%0212 473 7373 ;Sinyal seviyesinde azalma var. %cr%Sinyal bağlantılarını kontrol edip, uydu alıcınızı fişten çıkarıp tekrar fişe takınız ve Kolay Kurulum ekranından kanal kurulumu yapınız.%cr%Detaylı çözüm için%cr%www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz
-SMARTCARD_RIGHTS_MESSAGE_E76_1;;Hard disc of your set top box has been swapped. %cr%Please call 212-4737373 to activate the new hard disc.;Uydu Alıcınızın sabit diski değiştirilmiş.%cr%Yeni diskin aktive edilmesi için lütfen, 0212 473 7373'ü arayarak bilgi veriniz.
+SMARTCARD_RIGHTS_MESSAGE_E52_32;;Loss of signal. <br>Check your signal connections, power off and power on your receiver and perform channel installation by Easy Installation<br><br>0212 473 7373 ;Sinyal seviyesinde azalma var. <br>Sinyal bağlantılarını kontrol edip, uydu alıcınızı fişten çıkarıp tekrar fişe takınız ve Kolay Kurulum ekranından kanal kurulumu yapınız.<br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz
+SMARTCARD_RIGHTS_MESSAGE_E53;;Incorrect PIN code, please try again.;Hatalı PIN kodu. <br>Lütfen tekrar deneyiniz.
+SMARTCARD_RIGHTS_MESSAGE_E58;;Loss of signal. <br>Check your signal connections, power off and power on your receiver and perform channel installation by Easy Installation<br><br>0212 473 7373 ;Sinyal seviyesinde azalma var. <br>Sinyal bağlantılarını kontrol edip, uydu alıcınızı fişten çıkarıp tekrar fişe takınız ve Kolay Kurulum ekranından kanal kurulumu yapınız.<br>Detaylı çözüm için<br>www.digiturk.com.tr/destek adresinden bilgi alabilirsiniz
+SMARTCARD_RIGHTS_MESSAGE_E76_1;;Hard disc of your set top box has been swapped. <br>Please call 212-4737373 to activate the new hard disc.;Uydu Alıcınızın sabit diski değiştirilmiş.<br>Yeni diskin aktive edilmesi için lütfen, 0212 473 7373'ü arayarak bilgi veriniz.
 POPUP_SIGNAL_MESSAGE_LOSS;;SIGNAL LOSS;SİNYAL KAYBEDİLDİ
 POPUP_ACTIONNOTIFICATION_MESSAGE_TITLECONFLICT;;NEW CONFLICT;KAYIT ÇAKIŞMASI
-POPUP_ACTIONNOTIFICATION_MESSAGE_NEWCONFLICT;;A new conflict has been detected.%cr%One of your recordings will not be performed correctly.;Yeni bir kayıt çakışması oluştu.%cr%Planladığınız kayıtlardan biri eksik yapılabilir.
+POPUP_ACTIONNOTIFICATION_MESSAGE_NEWCONFLICT;;A new conflict has been detected.<br>One of your recordings will not be performed correctly.;Yeni bir kayıt çakışması oluştu.<br>Planladığınız kayıtlardan biri eksik yapılabilir.
 SEARCH_FORMAT_VALUE_ANYFORMAT;;Any Format;Tüm Formatlar
 SEARCH_YEAR_VALUE_ALL;;All;Hepsi
 SEARCH_YEAR_VALUE_NEW;;New;Yeni
@@ -1515,7 +1516,7 @@ SEARCH_YEAR_VALUE_70S;;70's;70'ler
 SEARCH_YEAR_VALUE_80S;;80's;80'ler
 SEARCH_YEAR_VALUE_90S;;90's;90'lar
 SEARCH_YEAR_VALUE_00S;;00's;00'lar
-POPUP_ACTIONNOTIFICATION_MESSAGE_VIDEO;;Unable to display the video content.%cr%The video file is not accessible or may be damaged.;İçeriğe ait video ekrana getirilemiyor.%cr%Dosyaya erişilemiyor ve bozulmuş olabilir.
+POPUP_ACTIONNOTIFICATION_MESSAGE_VIDEO;;Unable to display the video content.<br>The video file is not accessible or may be damaged.;İçeriğe ait video ekrana getirilemiyor.<br>Dosyaya erişilemiyor ve bozulmuş olabilir.
 LAYOUT_MEDIA_VALUE_IPTV;;Portal;Portal
 LAYOUT_MEDIA_VALUE_REC;;Record;Kayıt
 LAYOUT_MEDIA_VALUE_VOD;;Portal;Portal
@@ -1524,7 +1525,7 @@ SEARCH_RESULT_VALUE_RESULTMAX;;RESULT %1 OF A MAX. OF %2;İLK %2 SONUÇTA %1
 SEARCH_RESULT_VALUE_RESULT;;RESULT %1 OF %2 ;SONUÇ %1 / %2
 SEARCH_RESULT_PORTAL;;Portal;Portal
 DIGITURK_PORTAL_CONTACT;;For your ideas and opinions about Digiturk Portal, please send mail to portal@digiturk.com.tr;Digiturk Portal hakkındaki görüş ve önerileriniz için portal@digiturk.com.tr adresine mail gönderebilirsiniz.
-RECOMMENDATIONS_NODATA_MESSAGE_NOCONTENT;;This feature is available when HDD is plugged.%cr%You can call 212-473 7373 to demand appropriate HDD.%cr%If you have HDD, this feature will be activated soon.;Bu özellik yanlızca sabit disk takılıyken kullanılabilir. %cr%Uyumlu sabit disk talep etmek için Çağrı Merkezini arayabilirsiniz. 212-473 7373. %cr%Sabit diskiniz takılıysa bu özellik kısa süre içinde etkinleşecektir.
+RECOMMENDATIONS_NODATA_MESSAGE_NOCONTENT;;This feature is available when HDD is plugged.<br>You can call 212-473 7373 to demand appropriate HDD.<br>If you have HDD, this feature will be activated soon.;Bu özellik yanlızca sabit disk takılıyken kullanılabilir. <br>Uyumlu sabit disk talep etmek için Çağrı Merkezini arayabilirsiniz. 212-473 7373. <br>Sabit diskiniz takılıysa bu özellik kısa süre içinde etkinleşecektir.
 POPUP_ACTIONNOTIFICATION_MESSAGE_EMPTYFAVLIST;;Empty favorite fist.;Favori Listesi boş.
 POPUP_ACTIONNOTIFICATION_MESSAGE_EMPTYLIST;;No channels defined in the selected favourites list menu;Bu favori listesine kanal tanımlanmamış.
 SMARTCARD_RIGHTS_MESSAGE_E118_4;;Please call 0212 473 7373.;Lütfen 0212 473 7373'ü arayınız.
@@ -1533,7 +1534,7 @@ POPUP_ACTIONNOTIFICATION_VALUE_RECERROR;;Recording Error;Kaydetme hatası.
 RECORDINGS_DELETE_MESSAGE_CONFIRMDEL;;Your recordings have been deleted.;Kayıtlarınız silinmiştir.
 RECORDINGS_SCHEDULE_MESSAGE_CONFIRMREC;;Your recording has been created.;Kayıt planınız oluşturuldu.
 RECORDINGS_TAG_MESSAGE_CONFIRMTAG;;Your time-based tag has been created.;Zaman bazlı etiket oluşturuldu.
-RECORDINGS_MESSAGE_CONFIRM_LOCK;;Lock operation is completed successfully.;Seçtiğiniz kayıtların kilitleri düzenlenmiştir. %cr%Kitlediğiniz kayıtlara KİLİTLİ KAYITLAR sekmesinden ulaşabilirsiniz.
+RECORDINGS_MESSAGE_CONFIRM_LOCK;;Lock operation is completed successfully.;Seçtiğiniz kayıtların kilitleri düzenlenmiştir. <br>Kitlediğiniz kayıtlara KİLİTLİ KAYITLAR sekmesinden ulaşabilirsiniz.
 POPUP_ACTIONNOTIFICATION_MESSAGE_DELALLREC;;The multiple recordings you attempted to delete failed. Please try again.;Çoklu kayıt silme işleminiz başarısız oldu. Lütfen tekrar deneyiniz.
 EVENTOPTION_SCHEDULE_MESSAGE_CONFIRMCANCEL;;Your recording has been canceled.;Kayıt planı iptal edildi
 EVENTOPTION_SCHEDULE_MESSAGE_CONFIRMSTOP;;Your recording has been stopped.;Kayıt durduruldu.
@@ -1547,17 +1548,17 @@ POPUP_NOTIFICATIONS_MESSAGE_REMAININGVIEW;;You can watch this video %1 more time
 POPUP_NOTIFICATIONS_MESSAGE_NOREMAININGVIEW;;You have reach the maximum number of playback;İzleme adedi limitine ulaştınız.
 EVENTOPTION_TAG_MESSAGE_CONFIRMTAG;;Your event-based tag has been created.;Program için etiket oluşturuldu.
 POPUP_ACTIONNOTIFICATION_VALUE_AUTOSLEEP;;Auto-Sleep;Otomatik kapama
-POPUP_ACTIONNOTIFICATION_MESSAGE_AUTOSLEEP;;The auto sleep time you have set is now elapsed.%cr%Your decoder will now go into stand-by.;Ayarladığınız otomatik kapanış saati geldi.%cr%Uydu alıcınız standby moduna geçecek.
-POPUP_ACTIONNOTIFICATION_MESSAGE_TIMESHIFTDISABLED;;Timeshift has been disable in the PVR Settings menu. %cr%Please enable again to allow timeshift.;Zaman öteleme yapılamıyor.%cr%Kişisel Kayıt Ayarları menüsünden Canlı Yayın Otomatik Kaydı 'Kapalı' konuma getirilmiş, 'Açık' konuma getirip tekrar deneyiniz.
+POPUP_ACTIONNOTIFICATION_MESSAGE_AUTOSLEEP;;The auto sleep time you have set is now elapsed.<br>Your decoder will now go into stand-by.;Ayarladığınız otomatik kapanış saati geldi.<br>Uydu alıcınız standby moduna geçecek.
+POPUP_ACTIONNOTIFICATION_MESSAGE_TIMESHIFTDISABLED;;Timeshift has been disable in the PVR Settings menu. <br>Please enable again to allow timeshift.;Zaman öteleme yapılamıyor.<br>Kişisel Kayıt Ayarları menüsünden Canlı Yayın Otomatik Kaydı 'Kapalı' konuma getirilmiş, 'Açık' konuma getirip tekrar deneyiniz.
 POPUP_DELETIONCONFIRMATION_VALUE_MULTIPLEDELETION;;Multiple deletion;Çoklu silme
-POPUP_DELETIONCONFIRMATION_MESSAGE_MULTIPLEDELETION;;Enter your PIN to delete the selected recordings. %cr%This operation cannot be reversed.;Seçtiğiniz kayıtların silinmesi için PIN kodunuzu giriniz.%cr%Bu işlem geri alınamaz!
+POPUP_DELETIONCONFIRMATION_MESSAGE_MULTIPLEDELETION;;Enter your PIN to delete the selected recordings. <br>This operation cannot be reversed.;Seçtiğiniz kayıtların silinmesi için PIN kodunuzu giriniz.<br>Bu işlem geri alınamaz!
 POPUP_DELETIONCONFIRMATION_ACTION_MULTIPLEDELETION;;CANCEL DELETION;SİLMEKTEN VAZGEÇ
 EVENTOPTION_RECORD_MESSAGE_CONFIRMMODIFY;;Your recording has been modified.;Kayıt düzenleme işleminiz tamamlandı.
 EVENTOPTION_TAG_MESSAGE_CONFIRMMODIFY;;Your tag has been modified.;Etiket düzenleme işleminiz tamamlandı.
 EVENTOPTION_RECORD_MESSAGE_ERROR;;There is an error on current operation.;Yapmakta olduğunuz işlemde hata oluştu.
-SMARTCARD_RIGHTS_MESSAGE_E180;;All tuners are used for recording purposes.%cr%Only currently recorded channels are accessable.%cr%%cr%To access other channels you can stop one of the ongoing recordings.;Aynı anda iki kayıt devam ederken sadece kaydedilmekte olan kanalları veya önceden kaydedilmiş programları izleyebilirsiniz.%cr%Diğer kanalları izlemek için kayıtlardan birini durdurabilirsiniz.
-SMARTCARD_RIGHTS_MESSAGE_E201;;Time shift doesn't work.%cr%Please, try again later.;Zaman öteleme yapılamıyor.%cr%Lütfen daha sonra tekrar deneyiniz.
-SMARTCARD_RIGHTS_MESSAGE_E202;;Timeshift has been disable in the PVR Settings menu. %cr%Please enable again to allow timeshift.;Zaman öteleme yapılamıyor.%cr%Kişisel Kayıt Ayarları menüsünden Canlı Yayın Otomatik Kaydı 'Kapalı' konuma getirilmiş, 'Açık' konuma getirip tekrar deneyiniz.
+SMARTCARD_RIGHTS_MESSAGE_E180;;All tuners are used for recording purposes.<br>Only currently recorded channels are accessable.<br><br>To access other channels you can stop one of the ongoing recordings.;Aynı anda iki kayıt devam ederken sadece kaydedilmekte olan kanalları veya önceden kaydedilmiş programları izleyebilirsiniz.<br>Diğer kanalları izlemek için kayıtlardan birini durdurabilirsiniz.
+SMARTCARD_RIGHTS_MESSAGE_E201;;Time shift doesn't work.<br>Please, try again later.;Zaman öteleme yapılamıyor.<br>Lütfen daha sonra tekrar deneyiniz.
+SMARTCARD_RIGHTS_MESSAGE_E202;;Timeshift has been disable in the PVR Settings menu. <br>Please enable again to allow timeshift.;Zaman öteleme yapılamıyor.<br>Kişisel Kayıt Ayarları menüsünden Canlı Yayın Otomatik Kaydı 'Kapalı' konuma getirilmiş, 'Açık' konuma getirip tekrar deneyiniz.
 SMARTCARD_RIGHTS_MESSAGE_E501;;The file has been removed from your disk through auto-delete.;Bu kayıt otomatik silme işlemi ile sabit diskinizden silinmiştir.
 SMARTCARD_STATUS_ACTION_TITLE;;Smart Card Status;Smart Card Status
 SMARTCARD_STATUS_PARAMETER_STATUS;;Status;Status
@@ -1605,8 +1606,8 @@ POPUP_ACTIONNOTIFICATION_MESSAGE_AUTOMATICSTANDBY;;Your receiver will automatica
 POPUP_ACTIONNOTIFICATION_LABEL_AUTOMATICSTANDBY;;Automatic Standby;Otomatik Standby
 POPUP_ACTIONNOTIFICATION_MESSAGE_VODSTOPCONFIRM;;Do you want to stop playing ?;Videoyu durdurmak istediğinizden emin misiniz?
 POPUP_ACTIONNOTIFICATION_MESSAGE_VODNEXTEPISODE;;Next episode will be automatically played in %1 s.;Sonraki bölüm %1 s içinde otomatik olarak başlatılacaktır.
-POPUP_ACTIONNOTIFICATION_MESSAGE_STOPSCHEDULING;;This recording as a periodicity do you want to delete all its recurrence ?;Bu tekrarlı bir kayıt planıdır. %cr%Tüm kayıt planını iptal etmek istediğinize emin misiniz?.
-POPUP_ACTIONNOTIFICATION_MESSAGE_STOPTAG;;This tag as a periodicity do you want to delete all its recurrence ?;Bu tekrarlı bir kayıt etikettir. %cr%Tüm kayıt planını mı, sadece bu tarihteki planı mı silmek istediğinizi seçiniz.
+POPUP_ACTIONNOTIFICATION_MESSAGE_STOPSCHEDULING;;This recording as a periodicity do you want to delete all its recurrence ?;Bu tekrarlı bir kayıt planıdır. <br>Tüm kayıt planını iptal etmek istediğinize emin misiniz?.
+POPUP_ACTIONNOTIFICATION_MESSAGE_STOPTAG;;This tag as a periodicity do you want to delete all its recurrence ?;Bu tekrarlı bir kayıt etikettir. <br>Tüm kayıt planını mı, sadece bu tarihteki planı mı silmek istediğinizi seçiniz.
 POPUP_ACTIONNOTIFICATION_ACTION_ALLRECURRENCES;;ALL RECURRENCES;TÜM TEKRARLAR
 POPUP_ACTIONNOTIFICATION_ACTION_NEXTRECURRENCE;;NEXT RECURRENCE;BU TARİHTEKİ
 VOD_PLAY_ACTION_INTURKISH;;PLAY IN TURKISH ;DUBLAJLI İZLE
@@ -1624,15 +1625,15 @@ GENERIC_TEXT_VALUE_INFORMATION;;INFORMATION;BİLGİ
 VOD_WARNING_MESSAGE_FOLLOWME_INFORMATION;;Where would you like to play from?;Daha önce izlediğiniz bu içeriği nereden başlayarak izlemek istediğinizi seçiniz.
 VOD_PLAY_ACTION_FOLLOWME_FROMSTART;;FROM START;BAŞTAN
 VOD_PLAY_ACTION_FOLLOWME_FROMSTOP;;FROM LAST STOP;KALDIĞIM YERDEN
-POPUP_SCHEDULING_MESSAGE_ONSERIES;;Do you want to record all the episodes of the series or next episode only? These recordings will not be stored on your Hard Drive.;Bu içerik dizi olarak tanımlanmış. %cr%Sadece bu bölüm veya tüm bölümler için kayıt planlayabilirsiniz.
+POPUP_SCHEDULING_MESSAGE_ONSERIES;;Do you want to record all the episodes of the series or next episode only? These recordings will not be stored on your Hard Drive.;Bu içerik dizi olarak tanımlanmış. <br>Sadece bu bölüm veya tüm bölümler için kayıt planlayabilirsiniz.
 POPUP_SCHEDULING_ACTION_ONEEPISODE;;THIS EPISODE ONLY ;BU BÖLÜM
 POPUP_SCHEDULING_ACTION_ALLEPISODE;;ALL EPISODES;TÜM BÖLÜMLER
 POPUP_NOTIFICATIONS_LABEL_PIPIMPOSSIBLE;;Error PIP;KANAL TAKİP
-POPUP_NOTIFICATIONS_MESSAGE_PIPIMPOSSIBLE;;You can not use PIP on this channel.;Bu kanal takibe alınamıyor. %cr%Kilitli veya yetkiniz olmayan bir kanal olabilir.
+POPUP_NOTIFICATIONS_MESSAGE_PIPIMPOSSIBLE;;You can not use PIP on this channel.;Bu kanal takibe alınamıyor. <br>Kilitli veya yetkiniz olmayan bir kanal olabilir.
 POPUP_NOTIFICATIONS_MESSAGE_PIPIMPOSSIBLE_RECORD;;You can not use PIP with an ongoing recording. Please stop recording and try again.;Kanal takip ve kayıt özelliklerini beraber kullanamazsınız. Lütfen kaydı durdurup yeniden deneyin.
 POPUP_NOTIFICATIONS_MESSAGE_PIPIMPOSSIBLE_SAMECHANNEL;;You can not use PIP for the channels that you are watching in main window.;Ana ekranda izlemekte olduğunuz kanal dışındaki kanalları takip edebilirsiniz.
 POPUP_NOTIFICATIONS_MESSAGE_FORCEDMSG_CLOSEINFO;;Press ÇIKIŞ (exit) to close.;Kapatmak için ÇIKIŞ tuşuna basınız.
-EVENTOPTION_RENT_MESSAGE_NOT_POSSIBLE;;This is a subscription program.%cr%%cr%In order to subscribe to the package%cr%call DIGITURK Call Center.%cr%0212 473 73 73;Bu programı izlemek için üye olmanız gerekmektedir.%cr%%cr%Üyelik için DIGITURK Müşteri Hizmetlerini arayın.%cr%0212 473 73 73
+EVENTOPTION_RENT_MESSAGE_NOT_POSSIBLE;;This is a subscription program.<br><br>In order to subscribe to the package<br>call DIGITURK Call Center.<br>0212 473 73 73;Bu programı izlemek için üye olmanız gerekmektedir.<br><br>Üyelik için DIGITURK Müşteri Hizmetlerini arayın.<br>0212 473 73 73
 POPUP_ACTIONNOTIFICATION_MESSAGE_DELETE_RECORD;;DELETE RECORD;KAYDI SİL
 POPUP_ACTIONNOTIFICATION_MESSAGE_PLAY_NEXT;;PLAY NEXT;SONRAKİNİ İZLE
 POPUP_ACTIONNOTIFICATION_MESSAGE_CONFIRM_DELETE;;This record will be deleted. Are you sure?;İzlemekte olduğunuz kayıt silinecektir. Onaylıyor musunuz?
@@ -1649,18 +1650,18 @@ VOD_FEATURES_MESSAGE_CONFIRMREMOVEFROMFAV;;The content is removed from your favo
 VOD_FEATURES_ACTION_LASTWATCHED;;LAST WATCHED;SON İZLEDİKLERİM
 OKMENU_SPY_ACTION_SWAP_AUDIO;;SWAP AUDIO;SESLERİ DEĞİŞTİR
 VOD_NODATA_MESSAGE_RENTED;;There is no rented content;Kiraladığınız içerik bulunmamaktadır.
-VOD_CATALOGUE_MESSAGE_TEXT;;CONNECTION ERROR%cr%Connect your decoder to the IP service for a richer experience! %cr%Access 100s of movies, series in IQ Portal, never miss a show again with catch-up TV, get widgets, and more. %cr%Call customer service for assistance. 0212 473 7373;BAĞLANTI HATASI%cr%Uydu alıcınızı internete bağlayarak çok daha gelişmiş bir deneyim yaşayabilirsiniz.%cr%Yüzlerce film, dizi, belgesel, uygulamalar ve fazlası...%cr%Destek için Müşteri Hizmetlerini arayınız. 0212 4737373
-VOD_CATALOGUE_MESSAGE_PROXYERROR;;MAINTENANCE%cr%We are currently maintaining our servers to improve service quality.%cr%Please try it later.;BAKIM ÇALIŞMASI%cr%Hizmet kalitemizi artırmak için sunucularımızda bakım çalışması yapılmaktadır.%cr%Lütfen kısa bir süre sonra tekrar deneyiniz.
-VOD_NODATA_MESSAGE_ALL;;CONNECTION ERROR%cr%Please try again.%cr%If problem continues power off and power on your receiver.;BAĞLANTI HATASI%cr%Lütfen tekrar deneyiniz.%cr%Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
-VOD_NODATA_MESSAGE_TIMEOUT;;CONNECTION ERROR%cr%Please try again.%cr%If problem continues power off and power on your receiver.;BAĞLANTI HATASI%cr%Lütfen tekrar deneyiniz.%cr%Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
-VOD_ERROR_MESSAGE_GENDBS;;CONNECTION ERROR%cr%Please try again.%cr%If problem continues power off and power on your receiver.;BAĞLANTI HATASI%cr%Lütfen tekrar deneyiniz.%cr%Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
-VOD_ERROR_MESSAGE_ENCDBS;;CONNECTION ERROR%cr%Please try again.%cr%If problem continues power off and power on your receiver.;BAĞLANTI HATASI%cr%Lütfen tekrar deneyiniz.%cr%Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
-VOD_ERROR_MESSAGE_GENPORTAL;;CONNECTION ERROR%cr%Please try again.%cr%If problem continues power off and power on your receiver.;BAĞLANTI HATASI%cr%Lütfen tekrar deneyiniz.%cr%Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
-VOD_ERROR_MESSAGE_RESOLV;;CONNECTION ERROR%cr%Please try again.%cr%If problem continues power off and power on your receiver.;BAĞLANTI HATASI%cr%Lütfen tekrar deneyiniz.%cr%Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
-VOD_ERROR_MESSAGE_SERVICELAYER;;CONNECTION ERROR%cr%Please try again.%cr%If problem continues power off and power on your receiver.%cr%Call customer service for assistance.0212 4737373;BAĞLANTI HATASI%cr%Lütfen tekrar deneyiniz.%cr%Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.%cr%Destek için Müşteri Hizmetlerini arayınız. 0212 4737373
-VOD_ERROR_MESSAGE_BADURLS;;HTTP Media Service Provider Error. %cr%Please try again later;HTTP Medya Servis Sağlayıcı Hatası. %cr%Lütfen daha sonra tekrar deneyiniz.
-VOD_ERROR_MESSAGE_SIGNALLOST;;This service is only available when the signal cable is connected. Please connect your signal cable.;Bu servise sadece sinyal alınırken ulaşabilirsiniz. %cr%SMR0001%cr%Lütfen sinyal bağlantılarınızı kontrol ediniz.
-VOD_ERROR_MESSAGE_SMARTCARD;;This service is only available when the smart card is inserted. Please insert your smart card.;Bu servise sadece Dijital Kartınız takılı iken ulaşabilirsiniz. %cr%Lütfen Dijital Kartınız takınız.
+VOD_CATALOGUE_MESSAGE_TEXT;;CONNECTION ERROR<br>Connect your decoder to the IP service for a richer experience! <br>Access 100s of movies, series in IQ Portal, never miss a show again with catch-up TV, get widgets, and more. <br>Call customer service for assistance. 0212 473 7373;BAĞLANTI HATASI<br>Uydu alıcınızı internete bağlayarak çok daha gelişmiş bir deneyim yaşayabilirsiniz.<br>Yüzlerce film, dizi, belgesel, uygulamalar ve fazlası...<br>Destek için Müşteri Hizmetlerini arayınız. 0212 4737373
+VOD_CATALOGUE_MESSAGE_PROXYERROR;;MAINTENANCE<br>We are currently maintaining our servers to improve service quality.<br>Please try it later.;BAKIM ÇALIŞMASI<br>Hizmet kalitemizi artırmak için sunucularımızda bakım çalışması yapılmaktadır.<br>Lütfen kısa bir süre sonra tekrar deneyiniz.
+VOD_NODATA_MESSAGE_ALL;;CONNECTION ERROR<br>Please try again.<br>If problem continues power off and power on your receiver.;BAĞLANTI HATASI<br>Lütfen tekrar deneyiniz.<br>Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
+VOD_NODATA_MESSAGE_TIMEOUT;;CONNECTION ERROR<br>Please try again.<br>If problem continues power off and power on your receiver.;BAĞLANTI HATASI<br>Lütfen tekrar deneyiniz.<br>Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
+VOD_ERROR_MESSAGE_GENDBS;;CONNECTION ERROR<br>Please try again.<br>If problem continues power off and power on your receiver.;BAĞLANTI HATASI<br>Lütfen tekrar deneyiniz.<br>Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
+VOD_ERROR_MESSAGE_ENCDBS;;CONNECTION ERROR<br>Please try again.<br>If problem continues power off and power on your receiver.;BAĞLANTI HATASI<br>Lütfen tekrar deneyiniz.<br>Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
+VOD_ERROR_MESSAGE_GENPORTAL;;CONNECTION ERROR<br>Please try again.<br>If problem continues power off and power on your receiver.;BAĞLANTI HATASI<br>Lütfen tekrar deneyiniz.<br>Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
+VOD_ERROR_MESSAGE_RESOLV;;CONNECTION ERROR<br>Please try again.<br>If problem continues power off and power on your receiver.;BAĞLANTI HATASI<br>Lütfen tekrar deneyiniz.<br>Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.
+VOD_ERROR_MESSAGE_SERVICELAYER;;CONNECTION ERROR<br>Please try again.<br>If problem continues power off and power on your receiver.<br>Call customer service for assistance.0212 4737373;BAĞLANTI HATASI<br>Lütfen tekrar deneyiniz.<br>Eğer probleminiz çözülmezse, uydu alıcınızı fişten çıkarıp tekrar fişe takınız.<br>Destek için Müşteri Hizmetlerini arayınız. 0212 4737373
+VOD_ERROR_MESSAGE_BADURLS;;HTTP Media Service Provider Error. <br>Please try again later;HTTP Medya Servis Sağlayıcı Hatası. <br>Lütfen daha sonra tekrar deneyiniz.
+VOD_ERROR_MESSAGE_SIGNALLOST;;This service is only available when the signal cable is connected. Please connect your signal cable.;Bu servise sadece sinyal alınırken ulaşabilirsiniz. <br>SMR0001<br>Lütfen sinyal bağlantılarınızı kontrol ediniz.
+VOD_ERROR_MESSAGE_SMARTCARD;;This service is only available when the smart card is inserted. Please insert your smart card.;Bu servise sadece Dijital Kartınız takılı iken ulaşabilirsiniz. <br>Lütfen Dijital Kartınız takınız.
 VOD_ERROR_MESSAGE_SCANDSIGNAL;;This service is only available when the smart card is inserted and signal cable is connected.;Bu servise sadece sinyal alınırken ve Dijital Kartınız takılı iken ulaşabilirsiniz.
 LANG_BTM;;DESCRIPTIVE;BETİMLEMELİ
 VOD_PLAYERROR_MESSAGE_DRMWEBSERVICE;;DRM WebService Provider Error. Please try it again later.;DRM Webservis Sağlayıcı Hatası. Daha sonra tekrar deneyiniz.
@@ -1696,9 +1697,9 @@ VOD_CATALOGUE_MESSAGE_MOREINFOUSER;;This content is stored in your hdd. It will 
 VOD_FEATURES_ACTION_ADDPVRORDER;;CREATE RECORDING ORDER;KAYIT EMRİ VER
 VOD_FEATURES_ACTION_REMOVEPVRORDER;;DELETE RECORDING ORDER;KAYIT EMRİNİ İPTAL ET
 VOD_FEATURES_ACTION_MYPVR;;MY RECORDINGS;KAYDETTİKLERİM
-VOD_FEATURES_MESSAGE_NOPVRRECORDING;;No new episodes were added since you created the Recording Order.%cr%Please visit this page again later.;Kayıt emri verdiğiniz tarihten sonra yeni bölüm henüz eklenmemiş.%cr%%cr%Lütfen daha sonra tekrar ziyaret ediniz.
-VOD_FEATURES_MESSAGE_NOPVRCOMMAND_SERIES;;You need to create a Recording Order to see the episodes. %cr%%cr%After creating a Recording Order you will see the episodes here.;Bu dizinin bölümlerini izleyebilmek için kayıt emri oluşturmalısınız. %cr%%cr%Kayıt emri oluşturduğunuz tarihten itibaren yayınlanan bölümlere buradan ulaşabilirsiniz.%cr%
-POPUP_PVR_MESSAGE_ONCREATE;;Do you want to record all the episodes of the series or next episode only? These recordings will not be stored on your Hard Drive.;Bundan sonra yayınlanacak tüm bölümler veya tek bölüm için kayıt emri verebilirsiniz.%cr%Bu kayıtlar internetten erişiminize açılacaktır.
+VOD_FEATURES_MESSAGE_NOPVRRECORDING;;No new episodes were added since you created the Recording Order.<br>Please visit this page again later.;Kayıt emri verdiğiniz tarihten sonra yeni bölüm henüz eklenmemiş.<br><br>Lütfen daha sonra tekrar ziyaret ediniz.
+VOD_FEATURES_MESSAGE_NOPVRCOMMAND_SERIES;;You need to create a Recording Order to see the episodes. <br><br>After creating a Recording Order you will see the episodes here.;Bu dizinin bölümlerini izleyebilmek için kayıt emri oluşturmalısınız. <br><br>Kayıt emri oluşturduğunuz tarihten itibaren yayınlanan bölümlere buradan ulaşabilirsiniz.<br>
+POPUP_PVR_MESSAGE_ONCREATE;;Do you want to record all the episodes of the series or next episode only? These recordings will not be stored on your Hard Drive.;Bundan sonra yayınlanacak tüm bölümler veya tek bölüm için kayıt emri verebilirsiniz.<br>Bu kayıtlar internetten erişiminize açılacaktır.
 POPUP_PVR_ACTION_NEXTEPISODE;;NEXT EPISODE ONLY ;SONRAKİ BÖLÜM
 POPUP_PVR_ACTION_ALLEPISODE;;ALL EPISODES;TÜM BÖLÜMLER
 POPUP_PVR_ACTION_CANCEL;;CANCEL;VAZGEÇ
@@ -1713,7 +1714,7 @@ VOD_FEATURES_ACTION_DELETEPVREPISODE;;DELETE EPISODE;BÖLÜMÜ SİL
 VOD_FEATURES_MESSAGE_DELETEPVREPISODE;;Do you want to delete this episode?;Bu bölümü silmek istediğinizden emin misiniz?
 VOD_FEATURES_MESSAGE_NOPVRCOMMAND;;You need to create a Recording Order to view the contents of this channel.;Bu kanala ait içerikleri izleyebilmek için kayıt emri vermeniz gerekmektedir.
 LAYOUT_MOREINFO_MESSAGE_LASTRENTDATE;;LAST DATE FOR RENT :;KİRALAMA İÇİN SON TARİH :
-VOD_SALON_MESSAGE_RENTFAILED;;RENT ERROR%cr%Could not rent movie. Please check your connection and try again.;KİRALAMA HATASI%cr%Film kiralanamıyor. Lütfen internet bağlantınızı kontrol edip tekrar deneyiniz.
+VOD_SALON_MESSAGE_RENTFAILED;;RENT ERROR<br>Could not rent movie. Please check your connection and try again.;KİRALAMA HATASI<br>Film kiralanamıyor. Lütfen internet bağlantınızı kontrol edip tekrar deneyiniz.
 CONTROLSETTINGS_KID_AGE_SELECTION;;AGE LIMIT SETTINGS;ÇOCUK KİLİDİ
 CONTROLSETTINGS_KID_AGE_SELECTION_SUCCESS;;Age is saved successfull which age you entered;Seçtiğiniz yaş başarıyla kaydedilmiştir
 CONTROLSETTINGS_KID_AGE_SELECTION_TITLE;;Please enter your child age ;Lütfen çocuğunuzun yaşını giriniz.
@@ -1731,15 +1732,15 @@ POPUP_PAIRING_REQUEST_ACCEPT;;ACCEPT;EŞLEŞTİR
 POPUP_PAIRING_REQUEST_REJECT;;REJECT;REDDET
 POPUP_PAIRING_REQUEST_TITLE;;Pairing Request;Eşleşme İsteği
 EVENTOPTION_BUY_ACTION_BUY;;BUY (%1TL);SATIN AL (%1TL)
-ENTERPIN_LOCK_MESSAGE_SATIN_AL_LOCK;;Please, enter your PIN Code to buy this content.%cr%;Bu içeriği satın almak için lütfen PIN Kodunuzu giriniz.
+ENTERPIN_LOCK_MESSAGE_SATIN_AL_LOCK;;Please, enter your PIN Code to buy this content.<br>;Bu içeriği satın almak için lütfen PIN Kodunuzu giriniz.
 BUTTON_LABEL_BUY;;BUY;SATIN AL
-VOD_SALON_MESSAGE_SALEFAILED;;SALE ERROR%cr%Could not buy movie. Please check your connection and try again.;SATIN ALMA HATASI%cr%Film satın alınamıyor. Lütfen internet bağlantınızı kontrol edip tekrar deneyiniz.
+VOD_SALON_MESSAGE_SALEFAILED;;SALE ERROR<br>Could not buy movie. Please check your connection and try again.;SATIN ALMA HATASI<br>Film satın alınamıyor. Lütfen internet bağlantınızı kontrol edip tekrar deneyiniz.
 BUTTON_LABEL_RENT;;RENT;KİRALA
 BUTTON_LABEL_PRICE;;(%1);(%1)
 VOD_PLAY_ACTION_DESCRIPTIVE;;PLAY DESCRIPTIVE; BETİMLEMELİ İZLE
 POPUP_SCREEN_TEMP_PROBLEM_TEXT;;Temporary problem is occured. Press OK to exit this menu.;Geçici bir problem yaşanmakta. Bu menüden çıkmak için lütfen OK tuşuna basınız.
-ENTERPIN_LOCK_MESSAGE_SATIN_AL_LOCK;;Please, enter your PIN Code to buy this content to %1 TL.%cr%;Bu içeriği %1 TL'ye sınırsız izleme hakkı ile satın almak için lütfen PIN Kodunuzu giriniz.
-VOD_SALON_MESSAGE_SALEFAILED;;SALE ERROR%cr%Could not buy movie. Please check your connection and try again.;SATIN ALMA HATASI%cr%Film satın alınamıyor. Lütfen internet bağlantınızı kontrol edip tekrar deneyiniz.
+ENTERPIN_LOCK_MESSAGE_SATIN_AL_LOCK;;Please, enter your PIN Code to buy this content to %1 TL.<br>;Bu içeriği %1 TL'ye sınırsız izleme hakkı ile satın almak için lütfen PIN Kodunuzu giriniz.
+VOD_SALON_MESSAGE_SALEFAILED;;SALE ERROR<br>Could not buy movie. Please check your connection and try again.;SATIN ALMA HATASI<br>Film satın alınamıyor. Lütfen internet bağlantınızı kontrol edip tekrar deneyiniz.
 RECORD_LOCKED_AND_MOVED_TO_LOCKEDRECORDS;;Your record has been locked successfully and moved to 'LOCKED' tab.; Kaydınız başarıyla kilitlendi ve 'KİLİTLİ' sekmesine taşındı.
 RECORD_UNLOCKED_AND_MOVED_TO_ALLRECORDS;;Your record has been unlocked successfully and moved to 'ALL' tab.; Kaydınızın kilidi başarıyla kaldırıldı ve 'HEPSİ' sekmesine taşındı.
 PIP_NO_PERMISSION_POPUP;;You cannot use PIP on this channel.;Bu kanal için takip ekranı açamazsınız.
@@ -1793,15 +1794,15 @@ SEARCH_THEME_MUSIC;;Music;Müzik
 SEARCH_THEME_REALITY;;Reality;Reality
 
 #No HDD Messages
-MENU_NODATA_MESSAGE_NOHDD_1000;;HDD1000 HDD ERROR%cr%Recording feature is available when HDD is plugged.%cr%Be sure your HDD is plugged and power cycle set top box.;HDD1000 Sabit Disk Takılı Değil %cr% Kaydetme özelliği yalnızca sabit disk takılıyken kullanılabilir.%cr%Sabit diskin yerine oturduğuna emin olduktan sonra uydu alıcınızın fişini çıkarıp takınız.
-MENU_NODATA_MESSAGE_NOHDD_1001;;HDD1001 HDD ERROR%cr%Recording feature is available when HDD is plugged.%cr%Be sure your HDD is plugged and power cycle set top box.;HDD1001 Sabit Disk Takılı Değil %cr% Kaydetme özelliği yalnızca sabit disk takılıyken kullanılabilir.%cr%Sabit diskin yerine oturduğuna emin olduktan sonra uydu alıcınızın fişini çıkarıp takınız.
-MENU_NODATA_MESSAGE_NOHDD_1002;;HDD1002 HDD ERROR%cr%This feature is available when HDD is plugged.%cr%Be sure your HDD is plugged and power cycle set top box.;HDD1002 Sabit Disk Takılı Değil %cr% Bu özellik yanlızca sabit disk takılıyken kullanılabilir.%cr%Sabit diskin yerine oturduğuna emin olduktan sonra uydu alıcınızın fişini çıkarıp takınız.
-MENU_NODATA_MESSAGE_NOHDD_1003;;HDD1003 HDD ERROR%cr%This feature is available when HDD is plugged.%cr%You can call 212-473 7373 to demand appropriate HDD.%cr%If you have HDD, this feature will be activated soon.;HDD1003 SABİT DİSK HATASI %cr% Bu özellik yanlızca sabit disk takılıyken kullanılabilir.%cr%Sabit disk talep etmek için 0212 473 73 73'ü arayabilirsiniz.%cr%Sabit diskiniz takılıysa bu özellik kısa süre içinde etkinleşecektir.
+MENU_NODATA_MESSAGE_NOHDD_1000;;HDD1000 HDD ERROR<br>Recording feature is available when HDD is plugged.<br>Be sure your HDD is plugged and power cycle set top box.;HDD1000 Sabit Disk Takılı Değil <br> Kaydetme özelliği yalnızca sabit disk takılıyken kullanılabilir.<br>Sabit diskin yerine oturduğuna emin olduktan sonra uydu alıcınızın fişini çıkarıp takınız.
+MENU_NODATA_MESSAGE_NOHDD_1001;;HDD1001 HDD ERROR<br>Recording feature is available when HDD is plugged.<br>Be sure your HDD is plugged and power cycle set top box.;HDD1001 Sabit Disk Takılı Değil <br> Kaydetme özelliği yalnızca sabit disk takılıyken kullanılabilir.<br>Sabit diskin yerine oturduğuna emin olduktan sonra uydu alıcınızın fişini çıkarıp takınız.
+MENU_NODATA_MESSAGE_NOHDD_1002;;HDD1002 HDD ERROR<br>This feature is available when HDD is plugged.<br>Be sure your HDD is plugged and power cycle set top box.;HDD1002 Sabit Disk Takılı Değil <br> Bu özellik yanlızca sabit disk takılıyken kullanılabilir.<br>Sabit diskin yerine oturduğuna emin olduktan sonra uydu alıcınızın fişini çıkarıp takınız.
+MENU_NODATA_MESSAGE_NOHDD_1003;;HDD1003 HDD ERROR<br>This feature is available when HDD is plugged.<br>You can call 212-473 7373 to demand appropriate HDD.<br>If you have HDD, this feature will be activated soon.;HDD1003 SABİT DİSK HATASI <br> Bu özellik yanlızca sabit disk takılıyken kullanılabilir.<br>Sabit disk talep etmek için 0212 473 73 73'ü arayabilirsiniz.<br>Sabit diskiniz takılıysa bu özellik kısa süre içinde etkinleşecektir.
 
-MENU_NODATA_MESSAGE_NOHDD_1100;;HDD1100 HDD ERROR%cr%Recording feature is available when HDD is plugged. If you have HDD, plug again and power cycle set top box.;HDD1100 SABİT DİSK HATASI %cr%Kaydetme özelliği yalnızca sabit disk takılıyken kullanılabilir. Sabit diskiniz varsa kutunun fişini çıkarıp takın.
-RECOMMENDATION_NO_CONTENT_ERR_1004;;ERR1004 ERROR%cr%Recommended events will be loaded soon.%cr%Please try again later.;ERR1004 Önerilen İçerikler Yükleniyor%cr%Önerilen içerikler kısa süre içinde yüklenerek özellik aktiflenecektir.%cr%Lütfen daha sonra tekrar deneyiniz.
-DVDIGI_NO_CONTENT_ERR1005;;ERR1005%cr%DVDigi events will be loaded soon.%cr%Please try again later.;ERR1005%cr%DVDigi içerikleri uydu alıcınıza kısa süre içinde yüklenecektir.%cr%Uydu alıcınızı kullanmadığınız zamanlarda standby (bekleme) modunda bırakınız.
-SEARCH_MENU_NOT_AVAILABLE_ERR1003;;ERR1003 No Index File%cr%Search index file will be loaded soon.%cr%Please try again later.;ERR1003 Arama Kaynak Dosyası Yükleniyor%cr%Arama kaynak dosyası kısa süre içinde yüklenerek özellik aktiflenecektir.%cr%Lütfen daha sonra tekrar deneyiniz.
+MENU_NODATA_MESSAGE_NOHDD_1100;;HDD1100 HDD ERROR<br>Recording feature is available when HDD is plugged. If you have HDD, plug again and power cycle set top box.;HDD1100 SABİT DİSK HATASI <br>Kaydetme özelliği yalnızca sabit disk takılıyken kullanılabilir. Sabit diskiniz varsa kutunun fişini çıkarıp takın.
+RECOMMENDATION_NO_CONTENT_ERR_1004;;ERR1004 ERROR<br>Recommended events will be loaded soon.<br>Please try again later.;ERR1004 Önerilen İçerikler Yükleniyor<br>Önerilen içerikler kısa süre içinde yüklenerek özellik aktiflenecektir.<br>Lütfen daha sonra tekrar deneyiniz.
+DVDIGI_NO_CONTENT_ERR1005;;ERR1005<br>DVDigi events will be loaded soon.<br>Please try again later.;ERR1005<br>DVDigi içerikleri uydu alıcınıza kısa süre içinde yüklenecektir.<br>Uydu alıcınızı kullanmadığınız zamanlarda standby (bekleme) modunda bırakınız.
+SEARCH_MENU_NOT_AVAILABLE_ERR1003;;ERR1003 No Index File<br>Search index file will be loaded soon.<br>Please try again later.;ERR1003 Arama Kaynak Dosyası Yükleniyor<br>Arama kaynak dosyası kısa süre içinde yüklenerek özellik aktiflenecektir.<br>Lütfen daha sonra tekrar deneyiniz.
 
 #Footbal Application
 HIGHLIGHTS;;HIGHLIGHTS; ÖNEMLI ANLAR

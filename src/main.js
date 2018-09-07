@@ -17,6 +17,7 @@ Vue.prototype.$isFocused = false;
 const translations = LanguageHelper.createTranslations();
 const i18n = new VueI18n({
     locale: config.defaultLocale, // TODO set current language from a manager or something
+    silentTranslationWarn: true,
     messages: translations
 });
 
@@ -31,7 +32,11 @@ Vue.mixin({
         }
 
         const widget = this.$store.getters.widget;
-        this.$isFocused = widget && this.$options.name.toLowerCase() === widget.toLowerCase();
+        if (widget && this.$options && this.$options.name) {
+            this.$isFocused = this.$options.name.toLowerCase() === widget.toLowerCase();
+        } else {
+            this.$isFocused = false;
+        }
     },
     beforeDestroy() {
         if (this.observes) {

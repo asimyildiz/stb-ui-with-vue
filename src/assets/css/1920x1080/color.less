@@ -25,11 +25,10 @@
 @DDEMM_COLOR_BLUE : rgb(48,16,80);
 @DDEMM_COLOR_RED : rgb(240,0,0);*/
 
-
 .channelLogo {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 /************************************************************
@@ -37,26 +36,27 @@
  ***********************************************************/
 
 .setOpacity() {
-  @opacities: lightTransparency 0.79, mediumTransparency 0.84, standardTransparency 0.89, darkTransparency 0.95, opaqueTransparency 1;
-  .traverse(@iterator:1) when(@iterator <= length(@opacities)) {
-    @name: extract(extract(@opacities, @iterator),1);
-    body.@{name} & {
-      opacity: extract(extract(@opacities, @iterator),2);
-    }
+	@opacities: lightTransparency 0.79, mediumTransparency 0.84, standardTransparency 0.89, darkTransparency 0.95, opaqueTransparency 1;
+	.traverse(@iterator:1) when (@iterator <= length(@opacities)) {
+		@name: extract(extract(@opacities, @iterator), 1);
+		body.@{name} & {
+			opacity: extract(extract(@opacities, @iterator), 2);
+		}
 
-    .traverse((@iterator + 1));
-  }
-  .traverse();
+		.traverse((@iterator + 1));
+	}
+	.traverse();
 }
-.setBlurOpacity() {
-  @opacities: lightTransparency 0.59, mediumTransparency 0.64, standardTransparency 0.69, darkTransparency 0.74, opaqueTransparency 1;
-  .traverse(@iterator:1) when(@iterator <= length(@opacities)) {
-    @name: extract(extract(@opacities, @iterator),1);
-    body.@{name} & {
-      opacity: extract(extract(@opacities, @iterator),2);
-    }
 
-    .traverse((@iterator + 1));
-  }
-  .traverse();
+.setBlurOpacity() {
+	@opacities: lightTransparency 0.59, mediumTransparency 0.64, standardTransparency 0.69, darkTransparency 0.74, opaqueTransparency 1;
+	.traverse(@iterator:1) when (@iterator <= length(@opacities)) {
+		@name: extract(extract(@opacities, @iterator), 1);
+		body.@{name} & {
+			opacity: extract(extract(@opacities, @iterator), 2);
+		}
+
+		.traverse((@iterator + 1));
+	}
+	.traverse();
 }

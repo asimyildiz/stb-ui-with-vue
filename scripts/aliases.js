@@ -99,7 +99,7 @@ const findVendorFilesFor = (profile, alias, _imports, _exports, isGlobal) => {
                 for (let i = 0; i < filesLength; i++) {
                     parser(files[i], ((profile, file, error, ast) => {
                         createAlias(profile, alias, ast[0].name, file, _imports, _exports, filesLength, isGlobal);
-                        if (filesLength + 1 === aliasesCreated) {
+                        if (filesLength + 2 === aliasesCreated) { // TODO CHECK HERE SOMETHING IS WRONG WITH filesLength + X
                             if (isGlobal) {
                                 writeAliasesGlobal(_imports, _exports);
                             } else {

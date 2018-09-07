@@ -7,7 +7,7 @@ import isFunction from '../utils/IsFunction';
 import Arrays from '../utils/Arrays';
 
 /**
- * class for volume service
+ * class for channel service
  * @alias channelService
  */
 class AbstractChannelService extends AbstractFilterChannelService {
@@ -69,21 +69,6 @@ class AbstractChannelService extends AbstractFilterChannelService {
         this._activeFilteredListId = null;
     }
 
-    /**
-     * return channel list filter accordingly
-     * @param {Object} filter
-     * @returns {Promise<AbstractChannel[]>}
-     */
-    getChannelListByFilter(filter) {
-        let promiseGetChannelList = null;
-        if (filter.isFilter) {
-            promiseGetChannelList = this.getFilterList(filter.id);
-        } else {
-            promiseGetChannelList = this.getFavoriteList(filter);
-        }
-        return promiseGetChannelList;
-    }
-
     /** ***************************************************************************************
      * MODELs FACTORY
      **************************************************************************************** */
@@ -105,9 +90,11 @@ class AbstractChannelService extends AbstractFilterChannelService {
     }
 
     /** ***************************************************************************************
-     * CURRENT LIST
+     * PUBLIC API
      **************************************************************************************** */
-
+    /** ***************************************************************************************
+     * CHANNEL LIST
+     **************************************************************************************** */
     /**
      * Change the current list.
      *
@@ -168,10 +155,6 @@ class AbstractChannelService extends AbstractFilterChannelService {
         });
     }
 
-    /** ***************************************************************************************
-     * CHANNEL LIST
-     **************************************************************************************** */
-
     /**
      * Get the channels of the current channel list , sorted by LCN.
      * You can use the listId option to get a the channel of a specific list.
@@ -229,6 +212,21 @@ class AbstractChannelService extends AbstractFilterChannelService {
             })
             .then(list =>
                 list.filter(AbstractChannelService.byTypeFilter(type)));
+    }
+
+    /**
+     * return channel list filter accordingly
+     * @param {Object} filter
+     * @returns {Promise<AbstractChannel[]>}
+     */
+    getChannelListByFilter(filter) {
+        let promiseGetChannelList = null;
+        if (filter.isFilter) {
+            promiseGetChannelList = this.getFilterList(filter.id);
+        } else {
+            promiseGetChannelList = this.getFavoriteList(filter);
+        }
+        return promiseGetChannelList;
     }
 
     /** *********************************************************************************************************
@@ -350,25 +348,6 @@ class AbstractChannelService extends AbstractFilterChannelService {
         return this.find(item => item.isLocked());
     }
 
-    /** *********************************************************************************************************
-     * ABSTRACT
-     ********************************************************************************************************** */
-    /**
-     * Find channel(s) using a function as filter.
-     *
-     * @param {Function|null} filterFunction A function that takes a channel in arg and return true or false (true mean keep channel)
-     * @param {Object} [options] Additional options
-     * @param {Boolean} [options.force=false] If true, don't use the value stored in the cache
-     * @param {String} [options.listId=null] If set, get channel on a specific list
-     * @returns {Promise<AbstractChannel[], Error>} A promise (channel(s), error)
-     * @override
-     */
-    _find(filterFunction, options) {
-        options = options || {};
-        options.listId = this._currentChannelListId;
-        return this.getChannelList(options);
-    }
-
     /** ***************************************************************************************
      * SHORTCUTs
      **************************************************************************************** */
@@ -447,6 +426,14 @@ class AbstractChannelService extends AbstractFilterChannelService {
         options = options || {};
         options.listId = AbstractFavoritesAndBlockedList.BLOCKED_CHANNEL_LIST_ID;
         return this.getChannelList(options);
+    }
+
+    /**
+     * Clears channel cache
+     */
+    dropChannelCache() {
+        this.clearFilteredList(); // we need to also clear filter list here
+        ServiceCache.deleteFromCacheSync(AbstractFavoritesAndBlockedList.ALL_CHANNEL_LIST_ID);
     }
 
     /** ***************************************************************************************
@@ -695,6 +682,25 @@ class AbstractChannelService extends AbstractFilterChannelService {
     }
 
     /** ***************************************************************************************
+     * OVERRIDE
+     **************************************************************************************** */
+    /**
+     * Find channel(s) using a function as filter.
+     *
+     * @param {Function|null} filterFunction A function that takes a channel in arg and return true or false (true mean keep channel)
+     * @param {Object} [options] Additional options
+     * @param {Boolean} [options.force=false] If true, don't use the value stored in the cache
+     * @param {String} [options.listId=null] If set, get channel on a specific list
+     * @returns {Promise<AbstractChannel[], Error>} A promise (channel(s), error)
+     * @override
+     */
+    _find(filterFunction, options) {
+        options = options || {};
+        options.listId = this._currentChannelListId;
+        return this.getChannelList(options);
+    }
+
+    /** ***************************************************************************************
      * PROTECTED
      **************************************************************************************** */
 
@@ -742,12 +748,13 @@ class AbstractChannelService extends AbstractFilterChannelService {
     }
 
     /** ***************************************************************************************
-     * ABSTRACT
+     * ABSTRACT METHODs
      **************************************************************************************** */
     /**
      * create new channel
      * @param {Object} properties
      * @return {Promise<AbstractChannel>}
+     * @abstract
      * @protected
      */
     _newChannel(properties) {
@@ -761,6 +768,7 @@ class AbstractChannelService extends AbstractFilterChannelService {
      *
      * @param {Object} [options] Additional options
      * @returns {Promise<AbstractChannel[],Error>} A promise resolved with an array of channels or rejected in case of problem
+     * @abstract
      * @protected
      */
     _getAllList(options) {
@@ -777,18 +785,11 @@ class AbstractChannelService extends AbstractFilterChannelService {
      *
      * @param {String} listId The id of the list
      * @return {Promise<String,Error>} A promise (listId, error)
+     * @abstract
      * @protected
      */
     _setCurrentChannelListId(listId) {
         return Promise.resolve(listId);
-    }
-
-    /**
-     * Clears channel cache
-     */
-    dropChannelCache() {
-        this.clearFilteredList(); // we need to also clear filter list here
-        ServiceCache.deleteFromCacheSync(AbstractFavoritesAndBlockedList.ALL_CHANNEL_LIST_ID);
     }
 }
 

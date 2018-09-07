@@ -5,7 +5,7 @@ import DesktopChannel from '../models/DesktopChannel';
 import channelData from '../data/ChannelData';
 
 /**
- * class for volume service for desktop vendor implementation
+ * class for channel service for desktop vendor implementation
  * @alias channelService
  * @name DesktopChannelService
  */

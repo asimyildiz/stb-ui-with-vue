@@ -1,7 +1,7 @@
 import AbstractNativeObjectModel from './AbstractNativeObjectModel';
 
 /**
- * class for volume service
+ * class for channel model
  * @model AbstractChannel
  */
 class AbstractChannel extends AbstractNativeObjectModel {

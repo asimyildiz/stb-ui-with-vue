@@ -13,36 +13,36 @@
  * COMMON BODY RULE
  ***********************************************************/
 body {
-  width: @WIDTH_FULL;
-  height: @HEIGHT_FULL;
-  top: 0;
-  left: 0;
-  margin: 0;
-  .normalRegular();
-  font-family: @FONT_FAMILY;
-  font-weight: 400;
-  background-color: @DGK_GREY_160;
+	width: @WIDTH_FULL;
+	height: @HEIGHT_FULL;
+	top: 0;
+	left: 0;
+	margin: 0;
+	.normalRegular();
+	font-family: @FONT_FAMILY;
+	font-weight: 400;
+	background-color: @DGK_GREY_160;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /************************************************************
  * LAYERs
  ***********************************************************/
 .layer {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: @WIDTH_FULL;
-  height: @HEIGHT_FULL;
-  overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: @WIDTH_FULL;
+	height: @HEIGHT_FULL;
+	overflow: hidden;
 }
 
 .layer.hide {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 /************************************************************
@@ -50,72 +50,72 @@ body {
  ************************************************************/
 
 .noTransition() {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
 }
 
 .transition (@speed:200ms, @type:linear, @delay:0s) {
-  -webkit-transition: -webkit-transform @speed @type @delay;
-  -moz-transition: -moz-transform @speed @type @delay;
-  -ms-transition: -ms-transform @speed @type @delay;
-  -o-transition: -o-transform @speed @type @delay;
-  transition: transform @speed @type @delay;
+	-webkit-transition: -webkit-transform @speed @type @delay;
+	-moz-transition: -moz-transform @speed @type @delay;
+	-ms-transition: -ms-transform @speed @type @delay;
+	-o-transition: -o-transform @speed @type @delay;
+	transition: transform @speed @type @delay;
 }
 
 /************************************************************
  * TEMPLATING
  ***********************************************************/
 .ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-overflow: -o-ellipsis-lastline;
-  white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-overflow: -o-ellipsis-lastline;
+	white-space: nowrap;
 }
 
 .underscoreRed {
-  &:after {
-    content: "";
-    background: @DGK_RED;
-    position: absolute;
-    left: 0;
-    margin-top: 58px;
-    height: 3px;
-    width: 30px;
-  }
+	&:after {
+		content: "";
+		background: @DGK_RED;
+		position: absolute;
+		left: 0;
+		margin-top: 58px;
+		height: 3px;
+		width: 30px;
+	}
 }
 
 .lineHeight(@height) {
-  height: @height;
-  line-height: @height;
+	height: @height;
+	line-height: @height;
 }
 
 /************************************************************
  * BUTTONS
  ***********************************************************/
 .remoteButton () {
-  width: 32px;
-  height: 32px;
+	width: 32px;
+	height: 32px;
 }
 
 .remoteButtonBlue {
-  background: @ICON_REMOTE_BUTTON_BLUE no-repeat transparent;
-  .remoteButton();
+	background: @ICON_REMOTE_BUTTON_BLUE no-repeat transparent;
+	.remoteButton();
 }
 
 .remoteButtonGreen {
-  background: @ICON_REMOTE_BUTTON_GREEN no-repeat transparent;
-  .remoteButton();
+	background: @ICON_REMOTE_BUTTON_GREEN no-repeat transparent;
+	.remoteButton();
 }
 
 .remoteButtonRed {
-  background: @ICON_REMOTE_BUTTON_RED no-repeat transparent;
-  .remoteButton();
+	background: @ICON_REMOTE_BUTTON_RED no-repeat transparent;
+	.remoteButton();
 }
 
 .remoteButtonYellow {
-  background: @ICON_REMOTE_BUTTON_YELLOW no-repeat transparent;
-  .remoteButton();
+	background: @ICON_REMOTE_BUTTON_YELLOW no-repeat transparent;
+	.remoteButton();
 }

@@ -1,7 +1,8 @@
 <template>
     <div class="liveInfoScreen">
-        <LiveInfoChannelWidget ref="liveInfoChannelWidget" id="liveInfoChannelWidget" />
-        <DateWidget ref="dateWidget" id="dateWidget" />
+        <LiveInfoChannelWidget ref="liveInfoChannelWidget" id="liveInfoChannelWidget"/>
+        <LiveInfoProgramWidget ref="liveInfoProgramWidget" id="liveInfoProgramWidget"/>
+        <DateWidget ref="dateWidget" id="dateWidget"/>
     </div>
 </template>
 
@@ -9,12 +10,14 @@
 import router from '@/router';
 import KeyHelper from '@/helpers/KeyHelper';
 import LiveInfoChannelWidget from '@/components/LiveInfoChannelWidget.vue';
+import LiveInfoProgramWidget from '@/components/LiveInfoProgramWidget.vue';
 import DateWidget from '@/components/DateWidget.vue';
 
 export default {
     name: 'liveInfoScreen',
     components: {
         LiveInfoChannelWidget,
+        LiveInfoProgramWidget,
         DateWidget
     },
     methods: {
@@ -30,10 +33,14 @@ export default {
             const channelNumber = this.$route.params.channelNumber;
             if (channelNumber) {
                 bein.channelService.getNearestChannel(channelNumber)
-                        .then((channel) => {
-                            this.$store.commit('SET_CHANNEL', channel);
-                        });
-            }else {
+                    .then((channel) => {
+                        this.$store.commit('SET_CHANNEL', channel);
+                        return bein.programService.getProgramsByChannel(channel.id, { number: 2 });
+                    })
+                    .then((programs) => {
+                        this.$store.commit('SET_PROGRAMS', programs);
+                    });
+            } else {
                 this.goToLiveScreen();
             }
         },
@@ -58,3 +65,5 @@ export default {
     }
 };
 </script>
+
+<style src="@/assets/css/1920x1080/templates/eventNode.less" lang="less"></style>

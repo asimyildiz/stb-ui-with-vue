@@ -29,7 +29,7 @@ const router = new Router({
                 key: 0
             },
             meta: {
-                widget: "TuneWidget"
+                widget: 'TuneWidget'
             }
         },
         {
@@ -44,7 +44,7 @@ const router = new Router({
                 channelNumber: 0
             },
             meta: {
-                widget: "LiveInfoChannelWidget"
+                widget: 'LiveInfoChannelWidget'
             }
         }
     ]
