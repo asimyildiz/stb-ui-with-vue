@@ -48,7 +48,7 @@ export default {
             }
 
             return {
-                width: percent + '%'
+                width: `${percent}%`
             };
         }
     }

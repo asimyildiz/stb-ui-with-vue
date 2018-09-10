@@ -65,5 +65,3 @@ export default {
     }
 };
 </script>
-
-<style src="@/assets/css/1920x1080/templates/eventNode.less" lang="less"></style>

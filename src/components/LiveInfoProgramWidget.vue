@@ -22,46 +22,9 @@
         <div class="programContainer">
             <div class="arrow"></div>
             <div class="posterArea" style="background-image: none;"></div>
-            <div class="nowLiveEventNode normalRegular" id="nowProgram">
-                <div class="poster"></div>
-                <div class="eventDataWrapper">
-                    <div class="title">{{ currentProgram.name }}</div>
-                    <div class="genre">{{ $t('SEARCH_GENRE_VALUE_DVBGENRE_' + currentProgram.genre) }}</div>
-                    <div class="ratingIconList">
-                        <div class="IconListNode" id="ratingIconListItems"></div>
-                    </div>
-                    <ProgressBarWidget ref="progressBarWidget" id="progressBarWidget" :program="currentProgram"  />
-                    <div class="time">
-                        <span class="startTime">{{ cProgram.startTime }}</span>
-                        <span class="seperator">-</span>
-                        <span class="endTime">{{ cProgram.endTime }}</span>
-                    </div>
-                    <div class="iconList">
-                        <div class="IconListNode" id="iconListItems"></div>
-                    </div>
-                    <div class="tagTitle hideBorder"></div>
-                </div>
-            </div>
+            <EventWidget ref="nowProgram" id="nowProgram" :program="currentProgram" :isNowEvent="true" />
             <div class="border"></div>
-            <div class="liveEventNode normalRegular" id="nextProgram">
-                <div class="poster"></div>
-                <div class="eventDataWrapper">
-                    <div class="title">{{ nextProgram.name }}</div>
-                    <div class="genre">{{ $t('SEARCH_GENRE_VALUE_DVBGENRE_' + nextProgram.genre) }}</div>
-                    <div class="ratingIconList">
-                        <div class="IconListNode" id="ratingIconListItems"></div>
-                    </div>
-                    <div class="time">
-                        <span class="startTime">{{ nProgram.startTime }}</span>
-                        <span class="seperator">-</span>
-                        <span class="endTime">{{ nProgram.endTime }}</span>
-                    </div>
-                    <div class="iconList">
-                        <div class="IconListNode" id="iconListItems"></div>
-                    </div>
-                    <div class="tagTitle">{{ $t('EVENTOPTION_WATCH_ACTION_TAG') }}</div>
-                </div>
-            </div>
+            <EventWidget ref="nextProgram" id="nextProgram" :program="nextProgram" :isNowEvent="false" />
         </div>
         <div class="moreInfoButton">
             <div class="insideWidget bgTemplate size0">
@@ -78,57 +41,26 @@
 
 <script type="text/babel">
 import ProgressBarWidget from './ProgressBarWidget';
+import EventWidget from './EventWidget';
 
 export default {
     name: 'liveInfoProgramWidget',
-    data() {
-        return {
-            cProgram: {
-                startTime: '',
-                endTime: ''
-            },
-            nProgram: {
-                startTime: '',
-                endTime: ''
-            }
-        }
-    },
     components: {
-        ProgressBarWidget
-    },
-    methods: {
-        getTimeInformation(program) {
-            if (program) {
-                var startDate = new Date(program.start);
-                var endDate = new Date(startDate.getTime() + program.duration);
-
-                return {
-                    startTime: startDate.format(this.$t.bind(this), this.$t('HH:MM')),
-                    endTime: endDate.format(this.$t.bind(this), this.$t('HH:MM'))
-                };
-            }
-        }
+        ProgressBarWidget,
+        EventWidget
     },
     computed: {
         currentProgram() {
             const programs = this.$store.getters.programs;
             if (programs && programs.length > 0) {
-                const program = programs[0];
-                const timeInformation = this.getTimeInformation(program);
-                this.cProgram.startTime = timeInformation.startTime;
-                this.cProgram.endTime = timeInformation.endTime;
-                return program;
+                return programs[0];
             }
             return {};
         },
         nextProgram() {
             const programs = this.$store.getters.programs;
             if (programs && programs.length > 1) {
-                const program = programs[1];
-                const timeInformation = this.getTimeInformation(program);
-                this.nProgram.startTime = timeInformation.startTime;
-                this.nProgram.endTime = timeInformation.endTime;
-                return program;
+                return programs[1];
             }
             return {};
         }
