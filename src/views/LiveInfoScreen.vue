@@ -23,8 +23,20 @@ export default {
     methods: {
         observes() {
             return {
-                numKey(event) {
-                    console.log(event);
+                rightKeyEventFromLiveInfoChannelWidget(event) {
+                    this.$refs.liveInfoProgramWidget.setFocus();
+                },
+                leftKeyEventFromLiveInfoChannelWidget(event) {
+                    this.goToLiveScreen();
+                },
+                leftKeyEventFromLiveInfoProgramWidget(event) {
+                    this.$refs.liveInfoChannelWidget.setFocus();
+                },
+                downKeyEventFromLiveInfoProgramWidget(event) {
+                    this.$refs.liveInfoProgramWidget.down();
+                },
+                upKeyEventFromLiveInfoProgramWidget(event) {
+                    this.$refs.liveInfoProgramWidget.up();
                 }
             };
         },

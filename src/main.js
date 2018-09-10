@@ -12,7 +12,9 @@ import aliases from './middleware/aliases';
 Vue.use(VueI18n);
 Vue.config.productionTip = false;
 Vue.prototype.$config = config;
-Vue.prototype.$isFocused = false;
+Vue.prototype.setFocus = function () {
+    this.$store.commit('SET_WIDGET', this.$options.name);
+};
 
 const translations = LanguageHelper.createTranslations();
 const i18n = new VueI18n({
@@ -30,13 +32,6 @@ Vue.mixin({
                 this.$root.$on(key, observes[key].bind(this));
             });
         }
-
-        const widget = this.$store.getters.widget;
-        if (widget && this.$options && this.$options.name) {
-            this.$isFocused = this.$options.name.toLowerCase() === widget.toLowerCase();
-        } else {
-            this.$isFocused = false;
-        }
     },
     beforeDestroy() {
         if (this.observes) {
@@ -45,8 +40,15 @@ Vue.mixin({
                 this.$root.$off(key);
             });
         }
-
-        this.$isFocused = false;
+    },
+    computed: {
+        isFocused: {
+            get: function () {
+                const widget = this.$store.getters.widget;
+                const name = this.$options && this.$options.name;
+                return widget && name && name.toLowerCase() === widget.toLowerCase();
+            }
+        }
     }
 });
 
@@ -56,8 +58,8 @@ new Vue({
     store,
     render: h => h(App),
     mounted() {
-        window.addEventListener('keyup', KeyHelper.globalKeyUpHandler.bind(this));
-        window.addEventListener('keydown', KeyHelper.globalKeyDownHandler.bind(this));
-        window.addEventListener('keypress', KeyHelper.globalKeyPressHandler.bind(this));
+        window.addEventListener('keyup', KeyHelper.globalKeyUpHandler.bind(this, store));
+        window.addEventListener('keydown', KeyHelper.globalKeyDownHandler.bind(this, store));
+        window.addEventListener('keypress', KeyHelper.globalKeyPressHandler.bind(this, store));
     }
 }).$mount('#app');

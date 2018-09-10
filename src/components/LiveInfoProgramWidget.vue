@@ -1,5 +1,5 @@
 <template>
-    <div id="liveInfoProgramWidget" class="LiveInfoProgramWidget Widget link">
+    <div id="liveInfoProgramWidget" class="LiveInfoProgramWidget Widget link" v-bind:class="{ focus: isFocused }">
         <div class="insideWidget bgTemplate size0">
             <div class="background"></div>
             <div class="templateShadows">
@@ -19,7 +19,7 @@
                 {{ $t('SIGNAL_TUNER_MESSAGE_SIGNALLOSS') }}
             </div>
         </div>
-        <div class="programContainer">
+        <div class="programContainer" v-bind:class="{ showNextProgram: isShowNextProgram }">
             <div class="arrow"></div>
             <div class="posterArea" style="background-image: none;"></div>
             <EventWidget ref="nowProgram" id="nowProgram" :program="currentProgram" :isNowEvent="true" />
@@ -48,6 +48,19 @@ export default {
     components: {
         ProgressBarWidget,
         EventWidget
+    },
+    data() {
+        return {
+            isShowNextProgram: false
+        }
+    },
+    methods: {
+        down() {
+            this.isShowNextProgram = true;
+        },
+        up() {
+            this.isShowNextProgram = false;
+        }
     },
     computed: {
         currentProgram() {

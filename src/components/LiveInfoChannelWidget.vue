@@ -1,5 +1,5 @@
 <template>
-    <div id="liveInfoChannelWidget" class="LiveInfoChannelWidget Widget" v-bind:class="{ focus: $isFocused }">
+    <div id="liveInfoChannelWidget" class="LiveInfoChannelWidget Widget" v-bind:class="{ focus: isFocused }">
         <div class="insideWidget bgTemplate size0">
             <div class="background"></div>
             <div class="templateShadows">
