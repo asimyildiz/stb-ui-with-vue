@@ -3,7 +3,6 @@
 </template>
 
 <script type="text/babel">
-import router from '@/router';
 import AbstractScreen from '@/views/AbstractScreen';
 
 export default {

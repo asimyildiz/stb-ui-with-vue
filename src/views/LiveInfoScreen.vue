@@ -7,7 +7,6 @@
 </template>
 
 <script type="text/babel">
-import KeyHelper from '@/helpers/KeyHelper';
 import AbstractScreen from '@/views/AbstractScreen';
 import LiveInfoChannelWidget from '@/components/LiveInfoChannelWidget.vue';
 import LiveInfoProgramWidget from '@/components/LiveInfoProgramWidget.vue';

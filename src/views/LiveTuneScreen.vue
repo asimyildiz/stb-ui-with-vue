@@ -6,7 +6,6 @@
 </template>
 
 <script type="text/babel">
-import router from '@/router';
 import KeyHelper from '@/helpers/KeyHelper';
 import AbstractScreen from '@/views/AbstractScreen';
 import TuneWidget from '@/components/TuneWidget.vue';
