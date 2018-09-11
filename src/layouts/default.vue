@@ -8,7 +8,9 @@
         <div class="layer osd" id="osdLayer"></div>
         <div class="layer spy" id="spyLayer"></div>
         <div class="layer main" id="mainLayer">
-            <router-view></router-view>
+            <transition name="fade" mode="out-in" appear>
+                <router-view></router-view>
+            </transition>
         </div>
         <div class="layer volume" id="volumeLayer">
             <VolumeWidget v-show="isVolumeVisible" ref="volumeWidget" id="volumeWidget" :numberOfSteps="16" />

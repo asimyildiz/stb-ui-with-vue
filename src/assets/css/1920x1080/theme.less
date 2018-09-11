@@ -65,6 +65,13 @@ body {
 	transition: transform @speed @type @delay;
 }
 
+.fade-enter-active, .fade-leave-active {
+	transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+	opacity: 0;
+}
+
 /************************************************************
  * TEMPLATING
  ***********************************************************/
