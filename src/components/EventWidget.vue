@@ -24,10 +24,12 @@
 </template>
 
 <script type="text/babel">
+import AbstractWidget from '@/components/AbstractWidget';
 import ProgressBarWidget from './ProgressBarWidget';
 
 export default {
     name: 'eventWidget',
+    extends: AbstractWidget,
     props: {
         program: {
             type: Object,

@@ -26,8 +26,11 @@
 </template>
 
 <script type="text/babel">
+import AbstractWidget from '@/components/AbstractWidget';
+
 export default {
     name: 'liveInfoChannelWidget',
+    extends: AbstractWidget,
     data() {
         return {
             isImageLoaded: false,
@@ -56,6 +59,16 @@ export default {
         }
     },
     methods: {
+        observes() {
+            return {
+                downKey(event) {
+                    console.log('LiveInfoChannelWidget.downKey');
+                },
+                upKey(event) {
+                    console.log('LiveInfoChannelWidget.upKey');
+                }
+            };
+        },
         imageLoaded() {
             this.isImageLoaded = true;
             this.isImageNotLoaded = false;

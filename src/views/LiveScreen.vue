@@ -4,14 +4,16 @@
 
 <script type="text/babel">
 import router from '@/router';
+import AbstractScreen from '@/views/AbstractScreen';
 
 export default {
     name: 'liveScreen',
+    extends: AbstractScreen,
     methods: {
         observes() {
             return {
                 numKey(event) {
-                    router.push({ name: 'liveTuneScreen', params: { key: event.keyCode } });
+                    this.goToLiveTuneScreen({ key: event.keyCode });
                 }
             };
         }

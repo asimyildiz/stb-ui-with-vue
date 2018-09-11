@@ -8,8 +8,11 @@
 </template>
 
 <script type="text/babel">
+import AbstractWidget from '@/components/AbstractWidget';
+
 export default {
     name: 'dateWidget',
+    extends: AbstractWidget,
     computed: {
         time() {
             const date = new Date();

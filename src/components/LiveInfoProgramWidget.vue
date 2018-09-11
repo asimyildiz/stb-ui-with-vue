@@ -40,11 +40,13 @@
 </template>
 
 <script type="text/babel">
+import AbstractWidget from '@/components/AbstractWidget';
 import ProgressBarWidget from './ProgressBarWidget';
 import EventWidget from './EventWidget';
 
 export default {
     name: 'liveInfoProgramWidget',
+    extends: AbstractWidget,
     components: {
         ProgressBarWidget,
         EventWidget
@@ -52,14 +54,18 @@ export default {
     data() {
         return {
             isShowNextProgram: false
-        }
+        };
     },
     methods: {
-        down() {
-            this.isShowNextProgram = true;
-        },
-        up() {
-            this.isShowNextProgram = false;
+        observes() {
+            return {
+                downKey(event) {
+                    this.isShowNextProgram = true;
+                },
+                upKey(event) {
+                    this.isShowNextProgram = false;
+                }
+            };
         }
     },
     computed: {

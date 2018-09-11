@@ -58,6 +58,9 @@ const keyHelper = {
         case 13:
             this.$root.$emit('click', event);
             break;
+        case 81:
+            this.$root.$emit('exit', event);
+            break;
         }
     },
 

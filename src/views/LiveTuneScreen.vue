@@ -8,11 +8,13 @@
 <script type="text/babel">
 import router from '@/router';
 import KeyHelper from '@/helpers/KeyHelper';
+import AbstractScreen from '@/views/AbstractScreen';
 import TuneWidget from '@/components/TuneWidget.vue';
 import DateWidget from '@/components/DateWidget.vue';
 
 export default {
     name: 'liveTuneScreen',
+    extends: AbstractScreen,
     data() {
         return {
             channelNumber: ''
@@ -33,13 +35,13 @@ export default {
                 },
                 click(event) {
                     if (this.channelNumber) {
-                        this.goToLiveInfoScreen();
+                        this.goToLiveInfoScreen({ channelNumber: this.channelNumber });
                     }
+                },
+                exit(event) {
+                    this.goToLiveScreen();
                 }
             };
-        },
-        goToLiveInfoScreen() {
-            router.push({ name: 'liveInfoScreen', params: { channelNumber: this.channelNumber } });
         }
     },
     mounted() {
@@ -52,7 +54,7 @@ export default {
 
         // read timeout value from a config file and go to liveInfoScreen not liveScreen
         setTimeout(() => {
-            this.goToLiveInfoScreen();
+            this.goToLiveInfoScreen({ channelNumber: this.channelNumber });
         }, 3000);
     }
 };

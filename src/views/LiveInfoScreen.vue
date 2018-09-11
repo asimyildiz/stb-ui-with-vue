@@ -7,14 +7,15 @@
 </template>
 
 <script type="text/babel">
-import router from '@/router';
 import KeyHelper from '@/helpers/KeyHelper';
+import AbstractScreen from '@/views/AbstractScreen';
 import LiveInfoChannelWidget from '@/components/LiveInfoChannelWidget.vue';
 import LiveInfoProgramWidget from '@/components/LiveInfoProgramWidget.vue';
 import DateWidget from '@/components/DateWidget.vue';
 
 export default {
     name: 'liveInfoScreen',
+    extends: AbstractScreen,
     components: {
         LiveInfoChannelWidget,
         LiveInfoProgramWidget,
@@ -32,11 +33,8 @@ export default {
                 leftKeyEventFromLiveInfoProgramWidget(event) {
                     this.$refs.liveInfoChannelWidget.setFocus();
                 },
-                downKeyEventFromLiveInfoProgramWidget(event) {
-                    this.$refs.liveInfoProgramWidget.down();
-                },
-                upKeyEventFromLiveInfoProgramWidget(event) {
-                    this.$refs.liveInfoProgramWidget.up();
+                exit(event) {
+                    this.goToLiveScreen();
                 }
             };
         },
@@ -55,9 +53,6 @@ export default {
             } else {
                 this.goToLiveScreen();
             }
-        },
-        goToLiveScreen() {
-            router.push({ name: 'liveScreen' });
         }
     },
     created() {

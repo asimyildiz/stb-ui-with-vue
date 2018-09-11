@@ -10,8 +10,11 @@
 </template>
 
 <script type="text/babel">
+import AbstractWidget from '@/components/AbstractWidget';
+
 export default {
     name: 'volumeWidget',
+    extends: AbstractWidget,
     props: {
         numberOfSteps: {
             type: Number,

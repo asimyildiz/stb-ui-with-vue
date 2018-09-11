@@ -12,6 +12,11 @@ import aliases from './middleware/aliases';
 Vue.use(VueI18n);
 Vue.config.productionTip = false;
 Vue.prototype.$config = config;
+Vue.prototype.$TYPES = {
+    SCREEN: 'screen',
+    WIDGET: 'widget'
+};
+
 Vue.prototype.setFocus = function () {
     this.$store.commit('SET_WIDGET', this.$options.name);
 };
@@ -25,28 +30,61 @@ const i18n = new VueI18n({
 
 // extend Vue mounted and beforeDestroy methods to enable component based listeners
 Vue.mixin({
+    created() {
+        this.$observed = [];
+    },
     mounted() {
-        if (this.observes) {
-            const observes = this.observes();
-            Object.keys(observes).forEach((key) => {
-                this.$root.$on(key, observes[key].bind(this));
-            });
+        // connect to all SCREENs observes
+        if (this.$data.$type === this.$TYPES.SCREEN) {
+            this.connectToObserves();
         }
     },
     beforeDestroy() {
-        if (this.observes) {
-            const observes = this.observes();
-            Object.keys(observes).forEach((key) => {
-                this.$root.$off(key);
-            });
+        // disconnect from all observes without checking the TYPE, because the component is being destroyed
+        this.disconnectFromObserves();
+    },
+    methods: {
+        connectToObserves() {
+            // connect to observes of current component
+            if (this.observes) {
+                const observes = this.observes();
+                Object.keys(observes).forEach((key) => {
+                    const methodToObserve = observes[key].bind(this);
+                    this.$observed.push({
+                        key,
+                        methodToObserve
+                    });
+                    this.$root.$on(key, methodToObserve);
+                });
+            }
+        },
+        disconnectFromObserves() {
+            // disconnect from current component's observes
+            if (this.$observed.length > 0) {
+                this.$observed.forEach((observe, index) => {
+                    this.$root.$off(observe.key, observe.methodToObserve);
+                });
+            }
         }
     },
     computed: {
         isFocused: {
-            get: function () {
-                const widget = this.$store.getters.widget;
-                const name = this.$options && this.$options.name;
-                return widget && name && name.toLowerCase() === widget.toLowerCase();
+            get() {
+                // focus is only needs to be handled for WIDGETs, NOT SCREENS
+                if (this.$data.$type === this.$TYPES.WIDGET) {
+                    const widget = this.$store.getters.widget;
+                    const name = this.$options && this.$options.name;
+                    if (widget && name && name.toLowerCase() === widget.toLowerCase()) {
+                        this.connectToObserves();
+                        return true;
+                    }
+
+                    // disconnect WIDGETs observes
+                    this.disconnectFromObserves();
+                }
+                // do not disconnect here from observes,
+                // because it will also disconnect from SCREENs observes
+                return false;
             }
         }
     }
