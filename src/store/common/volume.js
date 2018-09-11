@@ -1,6 +1,5 @@
 let currentTimeout = null;
-function setAndshowVolume(commit, state) {
-    bein.volumeService.setVolume(state.currentVolume);
+function hideVolume(commit) {
     clearTimeout(currentTimeout);
     currentTimeout = setTimeout(() => {
         commit('HIDE_VOLUME');
@@ -48,19 +47,19 @@ export default {
     actions: {
         INCREASE_VOLUME({ commit, state }) {
             commit('INCREASE_VOLUME');
-            setAndshowVolume(commit, state);
+            hideVolume(commit, state);
         },
         DECREASE_VOLUME({ commit, state }) {
             commit('DECREASE_VOLUME');
-            setAndshowVolume(commit, state);
+            hideVolume(commit, state);
         },
         MUTE_VOLUME({ commit, state }) {
             commit('MUTE_VOLUME');
-            setAndshowVolume(commit, state);
+            hideVolume(commit, state);
         },
         UNMUTE_VOLUME({ commit, state }) {
             commit('UNMUTE_VOLUME');
-            setAndshowVolume(commit, state);
+            hideVolume(commit, state);
         },
         TOGGLE_MUTE({ commit, state }) {
             if (state.muteState) {
@@ -68,7 +67,7 @@ export default {
             } else {
                 commit('MUTE_VOLUME');
             }
-            setAndshowVolume(commit, state);
+            hideVolume(commit, state);
         }
     },
     getters: {

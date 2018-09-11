@@ -1,1 +1,5 @@
-{"defaultLocale":"tr","isServedFromPC":true}
+{
+    "defaultLocale": "tr",
+    "volumeStep": 16,
+    "isServedFromPC": true
+}

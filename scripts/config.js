@@ -24,7 +24,7 @@ const runnable = (path, profile) => {
         console.log('using config file : %s', configFilePath);
         const config = JSON.parse(fs.readFileSync(configFilePath, 'utf8'));
         config.isServedFromPC = (profile === 'desktop');
-        fs.writeFileSync(configFilePath, JSON.stringify(config), 'utf8', writeToFileCallback);
+        fs.writeFileSync(configFilePath, JSON.stringify(config, null, 4), 'utf8', writeToFileCallback);
     }
 };
 

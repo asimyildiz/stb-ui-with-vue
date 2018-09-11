@@ -99,5 +99,9 @@ new Vue({
         window.addEventListener('keyup', KeyHelper.globalKeyUpHandler.bind(this, store));
         window.addEventListener('keydown', KeyHelper.globalKeyDownHandler.bind(this, store));
         window.addEventListener('keypress', KeyHelper.globalKeyPressHandler.bind(this, store));
+
+        this.$store.watch((state, getters) => getters.volume, (volume) => {
+            bein.volumeService.setVolume(volume);
+        });
     }
 }).$mount('#app');

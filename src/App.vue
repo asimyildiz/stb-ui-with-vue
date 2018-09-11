@@ -32,7 +32,7 @@ export default {
         bein.volumeService.getVolume({})
             .then((volume) => {
                 this.$store.commit('SET_CURRENTVOLUME', volume);
-                this.$store.commit('SET_VOLUMESTEP', 16);
+                this.$store.commit('SET_VOLUMESTEP', this.$config.volumeStep);
             });
     }
 };
