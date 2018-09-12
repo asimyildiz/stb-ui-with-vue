@@ -29,7 +29,9 @@ const router = new Router({
                 key: 0
             },
             meta: {
-                widget: 'TuneWidget'
+                widget: 'TuneWidget',
+                isAnimated: false,
+                animation: ''
             }
         },
         {
@@ -44,7 +46,9 @@ const router = new Router({
                 channelNumber: 0
             },
             meta: {
-                widget: 'LiveInfoChannelWidget'
+                widget: 'LiveInfoChannelWidget',
+                isAnimated: true,
+                animation: 'fade'
             }
         }
     ]

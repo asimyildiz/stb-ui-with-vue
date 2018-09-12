@@ -36,7 +36,7 @@ class DesktopProgram extends AbstractProgram {
         this.description = this._nativeObject.description;
         this.parentalRating = this._nativeObject.rating;
         const categoryIndex = Arrays.search(categoryData, this._nativeObject.category_id, 'id');
-        if (categoryIndex != -1) {
+        if (categoryIndex !== -1) {
             this.genre = categoryData[categoryIndex].content_nibble_lvl_1;
         } else {
             this.genre = DesktopProgramGenre.UNDEFINED;
@@ -51,14 +51,15 @@ class DesktopProgram extends AbstractProgram {
     /**
      * Returns the program image path.
      * It removes the '../../../..' prefix contained in generic events data.
-     * @param program
-     * @returns {string}
-     * @private
+     * @param {AbstractProgram} program
+     * @returns {String}
+     * @protected
      */
     _getProgramImagePath(program) {
         if (program.image) {
             return program.image.substring(12);
         }
+        return '';
     }
 }
 

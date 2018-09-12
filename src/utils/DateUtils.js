@@ -50,45 +50,45 @@ const dateFormat = (function () {
             utc = true;
         }
 
-        const _ = utc ? 'getUTC' : 'get',
-            d = date[`${_}Date`](),
-            D = date[`${_}Day`](),
-            m = date[`${_}Month`](),
-            y = date[`${_}FullYear`](),
-            H = date[`${_}Hours`](),
-            M = date[`${_}Minutes`](),
-            s = date[`${_}Seconds`](),
-            L = date[`${_}Milliseconds`](),
-            o = utc ? 0 : date.getTimezoneOffset(),
-            flags = {
-                d,
-                dd: pad(d),
-                ddd: translation(dF.i18n.dayNames[D]),
-                dddd: translation(dF.i18n.dayNames[D + 7]),
-                m: m + 1,
-                mm: pad(m + 1),
-                mmm: translation(dF.i18n.monthNames[m]),
-                mmmm: translation(dF.i18n.monthNames[m + 12]),
-                yy: String(y).slice(2),
-                yyyy: y,
-                h: H % 12 || 12,
-                hh: pad(H % 12 || 12),
-                H,
-                HH: pad(H),
-                M,
-                MM: pad(M),
-                s,
-                ss: pad(s),
-                l: pad(L, 3),
-                L: pad(L > 99 ? Math.round(L / 10) : L),
-                t: H < 12 ? 'a' : 'p',
-                tt: H < 12 ? 'am' : 'pm',
-                T: H < 12 ? 'A' : 'P',
-                TT: H < 12 ? 'AM' : 'PM',
-                Z: utc ? 'UTC' : (String(date).match(timezone) || ['']).pop().replace(timezoneClip, ''),
-                o: (o > 0 ? '-' : '+') + pad((Math.floor(Math.abs(o) / 60) * 100) + (Math.abs(o) % 60), 4),
-                S: ['th', 'st', 'nd', 'rd'][d % 10 > 3 ? 0 : ((d % 100) - (d % 10) !== 10) * (d % 10)]
-            };
+        const _ = utc ? 'getUTC' : 'get';
+        const d = date[`${_}Date`]();
+        const D = date[`${_}Day`]();
+        const m = date[`${_}Month`]();
+        const y = date[`${_}FullYear`]();
+        const H = date[`${_}Hours`]();
+        const M = date[`${_}Minutes`]();
+        const s = date[`${_}Seconds`]();
+        const L = date[`${_}Milliseconds`]();
+        const o = utc ? 0 : date.getTimezoneOffset();
+        const flags = {
+            d,
+            dd: pad(d),
+            ddd: translation(dF.i18n.dayNames[D]),
+            dddd: translation(dF.i18n.dayNames[D + 7]),
+            m: m + 1,
+            mm: pad(m + 1),
+            mmm: translation(dF.i18n.monthNames[m]),
+            mmmm: translation(dF.i18n.monthNames[m + 12]),
+            yy: String(y).slice(2),
+            yyyy: y,
+            h: H % 12 || 12,
+            hh: pad(H % 12 || 12),
+            H,
+            HH: pad(H),
+            M,
+            MM: pad(M),
+            s,
+            ss: pad(s),
+            l: pad(L, 3),
+            L: pad(L > 99 ? Math.round(L / 10) : L),
+            t: H < 12 ? 'a' : 'p',
+            tt: H < 12 ? 'am' : 'pm',
+            T: H < 12 ? 'A' : 'P',
+            TT: H < 12 ? 'AM' : 'PM',
+            Z: utc ? 'UTC' : (String(date).match(timezone) || ['']).pop().replace(timezoneClip, ''),
+            o: (o > 0 ? '-' : '+') + pad((Math.floor(Math.abs(o) / 60) * 100) + (Math.abs(o) % 60), 4),
+            S: ['th', 'st', 'nd', 'rd'][d % 10 > 3 ? 0 : ((d % 100) - (d % 10) !== 10) * (d % 10)]
+        };
 
         return mask.replace(token, $0 => ($0 in flags ? flags[$0] : $0.slice(1, $0.length - 1)));
     };

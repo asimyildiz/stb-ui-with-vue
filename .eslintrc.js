@@ -26,7 +26,13 @@ module.exports = {
     "no-plusplus": 0,
     "class-methods-use-this": 0,
     "semi": 2,
-    "indent": ["error", 4]
+    "indent": ["error", 4],
+    "no-unused-params": 0,
+    "prefer-destructuring": 0,
+    "no-unused-vars": 0,
+    'import/extensions': ['off', 'always', {
+      'vue': 'never'
+    }]
   },
   parserOptions: {
     parser: 'babel-eslint',

@@ -91,9 +91,8 @@ class Arrays {
             if (val === value) {
                 // key found at index imid
                 return imid;
-            }
-            // determine which subarray to search
-            else if (val < value) {
+            } else if (val < value) {
+                // determine which subarray to search
                 // change min index to search upper subarray
                 imin = imid + 1;
             } else {

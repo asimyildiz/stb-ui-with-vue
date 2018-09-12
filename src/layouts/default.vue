@@ -8,7 +8,7 @@
         <div class="layer osd" id="osdLayer"></div>
         <div class="layer spy" id="spyLayer"></div>
         <div class="layer main" id="mainLayer">
-            <transition name="fade" mode="out-in" appear>
+            <transition v-bind:name="getTransition" mode="out-in" appear>
                 <router-view></router-view>
             </transition>
         </div>
@@ -25,13 +25,38 @@ import VolumeWidget from '@/components/VolumeWidget.vue';
 
 export default {
     name: 'default',
+    data() {
+        return {
+            activeScreen: '',
+            transitionName: '',
+            isAnimated: false
+        };
+    },
     components: {
         LivePlayerWidget,
         VolumeWidget
     },
     computed: {
+        getTransition() {
+            if (this.isAnimated) {
+                return this.transitionName;
+            }
+        },
         isVolumeVisible() {
             return this.$store.getters.isVolumeVisible;
+        }
+    },
+    watch: {
+        '$route' (to, from) {
+            // TODO find a way for each component transitions to not affect each other while navigating
+            this.activeScreen = to.name;
+            if (to.meta && to.meta.isAnimated) {
+                this.transitionName = to.meta.animation && 'fade';
+                this.isAnimated = to.meta.isAnimated;
+            }else {
+                this.transitionName = '';
+                this.isAnimated = false;
+            }
         }
     }
 };

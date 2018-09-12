@@ -265,38 +265,6 @@ class DesktopChannelService extends AbstractChannelService {
     /**
      * @param {String} favoriteListId The id of the favorite list
      * @param {Object} [options] Additional options that may be needed by the middleware
-     * @returns {Promise<String>} The id of the created list
-     * @override
-     * @protected
-     */
-    _deleteFavoriteList(favoriteListId, options) {
-        return this._getAvailableFavoriteLists()
-            .then((ids) => {
-                let favoriteListIndex;
-                for (let i = 0; i < ids.length; i++) {
-                    if (ids[i].id === favoriteListId) {
-                        favoriteListIndex = i;
-                    }
-                }
-                if (favoriteListIndex == null) {
-                    return null;
-                }
-
-                // Remove the list
-                ids.splice(favoriteListIndex, 1);
-
-                return LocalStorage.store(this.STORAGE_KEY_FAVORITES_IDS, ids)
-                    .then(() => {
-                        const listId = `${this.STORAGE_KEY_FAVORITES}:${name}`;
-                        LocalStorage.remove(listId);
-                        return favoriteListId;
-                    });
-            });
-    }
-
-    /**
-     * @param {String} favoriteListId The id of the favorite list
-     * @param {Object} [options] Additional options that may be needed by the middleware
      * @returns {Promise<Array>}
      * @override
      * @protected

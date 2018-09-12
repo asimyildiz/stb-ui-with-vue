@@ -42,15 +42,16 @@ class ProgramHelper {
     _addEmptyPrograms(programs, channelId, startTime, endTime, lightweight) {
         // TODO programs.splice.apply may not be the best way to insert empty programs.
         const channelIndex = this.__getChannelIndex(channelId);
-        let lastProgram,
-            lastEnd,
-            emptyPrograms,
-            duration;
+        let emptyPrograms;
         if (programs.length === 0) {
             emptyPrograms = this._createEmptyPrograms(startTime, channelId, channelIndex, endTime - startTime, lightweight);
             programs.splice(...[programs.length, 0].concat(emptyPrograms)); // in-place concat
             return programs;
         }
+
+        let lastProgram;
+        let lastEnd;
+        let duration;
         startTime = startTime || programs[0].start;
         endTime = endTime || programs[programs.length - 1].start + programs[programs.length - 1].duration;
         for (let i = 0; i < programs.length; i++) {

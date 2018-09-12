@@ -11,7 +11,12 @@ import aliases from './middleware/aliases';
 
 Vue.use(VueI18n);
 Vue.config.productionTip = false;
-Vue.prototype.$config = config;
+
+let currentConfig = config;
+if (config[config.profile]) {
+    currentConfig = Object.assign(config, config[config.profile]);
+}
+Vue.prototype.$config = currentConfig;
 Vue.prototype.$TYPES = {
     SCREEN: 'screen',
     WIDGET: 'widget'

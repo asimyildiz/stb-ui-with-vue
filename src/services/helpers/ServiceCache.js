@@ -1,5 +1,5 @@
-const cacheSingleton = Symbol();
-const cacheSingletonEnforcer = Symbol();
+const cacheSingleton = Symbol('ServiceCache');
+const cacheSingletonEnforcer = Symbol('ServiceCache');
 
 class ServiceCache {
     /**

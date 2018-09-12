@@ -1,5 +1,9 @@
 {
     "defaultLocale": "tr",
-    "volumeStep": 16,
-    "isServedFromPC": true
+    "volumeStep": 14,
+    "desktop": {
+        "volumeStep": 16
+    },
+    "isServedFromPC": true,
+    "profile": "desktop"
 }

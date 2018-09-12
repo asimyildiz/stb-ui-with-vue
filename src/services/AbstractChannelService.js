@@ -572,6 +572,7 @@ class AbstractChannelService extends AbstractFilterChannelService {
                     }
                     return channelList[i];
                 }
+                return null;
             });
     }
 
@@ -618,6 +619,7 @@ class AbstractChannelService extends AbstractFilterChannelService {
                     }
                     return channelList[i];
                 }
+                return null;
             });
     }
 
@@ -662,23 +664,6 @@ class AbstractChannelService extends AbstractFilterChannelService {
                     }
                     return next;
                 }));
-    }
-
-    /**
-     * Get channel by it's number
-     * @param {Number} number Number of the channel
-     * @param {Object} [options]
-     * @param {Number} [options.type] - The type of channel to look for : $Channel.TV_TYPE or $Channel.Radio_TYPE. If omitted, any type will match.
-     * @param {Boolean} [options.force=false] If true, refresh the channel list (ie renew the cache)
-     * @param {String} [options.listId=null] If set, get channel on a specific list
-     * @returns {Promise<AbstractChannel|Error>} a promise
-     */
-    getChannelByNumber(number, options) {
-        return this.getChannelList(options)
-            .then((channelList) => {
-                const index = Arrays.search(channelList, number, 'number');
-                return channelList[index];
-            });
     }
 
     /** ***************************************************************************************

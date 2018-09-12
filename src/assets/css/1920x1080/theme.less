@@ -65,6 +65,29 @@ body {
 	transition: transform @speed @type @delay;
 }
 
+.out-up-enter-active,
+.out-up-leave-active,
+.out-down-enter-active,
+.out-down-leave-active,
+.fade-enter-active,
+.fade-leave-active {
+	transition: all .3s ease;
+}
+
+.out-up-leave-to,
+.out-down-enter {
+	position: absolute;
+	transform: translateY(-2.5em);
+	opacity: 0;
+}
+
+.out-up-enter,
+.out-down-leave-to {
+	position: absolute;
+	transform: translateY(2.5em);
+	opacity: 0;
+}
+
 .fade-enter-active, .fade-leave-active {
 	transition: opacity .5s;
 }

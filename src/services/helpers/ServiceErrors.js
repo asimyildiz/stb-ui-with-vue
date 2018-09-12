@@ -1,5 +1,5 @@
-const errorSingleton = Symbol();
-const errorSingletonEnforcer = Symbol();
+const errorSingleton = Symbol('ServiceErrors');
+const errorSingletonEnforcer = Symbol('ServiceErrors');
 
 class ServiceErrors {
     /**

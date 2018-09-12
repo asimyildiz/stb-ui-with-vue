@@ -25,7 +25,7 @@ class DesktopVolumeService extends AbstractVolumeService {
      * @override
      */
     _getVolume() {
-        return Promise.resolve(parseInt(localStorage.getItem('volume')));
+        return Promise.resolve(parseInt(localStorage.getItem('volume'), 10));
     }
 }
 
