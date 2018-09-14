@@ -1,5 +1,5 @@
 /** TODO : later move this into npm script and generate this code before build command * */
-import Utils from './Utils';
+import Utils from '@/helpers/Utils';
 
 /**
  * merge store objects into a single object
@@ -14,7 +14,7 @@ const mergeStoreObject = (storeObjects, storeObject) => {
 
 export default {
     createStore() {
-    // get all files under store
+        // get all files under store
         const files = require.context('@/store', true, /^\.\/(?!-)[^.]+\.(js)$/);
         const filenames = files.keys();
 

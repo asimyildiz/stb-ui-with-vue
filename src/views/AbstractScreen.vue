@@ -1,8 +1,6 @@
 <template></template>
 
 <script type="text/babel">
-import router from '@/router';
-
 export default {
     name: 'abstractScreen',
     data() {
@@ -12,13 +10,13 @@ export default {
     },
     methods: {
         goToLiveScreen() {
-            router.push({ name: 'liveScreen' });
+            this.$router.push({ name: 'liveScreen' });
         },
         goToLiveTuneScreen(params) {
-            router.push({ name: 'liveTuneScreen', params });
+            this.$router.push({ name: 'liveTuneScreen', params });
         },
         goToLiveInfoScreen(params) {
-            router.push({ name: 'liveInfoScreen', params });
+            this.$router.push({ name: 'liveInfoScreen', params });
         }
     }
 };

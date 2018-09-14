@@ -47,13 +47,13 @@ export default {
         }
     },
     watch: {
-        '$route' (to, from) {
+        $route(to, from) {
             // TODO find a way for each component transitions to not affect each other while navigating
             this.activeScreen = to.name;
             if (to.meta && to.meta.isAnimated) {
                 this.transitionName = to.meta.animation && 'fade';
                 this.isAnimated = to.meta.isAnimated;
-            }else {
+            } else {
                 this.transitionName = '';
                 this.isAnimated = false;
             }

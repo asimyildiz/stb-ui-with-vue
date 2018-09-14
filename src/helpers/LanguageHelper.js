@@ -1,9 +1,9 @@
 /** TODO : later move this into npm script and generate this code before build command * */
-import Utils from './Utils';
+import Utils from '@/helpers/Utils';
 
 export default {
     createTranslations() {
-    // get all files under store
+        // get all files under store
         const files = require.context('@/assets/i18n', true, /^\.\/(?!-)[^.]+\.(json)$/);
         const filenames = files.keys();
 

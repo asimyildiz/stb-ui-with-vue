@@ -12,7 +12,9 @@
     "package": "node scripts/package.js",
     "watch": "node scripts/watch.js",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "cover:unit": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm run test:unit",
+    "report:coverage": "nyc report --reporter=text-lcov > coverage.lcov"
   },
   "dependencies": {
     "vue": "^2.5.17",
@@ -29,14 +31,48 @@
     "@vue/cli-service": "^3.0.0",
     "@vue/eslint-config-airbnb": "^3.0.0",
     "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-plugin-istanbul": "^5.0.1",
     "chai": "^4.1.2",
     "commander": "^2.17.1",
+    "cross-env": "^5.2.0",
     "csv-parse": "^2.5.0",
     "glob": "^7.1.2",
+    "istanbul-instrumenter-loader": "^3.0.1",
     "jsdoc3-parser": "^2.0.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "npm-run": "^5.0.1",
-    "vue-template-compiler": "^2.5.17"
+    "nyc": "^13.0.1",
+    "vue-template-compiler": "^2.5.17",
+    "vue-test-utils": "^1.0.0-beta.11"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 0,
+    "statements": 0,
+    "functions": 0,
+    "branches": 0,
+    "include": [
+      "src/**/*.{js,vue}"
+    ],
+    "exclude": [
+      "src/*.js",
+      "tests/helpers/*.js",
+      "node_modules"
+    ],
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "extension": [
+      ".js",
+      ".vue"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "cache": false,
+    "all": true
   }
 }

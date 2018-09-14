@@ -1,10 +1,4 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import store from './store/index';
-
-Vue.use(Router);
-
-const router = new Router({
+export default {
     linkActiveClass: 'focus',
     mode: 'history',
     base: process.env.BASE_URL,
@@ -52,12 +46,4 @@ const router = new Router({
             }
         }
     ]
-});
-
-router.beforeEach((to, from, next) => {
-    store.commit('SET_SCREEN', to.name);
-    store.commit('SET_WIDGET', to.meta && to.meta.widget);
-    next();
-});
-
-export default router;
+};

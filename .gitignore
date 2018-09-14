@@ -24,4 +24,7 @@ yarn-error.log*
 *.sw*
 
 /public/videos/*
-/src/middleware/*
+/src/middleware
+
+.nyc_output
+coverage*
