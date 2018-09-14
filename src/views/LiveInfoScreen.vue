@@ -8,9 +8,9 @@
 
 <script type="text/babel">
 import AbstractScreen from '@/views/AbstractScreen';
-import LiveInfoChannelWidget from '@/components/LiveInfoChannelWidget.vue';
-import LiveInfoProgramWidget from '@/components/LiveInfoProgramWidget.vue';
-import DateWidget from '@/components/DateWidget.vue';
+import LiveInfoChannelWidget from '@/components/liveInfo/LiveInfoChannelWidget.vue';
+import LiveInfoProgramWidget from '@/components/liveInfo/LiveInfoProgramWidget.vue';
+import DateWidget from '@/components/commons/DateWidget.vue';
 
 export default {
     name: 'liveInfoScreen',

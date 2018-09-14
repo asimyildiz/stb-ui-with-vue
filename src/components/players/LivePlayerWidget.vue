@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="less" rel="stylesheet/less">
-    @import '../assets/css/1920x1080/positions.less';
+    @import '../../assets/css/1920x1080/positions.less';
 
     /**************************************************************
      * LivePlayerWidget (inline)

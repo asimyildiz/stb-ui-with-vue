@@ -82,10 +82,10 @@ export default {
 </script>
 
 <style lang="less" rel="stylesheet/less">
-    @import '../assets/css/1920x1080/positions.less';
-    @import '../assets/css/1920x1080/color.less';
-    @import '../assets/css/1920x1080/images.less';
-    @import '../assets/css/1920x1080/font.less';
+    @import '../../assets/css/1920x1080/positions.less';
+    @import '../../assets/css/1920x1080/color.less';
+    @import '../../assets/css/1920x1080/images.less';
+    @import '../../assets/css/1920x1080/font.less';
 
     /**************************************************************
     * LiveInfoChannelWidget (inline)

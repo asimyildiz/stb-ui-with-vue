@@ -8,8 +8,8 @@
 <script type="text/babel">
 import KeyHelper from '@/helpers/KeyHelper';
 import AbstractScreen from '@/views/AbstractScreen';
-import TuneWidget from '@/components/TuneWidget.vue';
-import DateWidget from '@/components/DateWidget.vue';
+import TuneWidget from '@/components/commons/TuneWidget.vue';
+import DateWidget from '@/components/commons/DateWidget.vue';
 
 export default {
     name: 'liveTuneScreen',

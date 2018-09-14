@@ -41,14 +41,12 @@
 
 <script type="text/babel">
 import AbstractWidget from '@/components/AbstractWidget';
-import ProgressBarWidget from './ProgressBarWidget';
-import EventWidget from './EventWidget';
+import EventWidget from '@/components/templates/EventWidget';
 
 export default {
     name: 'liveInfoProgramWidget',
     extends: AbstractWidget,
     components: {
-        ProgressBarWidget,
         EventWidget
     },
     data() {
@@ -88,10 +86,10 @@ export default {
 </script>
 
 <style lang="less" rel="stylesheet/less">
-    @import '../assets/css/1920x1080/positions.less';
-    @import '../assets/css/1920x1080/color.less';
-    @import '../assets/css/1920x1080/images.less';
-    @import '../assets/css/1920x1080/font.less';
+    @import '../../assets/css/1920x1080/positions.less';
+    @import '../../assets/css/1920x1080/color.less';
+    @import '../../assets/css/1920x1080/images.less';
+    @import '../../assets/css/1920x1080/font.less';
 
     /**************************************************************
      * LiveInfoProgramWidget (inline)

@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { cloneDeep } from 'lodash';
 import { mount } from 'vue-test-utils';
-import VolumeWidget from '@/components/VolumeWidget.vue';
+import VolumeWidget from '@/components/commons/VolumeWidget.vue';
 
 require('../init');
 

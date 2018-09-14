@@ -20,8 +20,8 @@
 </template>
 
 <script type="text/babel">
-import LivePlayerWidget from '@/components/LivePlayerWidget.vue';
-import VolumeWidget from '@/components/VolumeWidget.vue';
+import LivePlayerWidget from '@/components/players/LivePlayerWidget.vue';
+import VolumeWidget from '@/components/commons/VolumeWidget.vue';
 
 export default {
     name: 'default',
