@@ -1,7 +1,7 @@
-import DesktopVolumeService from '../vendors/desktop/services/DesktopVolumeService';
-import DesktopChannelService from '../vendors/desktop/services/DesktopChannelService';
-import DesktopProgramService from '../vendors/desktop/services/DesktopProgramService';
-window.bein = {};
-window.bein.volumeService = new DesktopVolumeService();
-window.bein.channelService = new DesktopChannelService();
-window.bein.programService = new DesktopProgramService();
+import DesktopVolumeService from '../../sdk/vendors/desktop/services/DesktopVolumeService';
+import DesktopProgramService from '../../sdk/vendors/desktop/services/DesktopProgramService';
+import DesktopChannelService from '../../sdk/vendors/desktop/services/DesktopChannelService';
+window.beINFW = {};
+window.beINFW.volumeService = new DesktopVolumeService();
+window.beINFW.programService = new DesktopProgramService();
+window.beINFW.channelService = new DesktopChannelService();

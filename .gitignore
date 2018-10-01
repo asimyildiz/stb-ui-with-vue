@@ -25,6 +25,7 @@ yarn-error.log*
 
 /public/videos/*
 /src/middleware
+/sdk
 
 .nyc_output
 coverage*

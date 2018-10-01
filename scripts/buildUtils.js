@@ -13,7 +13,7 @@ let isCommandSuccessful = true;
  */
 const commands = {
     preBuildCommand: 'npm run-script generator i18n ',
-    aliasesCommand: 'npm run-script aliases true ',
+    aliasesCommand: 'npm run-script aliases ',
     configCommand: 'npm run-script config src ',
     buildCommand: 'npm run-script build',
     serveCommand: 'npm run-script serve'

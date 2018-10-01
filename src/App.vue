@@ -29,7 +29,7 @@ export default {
         this.$root.$on('volDown', this.volDown.bind(this));
     },
     beforeMount() {
-        bein.volumeService.getVolume({})
+        beINFW.volumeService.getVolume({})
             .then((volume) => {
                 this.$store.commit('SET_CURRENTVOLUME', volume);
                 this.$store.commit('SET_VOLUMESTEP', this.$config.volumeStep);

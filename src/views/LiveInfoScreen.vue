@@ -41,10 +41,10 @@ export default {
             // TODO extract this code block into another method for code modularity
             const channelNumber = this.$route.params.channelNumber;
             if (channelNumber) {
-                bein.channelService.getNearestChannel(channelNumber)
+                beINFW.channelService.getNearestChannel(channelNumber)
                     .then((channel) => {
                         this.$store.commit('SET_CHANNEL', channel);
-                        return bein.programService.getProgramsByChannel(channel.id, { number: 2 });
+                        return beINFW.programService.getProgramsByChannel(channel.id, { number: 2 });
                     })
                     .then((programs) => {
                         this.$store.commit('SET_PROGRAMS', programs);

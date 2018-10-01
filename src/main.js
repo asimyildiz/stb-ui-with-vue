@@ -26,7 +26,7 @@ new helper.Vue({
         window.addEventListener('keypress', KeyHelper.globalKeyPressHandler.bind(this, store));
 
         this.$store.watch((state, getters) => getters.volume, (volume) => {
-            bein.volumeService.setVolume(volume);
+            beINFW.volumeService.setVolume(volume);
         });
     }
 }).$mount('#app');
