@@ -44,6 +44,22 @@ export default {
                 isAnimated: true,
                 animation: 'fade'
             }
+        },
+        {
+            path: '/vodScreen',
+            name: 'vodScreen',
+            // route level code-splitting
+            // this generates a separate chunk (about.[hash].js) for this route
+            // which is lazy-loaded when the route is visited.
+            component: () => import('./views/VodScreen.vue'),
+            props: {
+                layout: 'default'
+            },
+            meta: {
+                widget: 'VodCategoryListWidget',
+                isAnimated: true,
+                animation: 'fade'
+            }
         }
     ]
 };

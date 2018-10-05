@@ -1,0 +1,51 @@
+@import "positions";
+@import "color";
+@import "font";
+
+.List {
+	.item {
+		color: @DGK_GREY_200;
+		.normalRegular();
+		letter-spacing: 1px;
+		line-height: 49px;
+		height: 53px;
+		width: @WIDTH_AUTO_FULL;
+
+		&.focus {
+			color: @DGK_RED;
+
+			.underscore {
+				display: block;
+			}
+		}
+
+		&.disabled {
+			color: @DGK_GREY_100;
+		}
+
+		&.focus, &.selected {
+			letter-spacing: 1px;
+			//line-height: 65px;
+			height: 51px;
+			.largeBold();
+
+			.key {
+				margin-top: 3px;
+			}
+		}
+
+		.key {
+			float: left;
+			clear: left;
+			text-align: left
+		}
+		.underscore {
+			margin-left: 1px;
+			margin-top: -20px;
+			line-height: 6px;
+			display: none;
+			float: left;
+			clear: left;
+		}
+	}
+}

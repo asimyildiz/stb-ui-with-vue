@@ -2,8 +2,17 @@
     "defaultLocale": "tr",
     "volumeStep": 14,
     "desktop": {
+        "applicationId": "IQ",
+        "clientId": "SAGEM_4K",
+        "dbsCode": "dqC4uAfAdK/Mi2xEjCfvHRLQrIKkPpReUe6KuTJoXy6ti4OyvJt/M4YLy4eh79c6u3/96y4GHFtHUoJ2eH76aCYnZ4kmOax0ykLNhzjlJQ5tJafVhIX2nZwD3uC1857OxauFeCjLB2tu59FoH9KPgO/yhIByAICK4BAI4XQzfxbaMCzW9bk8JtN3tZYwg7+Le0YHCxZGtb2G6GA7yNf5z6av4cgni7DP8RlXxNv4QgXuXGP5unmIIXYDaOwnF5Uc+ggkhLdqDalXcyWei2J8tmxRpLmgyisqikV5YcmDFbe25bz1t5zHaVIc0CflD9QGwWixLi44i4VfQn7XDK4rVg==",
+        "portalCode": "1308152768-50542600-06",
         "volumeStep": 16
     },
     "isServedFromPC": true,
-    "profile": "desktop"
+    "profile": "desktop",
+    "serverUrl": "http://premiumiqdigitvportal.beinconnect.com.tr/Handlers/",
+    "serviceUrl": "VODService.svc/json/",
+    "serviceTimeout": 30000,
+    "versionCheckUrl": "report.version",
+    "requiredServiceVersion": "6.4.0"
 }

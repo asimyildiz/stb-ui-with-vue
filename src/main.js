@@ -15,6 +15,8 @@ const i18n = helper.i18n;
 const router = helper.router;
 const store = helper.store;
 
+beINFW.bootManager.init(beINFW, config);
+
 new helper.Vue({
     i18n,
     router,

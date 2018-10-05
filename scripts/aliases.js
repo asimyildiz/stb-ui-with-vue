@@ -75,27 +75,41 @@ const createAlias = (profile, alias, name, file, _imports, _exports, length) => 
 };
 
 /**
+ * create an alias for a vendor specific implementation using it's jsdoc
+ * @param {String} profile
+ * @param {String} file
+ * @param {Array<String>} _imports
+ * @param {Array<String>} _exports
+ * @param {Number} filesLength
+ * @param {Object} error
+ * @param {Object} ast
+ */
+const createVendorAlias = (profile, file, _imports, _exports, filesLength, error, ast) => {
+    createAlias(profile, ast[0].alias, ast[0].name, file, _imports, _exports, filesLength);
+    if (filesLength === aliasesCreated) {
+        writeAliasesGlobal(_imports, _exports);
+    }
+};
+
+/**
  * find vendor implementations for services
  * @param {String} profile - current profile to create aliases for
- * @param {String} alias - alias name for current service
  * @param {Array<String>} _imports - import statements
  * @param {Array<String>} _exports - export statements
  */
-const findVendorFilesFor = (profile, alias, _imports, _exports) => {
-    if (alias) {
-        glob(`sdk/vendors/${profile}/services/**/*${alias}.js`, { nocase: true }, function (er, files) {
-            if (!er && files && files.length > 0) {
-                const filesLength = files.length;
-                for (let i = 0; i < filesLength; i++) {
-                    parser(files[i], ((profile, file, error, ast) => {
-                        createAlias(profile, alias, ast[0].name, file, _imports, _exports, filesLength);
-                        if (filesLength + 2 === aliasesCreated) { // TODO CHECK HERE SOMETHING IS WRONG WITH filesLength + X
-                            writeAliasesGlobal(_imports, _exports);
-                        }
-                    }).bind(this, profile, files[i]));
-                }
-            }
-        });
+const findVendorFilesFor = (profile, _imports, _exports) => {
+    const managers = glob.sync('sdk/managers/**/*.js');
+    let files = glob.sync(`sdk/vendors/${profile}/services/**/*.js`);
+    if (files && files.length > 0) {
+        if (managers && managers.length > 0) {
+            // add managers into aliases
+            files = files.concat(managers);
+        }
+        const filesLength = files.length;
+        for (let i = 0; i < filesLength; i++) {
+            let currentFile = files[i];
+            parser(currentFile, createVendorAlias.bind(null, profile, currentFile, _imports, _exports, filesLength));
+        }
     }
 };
 
@@ -107,17 +121,12 @@ const findVendorFilesFor = (profile, alias, _imports, _exports) => {
 const runnable = (profile) => {
     clearAliases();
     copyFramework();
-    glob('sdk/services/**/*.js', {}, (er, files) => {
-        if (!er && files && files.length > 0) {
-            const _imports = [];
-            const _exports = [];
-            files.forEach((file, index) => {
-                parser(file, (error, ast) => {
-                    findVendorFilesFor(profile, ast[0].alias, _imports, _exports);
-                });
-            });
-        }
-    });
+    const files = glob.sync('sdk/services/**/*.js', {});
+    if (files && files.length > 0) {
+        const _imports = [];
+        const _exports = [];
+        findVendorFilesFor(profile, _imports, _exports);
+    }
 };
 
 program

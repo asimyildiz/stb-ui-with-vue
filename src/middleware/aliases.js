@@ -1,7 +1,13 @@
+import DesktopVodService from '../../sdk/vendors/desktop/services/DesktopVodService';
 import DesktopVolumeService from '../../sdk/vendors/desktop/services/DesktopVolumeService';
-import DesktopProgramService from '../../sdk/vendors/desktop/services/DesktopProgramService';
+import BootManager from '../../sdk/managers/common/BootManager';
 import DesktopChannelService from '../../sdk/vendors/desktop/services/DesktopChannelService';
+import VodManager from '../../sdk/managers/vod/VodManager';
+import DesktopProgramService from '../../sdk/vendors/desktop/services/DesktopProgramService';
 window.beINFW = {};
+window.beINFW.vodService = new DesktopVodService();
 window.beINFW.volumeService = new DesktopVolumeService();
-window.beINFW.programService = new DesktopProgramService();
+window.beINFW.bootManager = new BootManager();
 window.beINFW.channelService = new DesktopChannelService();
+window.beINFW.vodManager = new VodManager();
+window.beINFW.programService = new DesktopProgramService();

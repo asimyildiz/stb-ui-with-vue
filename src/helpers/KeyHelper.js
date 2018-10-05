@@ -43,6 +43,9 @@ const keyHelper = {
         case 66:
             this.$root.$emit('volDown', event);
             break;
+        case 80:
+            this.$root.$emit('portal', event);
+            break;
         case 48:
         case 49:
         case 50:

@@ -30,6 +30,7 @@ module.exports = {
         'no-unused-params': 0,
         'prefer-destructuring': 0,
         'no-unused-vars': 0,
+        'no-bitwise': 0,
         'import/extensions': ['off', 'always', {
             vue: 'never'
         }]

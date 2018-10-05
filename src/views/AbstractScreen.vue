@@ -17,6 +17,9 @@ export default {
         },
         goToLiveInfoScreen(params) {
             this.$router.push({ name: 'liveInfoScreen', params });
+        },
+        goToVodScreen(params) {
+            this.$router.push({ name: 'vodScreen', params });
         }
     }
 };

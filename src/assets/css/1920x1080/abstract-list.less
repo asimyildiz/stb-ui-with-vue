@@ -1,0 +1,87 @@
+@import "positions";
+@import "theme";
+
+.AbstractList, .List, .DoubleEntryList {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: @WIDTH_FULL;
+	height: @HEIGHT_FULL;
+	overflow: hidden;
+
+	.position {
+		top: 0;
+		left: 0;
+		width: @WIDTH_FULL;
+		height: @HEIGHT_FULL;
+	}
+
+	&.noAnimation {
+		.wrapper {
+			.noTransition();
+		}
+	}
+
+	&.isLongPressed {
+		.wrapper {
+			.transition(@FAST_TRANSITION_DURATION, linear);
+		}
+	}
+
+	&.vertical {
+		.wrapper {
+			.item {
+				display: block;
+			}
+			/*-webkit-box-orient: vertical;
+			-moz-box-orient: vertical;
+			box-orient: vertical;*/
+		}
+	}
+
+	&.horizontal {
+		.wrapper {
+			white-space: nowrap;
+			.item {
+				display: inline-block;
+			}
+			/*-webkit-box-orient: horizontal;
+			-moz-box-orient: horizontal;
+			box-orient: horizontal;*/
+		}
+	}
+
+	.container {
+		height: @HEIGHT_AUTO_FULL;
+		width: @WIDTH_AUTO_FULL;
+
+		.wrapper {
+			/*display: -moz-box;
+			display: -webkit-box;
+			display: box;*/
+			height: @HEIGHT_AUTO_FULL;
+			width: @WIDTH_AUTO_FULL;
+			.transition(@TRANSITION_DURATION, linear);
+		}
+	}
+
+	.item {
+		//position: absolute;
+		//height: 160px;
+		//width: 300px;
+		height: @HEIGHT_FULL/10;
+		width: @WIDTH_FULL/10;
+		line-height: 100px;
+		.smallRegular();
+		text-align: center;
+
+		&.big {
+			height: 190px;
+			width: 170px;
+		}
+		&.small {
+			height: 120px;
+			width: 150px;
+		}
+	}
+}

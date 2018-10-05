@@ -14,6 +14,9 @@ export default {
         },
         volDown(event) {
             this.$store.dispatch('DECREASE_VOLUME');
+        },
+        portal(event) {
+            this.$router.push({ name: 'vodScreen', params: {} });
         }
     },
     computed: {
@@ -27,6 +30,7 @@ export default {
     mounted() {
         this.$root.$on('volUp', this.volUp.bind(this));
         this.$root.$on('volDown', this.volDown.bind(this));
+        this.$root.$on('portal', this.portal.bind(this));
     },
     beforeMount() {
         beINFW.volumeService.getVolume({})
