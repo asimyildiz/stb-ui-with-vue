@@ -13,6 +13,9 @@ const mergeStoreObject = (storeObjects, storeObject) => {
 };
 
 export default {
+    /**
+     * create stores dynamically from store folder programmatically
+     */
     createStore() {
         // get all files under store
         const files = require.context('@/store', true, /^\.\/(?!-)[^.]+\.(js)$/);

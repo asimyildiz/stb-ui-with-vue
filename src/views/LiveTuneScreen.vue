@@ -12,6 +12,10 @@ import TuneWidget from '@/components/commons/TuneWidget.vue';
 import DateWidget from '@/components/commons/DateWidget.vue';
 
 export default {
+    /**
+     * liveTuneScreen 
+     * display numeric keys entered then navigate to channel number entered
+     */
     name: 'liveTuneScreen',
     extends: AbstractScreen,
     data() {
@@ -24,6 +28,13 @@ export default {
         DateWidget
     },
     methods: {
+        /**
+         * custom observes method to listen key events from widgets
+         * keys are first handled inside focused widgets then screens change focus between widgets which is registered for a screen
+         * handle numeric key press on liveTuneScreen - and numeric keys pressed to the first numeric key pressed passed to this screen
+         * click key press on liveTuneScreen - navigate to channel number entered and show liveInfoScreen
+         * handle exit key press - go back to liveScreen
+         */
         observes() {
             return {
                 numKey(event) {
@@ -43,6 +54,10 @@ export default {
             };
         }
     },
+    /**
+     * after liveTuneScreen is displayed with numeric key entered
+     * navigate automatically to liveInfoScreen if click key is not pressed for 3 seconds
+     */
     mounted() {
         // TODO extract this code block into another method for code modularity
         const currentKey = this.$route.params.key;

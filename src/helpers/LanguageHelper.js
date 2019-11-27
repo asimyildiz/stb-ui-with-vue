@@ -2,6 +2,10 @@
 import Utils from '@/helpers/Utils';
 
 export default {
+    /**
+     * create translations from a file
+     * @returns {Object}
+     */
     createTranslations() {
         // get all files under store
         const files = require.context('@/assets/i18n', true, /^\.\/(?!-)[^.]+\.(json)$/);

@@ -24,6 +24,11 @@ import LivePlayerWidget from '@/components/players/LivePlayerWidget.vue';
 import VolumeWidget from '@/components/commons/VolumeWidget.vue';
 
 export default {
+    /**
+     * this is a layer manager and initial entry point for this application
+     * using this layer management system, we display the player on bottom layer always
+     * all other screens are opened over the player
+     */
     name: 'default',
     data() {
         return {
@@ -37,16 +42,29 @@ export default {
         VolumeWidget
     },
     computed: {
+        /**
+         * if there is an animation to display a screen, run the animation
+         * @returns {String}
+         */
         getTransition() {
             if (this.isAnimated) {
                 return this.transitionName;
             }
         },
+        /**
+         * check if volume is visible
+         * volume can be displayed regardless of which screen is displayed
+         */
         isVolumeVisible() {
             return this.$store.getters.isVolumeVisible;
         }
     },
     watch: {
+        /**
+         * routing to a new screen from another screen
+         * @param {Object} to
+         * @param {Object} from
+         */
         $route(to, from) {
             // TODO find a way for each component transitions to not affect each other while navigating
             this.activeScreen = to.name;

@@ -13,6 +13,10 @@
 import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
+    /**
+     * volumeWidget 
+     * display volume information with bars on screens
+     */
     name: 'volumeWidget',
     extends: AbstractWidget,
     props: {
@@ -22,6 +26,11 @@ export default {
         }
     },
     methods: {
+        /**
+         * calculate current volume information and display it using bars
+         * @param {Number} stepId
+         * @returns {Object}
+         */
         classObject(stepId) {
             const volume = this.$store.getters.volume;
             return {

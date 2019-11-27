@@ -27,21 +27,25 @@
 </template>
 
 <script type="text/babel">
-    import AbstractWidget from '@/components/AbstractWidget';
+import AbstractWidget from '@/components/AbstractWidget';
 
-    export default {
-        name: 'vodCategoryListWidget',
-        extends: AbstractWidget,
-        computed: {
-            categories() {
-                const categories = this.$store.getters.categories;
-                if (categories) {
-                    return categories.defaultCategories;
-                }
-                return [];
+export default {
+    /**
+     * vodCategoryListWidget 
+     * display categories fetched from service
+     */
+    name: 'vodCategoryListWidget',
+    extends: AbstractWidget,
+    computed: {
+        categories() {
+            const categories = this.$store.getters.categories;
+            if (categories) {
+                return categories.defaultCategories;
             }
+            return [];
         }
-    };
+    }
+};
 </script>
 
 

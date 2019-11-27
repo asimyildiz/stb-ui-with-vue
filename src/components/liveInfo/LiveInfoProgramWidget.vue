@@ -44,6 +44,10 @@ import AbstractWidget from '@/components/AbstractWidget';
 import EventWidget from '@/components/templates/EventWidget';
 
 export default {
+    /**
+     * liveInfoProgramWidget 
+     * display program information for a channel on related screens
+     */
     name: 'liveInfoProgramWidget',
     extends: AbstractWidget,
     components: {
@@ -55,6 +59,12 @@ export default {
         };
     },
     methods: {
+        /**
+         * custom observes method to listen key events from widgets
+         * keys are first handled inside focused widgets then screens change focus between widgets which is registered for a screen
+         * handle down key press on liveInfoProgramWidget - show next program data
+         * handle up key press on liveInfoProgramWidget - show current program data
+         */
         observes() {
             return {
                 downKey(event) {
@@ -67,6 +77,10 @@ export default {
         }
     },
     computed: {
+        /**
+         * compute current program data from store for a channel
+         * @returns {Object}
+         */
         currentProgram() {
             const programs = this.$store.getters.programs;
             if (programs && programs.length > 0) {
@@ -74,6 +88,10 @@ export default {
             }
             return {};
         },
+        /**
+         * compute next program data from store for a channel
+         * @returns {Object}
+         */
         nextProgram() {
             const programs = this.$store.getters.programs;
             if (programs && programs.length > 1) {

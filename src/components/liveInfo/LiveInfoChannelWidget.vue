@@ -29,6 +29,10 @@
 import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
+    /**
+     * liveInfoChannelWidget 
+     * display channel information on related screens
+     */
     name: 'liveInfoChannelWidget',
     extends: AbstractWidget,
     data() {
@@ -38,14 +42,26 @@ export default {
         };
     },
     computed: {
+        /**
+         * get current channel's number information from store
+         * @returns {Number}
+         */
         channelNumber() {
             const channel = this.$store.getters.channel;
             return channel && channel.number;
         },
+        /**
+         * get current channel's name information from store
+         * @returns {String}
+         */
         channelName() {
             const channel = this.$store.getters.channel;
             return channel && channel.name;
         },
+        /**
+         * get current channel's logo
+         * @returns {String}
+         */
         channelLogo() {
             const channel = this.$store.getters.channel;
             let channelLogo = channel && channel.logo;
@@ -54,11 +70,21 @@ export default {
             }
             return channelLogo;
         },
+        /**
+         * if channel logo is not loaded then display channel name instead
+         * @returns {Boolean}
+         */
         canShowChannelName() {
             return !this.isImageLoaded && this.isImageNotLoaded;
         }
     },
     methods: {
+        /**
+         * custom observes method to listen key events from widgets
+         * keys are first handled inside focused widgets then screens change focus between widgets which is registered for a screen
+         * handle down key press on liveInfoChannelWidget - do nothing
+         * handle up key press on liveInfoChannelWidget - do nothing
+         */
         observes() {
             return {
                 downKey(event) {
@@ -69,10 +95,16 @@ export default {
                 }
             };
         },
+        /**
+         * check if channel logo is loaded
+         */
         imageLoaded() {
             this.isImageLoaded = true;
             this.isImageNotLoaded = false;
         },
+        /**
+         * check if channel logo is not loaded
+         */
         imageLoadError() {
             this.isImageLoaded = false;
             this.isImageNotLoaded = true;

@@ -28,6 +28,10 @@ import AbstractWidget from '@/components/AbstractWidget';
 import ProgressBarWidget from '@/components/templates/ProgressBarWidget';
 
 export default {
+    /**
+     * eventWidget 
+     * display event data
+     */
     name: 'eventWidget',
     extends: AbstractWidget,
     props: {
@@ -44,12 +48,20 @@ export default {
         ProgressBarWidget
     },
     computed: {
+        /**
+         * compute start time information of a program by formatting
+         * @returns {String}
+         */
         startTime() {
             if (this.program && this.program.start) {
                 const startDate = new Date(this.program.start);
                 return startDate.format(this.$t.bind(this), this.$t('HH:MM'));
             }
         },
+        /**
+         * compute end time information of a program by formatting
+         * @returns {String}
+         */
         endTime() {
             if (this.program && this.program.start && this.program.duration) {
                 const startDate = new Date(this.program.start);
@@ -57,6 +69,10 @@ export default {
                 return endDate.format(this.$t.bind(this), this.$t('HH:MM'));
             }
         },
+        /**
+         * compute and return current and next program data
+         * @returns {Object}
+         */
         eventNodeClass() {
             return {
                 nowLiveEventNode: this.isNowEvent,

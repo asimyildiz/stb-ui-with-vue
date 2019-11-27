@@ -13,6 +13,10 @@ import LiveInfoProgramWidget from '@/components/liveInfo/LiveInfoProgramWidget.v
 import DateWidget from '@/components/commons/DateWidget.vue';
 
 export default {
+    /**
+     * liveInfoScreen 
+     * display channel and program information
+     */
     name: 'liveInfoScreen',
     extends: AbstractScreen,
     components: {
@@ -21,6 +25,14 @@ export default {
         DateWidget
     },
     methods: {
+        /**
+         * custom observes method to listen key events from widgets
+         * keys are first handled inside focused widgets then screens change focus between widgets which is registered for a screen
+         * handle right key press from liveInfoChannelWidget - set focus to liveInfoProgramWidget
+         * handle left key press from liveInfoChannelWidget - go back to liveScreen
+         * handle left key press from liveInfoProgramWidget - set focus to liveInfoChannelWidget
+         * handle exit key press - go back to liveScreen
+         */
         observes() {
             return {
                 rightKeyEventFromLiveInfoChannelWidget(event) {
@@ -37,6 +49,13 @@ export default {
                 }
             };
         },
+        /**
+         * when a channel number is entered on liveTuneScreen 
+         * find nearest channel to that channel number
+         * get channel information 
+         * then get now and next program information
+         * if no channel number is entered go back to live
+         */
         fetchData() {
             // TODO extract this code block into another method for code modularity
             const channelNumber = this.$route.params.channelNumber;
@@ -54,17 +73,23 @@ export default {
             }
         }
     },
+    /**
+     * fetch the data when the view is created 
+     */
     created() {
-        // fetch the data when the view is created and the data is
-        // already being observed
         this.fetchData();
     },
+    /**
+     * watch route change and then fetch data if route changes
+     */
     watch: {
-        // call again the method if the route changes
         $route: 'fetchData'
     },
+    /**
+     * after liveInfoScreen is displayed with channel and program information
+     * go back to live screen after 10 minutes and hide liveInfoScreen
+     */
     mounted() {
-        // read timeout value from a config file and go to liveInfoScreen not liveScreen
         setTimeout(() => {
             this.goToLiveScreen();
         }, 10 * 60 * 1000);

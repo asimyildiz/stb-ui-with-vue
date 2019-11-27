@@ -11,13 +11,23 @@
 import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
+    /**
+     * dateWidget 
+     * display date information on screens
+     */
     name: 'dateWidget',
     extends: AbstractWidget,
     computed: {
+        /**
+         * compute time information by formatting current js date value
+         */
         time() {
             const date = new Date();
             return date.format(this.$t.bind(this), this.$t('HH:MM'));
         },
+        /**
+         * compute date information by formatting current js date value
+         */
         date() {
             const date = new Date();
             return date.format(this.$t.bind(this), this.$t('ddd d'));

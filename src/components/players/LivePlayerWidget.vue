@@ -8,6 +8,10 @@
 import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
+    /**
+     * livePlayerWidget 
+     * watch live tv on screen (for desktop play a fake video content)
+     */
     name: 'livePlayerWidget',
     extends: AbstractWidget,
     props: {

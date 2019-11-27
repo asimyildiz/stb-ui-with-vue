@@ -19,6 +19,10 @@
 import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
+    /**
+     * tuneWidget 
+     * display numeric keys entered
+     */
     name: 'tuneWidget',
     extends: AbstractWidget,
     props: {

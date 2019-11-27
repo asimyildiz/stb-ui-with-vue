@@ -13,6 +13,10 @@
 import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
+    /**
+     * progressBarWidget 
+     * display progress bar for current program based on current time information and program start time with duration information
+     */
     name: 'progressBarWidget',
     extends: AbstractWidget,
     data() {
@@ -28,6 +32,10 @@ export default {
         }
     },
     computed: {
+        /**
+         * calculate how much time passed for current event
+         * then display a progress bar based on current time js value
+         */
         percentage() {
             const currentTime = Date.now();
             let elapsed = -1;

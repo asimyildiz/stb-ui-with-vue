@@ -29,3 +29,6 @@ yarn-error.log*
 
 .nyc_output
 coverage*
+
+ChromeDataDir
+package-lock.json
