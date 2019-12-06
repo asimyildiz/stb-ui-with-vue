@@ -1,6 +1,7 @@
 /** TODO : later move this into npm script and generate this code before build command * */
 import Utils from '@/helpers/Utils';
 
+/* istanbul ignore */
 export default {
     /**
      * create translations from a file

@@ -20,8 +20,8 @@ import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
     /**
-     * tuneWidget 
      * display numeric keys entered
+     * @class TuneWidget
      */
     name: 'tuneWidget',
     extends: AbstractWidget,

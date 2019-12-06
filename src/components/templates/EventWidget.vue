@@ -29,8 +29,8 @@ import ProgressBarWidget from '@/components/templates/ProgressBarWidget';
 
 export default {
     /**
-     * eventWidget 
      * display event data
+     * @class EventWidget
      */
     name: 'eventWidget',
     extends: AbstractWidget,
@@ -57,6 +57,7 @@ export default {
                 const startDate = new Date(this.program.start);
                 return startDate.format(this.$t.bind(this), this.$t('HH:MM'));
             }
+            return '';
         },
         /**
          * compute end time information of a program by formatting
@@ -68,6 +69,7 @@ export default {
                 const endDate = new Date(startDate.getTime() + this.program.duration);
                 return endDate.format(this.$t.bind(this), this.$t('HH:MM'));
             }
+            return '';
         },
         /**
          * compute and return current and next program data

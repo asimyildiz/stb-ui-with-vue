@@ -30,8 +30,8 @@ import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
     /**
-     * liveInfoChannelWidget 
      * display channel information on related screens
+     * @class LiveInfoChannelWidget
      */
     name: 'liveInfoChannelWidget',
     extends: AbstractWidget,

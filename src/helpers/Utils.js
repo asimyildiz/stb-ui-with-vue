@@ -4,6 +4,7 @@
  * @param {String} filename
  * @returns {*}
  */
+/* istanbul ignore */
 export default {
     getModule(files, filename) {
         const file = files(filename);

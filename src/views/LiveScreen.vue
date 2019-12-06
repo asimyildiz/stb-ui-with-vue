@@ -7,8 +7,8 @@ import AbstractScreen from '@/views/AbstractScreen';
 
 export default {
     /**
-     * liveScreen 
-     * display video only
+     * display live video broadcast
+     * @class LiveScreen
      */
     name: 'liveScreen',
     extends: AbstractScreen,

@@ -14,7 +14,7 @@
             <div class="position">
                 <div class="container">
                     <div class="wrapper">
-                        <div v-for="category in categories" class="item">
+                        <div v-for="category in categories" v-bind:key="category.id" class="item">
                             <div class="key">{{ category.classificationName }}</div>
                             <div class="value"></div>
                             <div class="underscore">_</div>
@@ -31,8 +31,8 @@ import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
     /**
-     * vodCategoryListWidget 
      * display categories fetched from service
+     * @class VodCategoryListWidget
      */
     name: 'vodCategoryListWidget',
     extends: AbstractWidget,

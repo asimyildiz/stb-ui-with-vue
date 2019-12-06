@@ -10,8 +10,8 @@ import VodCategoryListWidget from '@/components/vod/VodCategoryListWidget.vue';
 
 export default {
     /**
-     * vodScreen 
      * display vod screen to show vod contents
+     * @class VodScreen
      */
     name: 'vodScreen',
     extends: AbstractScreen,
@@ -32,7 +32,7 @@ export default {
             };
         },
         /**
-         * get access keys from config 
+         * get access keys from config
          * then connect to vod service
          * return a fake code for DesktopVendor
          * for other vendors get the code from STB

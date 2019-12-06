@@ -45,8 +45,8 @@ import EventWidget from '@/components/templates/EventWidget';
 
 export default {
     /**
-     * liveInfoProgramWidget 
      * display program information for a channel on related screens
+     * @class LiveInfoProgramWidget
      */
     name: 'liveInfoProgramWidget',
     extends: AbstractWidget,

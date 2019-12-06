@@ -1,3 +1,4 @@
+/* istanbul ignore */
 const keyHelper = {
     // TODO add isLong to all emits
     // TODO check if it is possible and wise to use Vuex for keys
@@ -21,31 +22,39 @@ const keyHelper = {
     globalKeyDownHandler(store, event) {
         this.$root.$emit('keyDown', event);
         switch (event.keyCode) {
+        // left key press
         case 37:
             this.$root.$emit('leftKey', event);
             keyHelper.fireKeyEventForWidget.call(this, store, 'leftKey');
             break;
+        // up key press
         case 38:
             this.$root.$emit('upKey', event);
             keyHelper.fireKeyEventForWidget.call(this, store, 'upKey');
             break;
+        // right key press
         case 39:
             this.$root.$emit('rightKey', event);
             keyHelper.fireKeyEventForWidget.call(this, store, 'rightKey');
             break;
+        // down key press
         case 40:
             this.$root.$emit('downKey', event);
             keyHelper.fireKeyEventForWidget.call(this, store, 'downKey');
             break;
+        // 'v' key press
         case 86:
             this.$root.$emit('volUp', event);
             break;
+        // 'b' key press
         case 66:
             this.$root.$emit('volDown', event);
             break;
+        // 'p' key press
         case 80:
             this.$root.$emit('portal', event);
             break;
+        // numeric key press 0-9
         case 48:
         case 49:
         case 50:
@@ -58,11 +67,16 @@ const keyHelper = {
         case 57:
             this.$root.$emit('numKey', event);
             break;
+        // enter key press
         case 13:
             this.$root.$emit('click', event);
             break;
+        // 'q' key press
         case 81:
             this.$root.$emit('exit', event);
+            break;
+        default:
+            console.info('unhandled key event');
             break;
         }
     },

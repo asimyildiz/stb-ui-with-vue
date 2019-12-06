@@ -11,7 +11,7 @@
  */
 
 /**
- * @fileoverview Date manager for broadcast manager
+ * @fileoverview Date manager for broadcast manager converted from ES5 to ES6
  */
 const dateFormat = (function () {
     const token = /d{1,4}|m{1,4}|yy(?:yy)?|([HhMsTt])\1?|[LloSZ]|"[^"]*"|'[^']*'/g;

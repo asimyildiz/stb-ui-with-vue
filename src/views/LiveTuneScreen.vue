@@ -13,8 +13,8 @@ import DateWidget from '@/components/commons/DateWidget.vue';
 
 export default {
     /**
-     * liveTuneScreen 
      * display numeric keys entered then navigate to channel number entered
+     * @class LiveTuneScreen
      */
     name: 'liveTuneScreen',
     extends: AbstractScreen,

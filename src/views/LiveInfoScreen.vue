@@ -14,8 +14,8 @@ import DateWidget from '@/components/commons/DateWidget.vue';
 
 export default {
     /**
-     * liveInfoScreen 
      * display channel and program information
+     * @class LiveInfoScreen
      */
     name: 'liveInfoScreen',
     extends: AbstractScreen,
@@ -50,9 +50,9 @@ export default {
             };
         },
         /**
-         * when a channel number is entered on liveTuneScreen 
+         * when a channel number is entered on liveTuneScreen
          * find nearest channel to that channel number
-         * get channel information 
+         * get channel information
          * then get now and next program information
          * if no channel number is entered go back to live
          */
@@ -74,7 +74,7 @@ export default {
         }
     },
     /**
-     * fetch the data when the view is created 
+     * fetch the data when the view is created
      */
     created() {
         this.fetchData();

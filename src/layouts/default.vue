@@ -50,6 +50,7 @@ export default {
             if (this.isAnimated) {
                 return this.transitionName;
             }
+            return '';
         },
         /**
          * check if volume is visible

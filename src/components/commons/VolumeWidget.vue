@@ -3,7 +3,7 @@
         <div class="backgroundContainer"></div>
         <div class="volumeContainer">
             <div class="steps">
-                <div v-for="(step, stepId) in numberOfSteps" :class="classObject(stepId)"></div>
+                <div v-for="(step, stepId) in numberOfSteps" v-bind:key="`step-${stepId}`" :class="setCssObject(stepId)"></div>
             </div>
         </div>
     </div>
@@ -14,8 +14,8 @@ import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
     /**
-     * volumeWidget 
      * display volume information with bars on screens
+     * @class VolumeWidget
      */
     name: 'volumeWidget',
     extends: AbstractWidget,
@@ -31,7 +31,7 @@ export default {
          * @param {Number} stepId
          * @returns {Object}
          */
-        classObject(stepId) {
+        setCssObject(stepId) {
             const volume = this.$store.getters.volume;
             return {
                 step: true,

@@ -5,7 +5,7 @@
             <div class="fill" v-bind:style="percentage"></div>
         </div>
         <div class="duration">{{ duration }}</div>
-        <span v-if="!isNoInformation" class="minute">{{ $t('min') }}</span>
+        <span v-if="!hasNoInformation" class="minute">{{ $t('min') }}</span>
     </div>
 </template>
 
@@ -14,14 +14,14 @@ import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
     /**
-     * progressBarWidget 
      * display progress bar for current program based on current time information and program start time with duration information
+     * @class ProgressBarWidget
      */
     name: 'progressBarWidget',
     extends: AbstractWidget,
     data() {
         return {
-            isNoInformation: false,
+            hasNoInformation: false,
             duration: 0
         };
     },
@@ -31,36 +31,66 @@ export default {
             default: () => {}
         }
     },
-    computed: {
+    methods: {
         /**
-         * calculate how much time passed for current event
-         * then display a progress bar based on current time js value
+         * calculate elapsed time and current program duration in minutes
+         * @returns {Object}
          */
-        percentage() {
+        getElapsedTimeAndDuration() {
             const currentTime = Date.now();
             let elapsed = -1;
             let duration = -1;
-            let percent = 0;
-
             if (this.program && currentTime >= this.program.start && currentTime <= (this.program.start + this.program.duration)) {
                 elapsed = (currentTime - this.program.start) / 60000;
                 duration = this.program.duration / 60000;
             }
 
-            if (this.program && !this.program.isEmpty && !this.program.isNoInformation && elapsed >= 0 && duration > 0 && duration > elapsed) {
+            return {
+                elapsed,
+                duration
+            };
+        },
+        /**
+         * check if this is a valid program data
+         * @param {Number} elapsed
+         * @param {Number} duration
+         * @returns {Boolean}
+         */
+        isValidProgramData(elapsed, duration) {
+            return (this.program && !this.program.isEmpty && !this.program.isNoInformation && elapsed >= 0 && duration > 0 && duration > elapsed);
+        }
+    },
+    computed: {
+        /**
+         * calculate how much time passed for current event
+         * then display a progress bar based on current time js value
+         * @returns {Object}
+         */
+        percentage() {
+            let percent = 0;
+            const { elapsed, duration } = this.getElapsedTimeAndDuration();
+            if (this.isValidProgramData(elapsed, duration)) {
                 percent = (elapsed / duration) * 100;
-
-                const remaining = duration - elapsed > 0 ? Math.ceil(duration - elapsed) : 0;
-                this.duration = remaining;
-                this.isNoInformation = false;
-            } else {
-                this.isNoInformation = true;
-                this.duration = '';
             }
 
             return {
                 width: `${percent}%`
             };
+        }
+    },
+    /**
+     * after progressBarWidget is displayed
+     * check if there is a program information to display on screen
+     */
+    mounted() {
+        const { elapsed, duration } = this.getElapsedTimeAndDuration();
+        if (this.isValidProgramData(elapsed, duration)) {
+            const remaining = duration - elapsed > 0 ? Math.ceil(duration - elapsed) : 0;
+            this.duration = remaining;
+            this.hasNoInformation = false;
+        } else {
+            this.hasNoInformation = true;
+            this.duration = '';
         }
     }
 };

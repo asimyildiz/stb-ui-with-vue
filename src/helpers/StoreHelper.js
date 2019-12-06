@@ -12,6 +12,7 @@ const mergeStoreObject = (storeObjects, storeObject) => {
     });
 };
 
+/* istanbul ignore */
 export default {
     /**
      * create stores dynamically from store folder programmatically

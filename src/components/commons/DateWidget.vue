@@ -12,8 +12,8 @@ import AbstractWidget from '@/components/AbstractWidget';
 
 export default {
     /**
-     * dateWidget 
      * display date information on screens
+     * @class DateWidget
      */
     name: 'dateWidget',
     extends: AbstractWidget,

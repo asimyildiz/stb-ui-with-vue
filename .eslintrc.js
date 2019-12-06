@@ -10,6 +10,8 @@ module.exports = {
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-undef': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'vue/valid-template-root': 0,
         'comma-dangle': ['error', {
             arrays: 'never',
             objects: 'never',

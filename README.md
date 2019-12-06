@@ -9,10 +9,16 @@ npm config set registry http://localhost:4873
 - Project is tested on a Chrome Browser with disabled web security
 - Install chrome browser
 - Run chrome browser with options "--disable-web-security --user-data-dir='~/ChromeDataDir/'" (Ubuntu) 
+- Before serving the code, make sure that there is an 'sdk' folder created on root of the project
 
 ## Project setup
 ```
 npm install
+```
+
+## Loads FW and create vendor specific codes to sdk folder
+```
+npm run aliases desktop
 ```
 
 ### Compiles and hot-reloads for development

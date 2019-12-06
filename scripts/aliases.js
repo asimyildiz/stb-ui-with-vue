@@ -22,7 +22,7 @@ let aliasesCreated = 0;
  * clear previously created aliases
  */
 const clearAliases = () => {
-    rmdir('sdk/'); // remove sdk folder
+    rmdir('sdk/'); // remove sdk folder    
     fs.writeFile('src/middleware/aliases.js', '', 'utf8', writeToFileCallback);
     aliasesCreated = 0;
 };
