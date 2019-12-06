@@ -1,4 +1,4 @@
-# nstb
+# STB UI - vue.js
 POC for new STB UI code using vue.js
 
 ## Project initial steps
@@ -10,6 +10,7 @@ npm config set registry http://localhost:4873
 - Install chrome browser
 - Run chrome browser with options "--disable-web-security --user-data-dir='~/ChromeDataDir/'" (Ubuntu) 
 - Before serving the code, make sure that there is an 'sdk' folder created on root of the project
+- This is not a fully working STB UI code. It was implemented as a POC and coded only in 10 days.
 
 ## Project setup
 ```
