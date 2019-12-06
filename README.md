@@ -1,5 +1,5 @@
 # nstb
-digiturk (beIN Media Group) POC for new STB UI code using vue.js
+POC for new STB UI code using vue.js
 
 ## Project initial steps
 Project uses beINFW package which needs to be published to local npm registry (verdaccio)
